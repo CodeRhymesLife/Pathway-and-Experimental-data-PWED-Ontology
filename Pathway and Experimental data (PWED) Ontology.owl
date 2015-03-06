@@ -16,10 +16,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Declaration>
         <Class IRI="#Experiment"/>
     </Declaration>
@@ -39,7 +40,13 @@
         <Class IRI="#Species"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#pathwayComponent"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#publication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#species"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#title"/>
@@ -122,15 +129,34 @@
         <Literal datatypeIRI="&xsd;string">Dummy publication 1</Literal>
     </DataPropertyAssertion>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#pathwayComponent"/>
+        <Class IRI="#Pathway"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#publication"/>
         <ObjectUnionOf>
             <Class IRI="#Experiment"/>
             <Class IRI="#Pathway"/>
         </ObjectUnionOf>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#species"/>
+        <ObjectUnionOf>
+            <Class IRI="#Experiment"/>
+            <Class IRI="#Pathway"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#pathwayComponent"/>
+        <Class IRI="#Pathway"/>
+    </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#publication"/>
         <Class IRI="#Publication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#species"/>
+        <Class IRI="#Species"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="#title"/>
@@ -145,8 +171,18 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pathwayComponent</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Represents a isub-pathway within a parent pathway.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#publication</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">Publication associated with the pathway or experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#species</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The species the expreiment was run on.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
