@@ -49,7 +49,19 @@
         <ObjectProperty IRI="#species"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#author"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#id"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#title"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#year"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#dummyExperiment_NoPublication"/>
@@ -159,16 +171,85 @@
         <Class IRI="#Species"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
+        <DataProperty IRI="#author"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#id"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
         <DataProperty IRI="#title"/>
     </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#author"/>
+        <ObjectUnionOf>
+            <Class IRI="#Experiment"/>
+            <Class IRI="#Pathway"/>
+            <Class IRI="#Publication"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#id"/>
+        <ObjectUnionOf>
+            <Class IRI="#Experiment"/>
+            <Class IRI="#Pathway"/>
+            <Class IRI="#Publication"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <ObjectUnionOf>
+            <Class IRI="#Experiment"/>
+            <Class IRI="#Pathway"/>
+            <Class IRI="#Publication"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#title"/>
         <Class IRI="#Publication"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#year"/>
+        <ObjectUnionOf>
+            <Class IRI="#Experiment"/>
+            <Class IRI="#Pathway"/>
+            <Class IRI="#Publication"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#author"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#id"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#title"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#year"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#author</IRI>
+        <Literal datatypeIRI="&xsd;string">The authors of this publication, one per property value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#id</IRI>
+        <Literal datatypeIRI="&xsd;string">Unique identifier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#name</IRI>
+        <Literal datatypeIRI="&xsd;string">Name of entity</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#pathwayComponent</IRI>
