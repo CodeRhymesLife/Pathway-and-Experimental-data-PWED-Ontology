@@ -1,0 +1,1565 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24> .
+
+<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24> rdf:type :Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#publication
+
+:publication rdf:type :ObjectProperty ;
+             
+             rdfs:comment "Publication associated with the pathway or experiment." ;
+             
+             rdfs:range :Publication ;
+             
+             rdfs:domain [ rdf:type :Class ;
+                           :unionOf ( :Experiment
+                                      :Pathway
+                                    )
+                         ] .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#title
+
+:title rdf:type :DatatypeProperty ,
+                :FunctionalProperty ;
+       
+       rdfs:comment "The title of the publication." ;
+       
+       rdfs:domain :Publication ;
+       
+       rdfs:range xsd:string .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Experiment
+
+:Experiment rdf:type :Class ;
+            
+            rdfs:subClassOf :ExperimentSet .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#ExperimentSet
+
+:ExperimentSet rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#ExperimentWithPublication
+
+:ExperimentWithPublication rdf:type :Class ;
+                           
+                           :equivalentClass [ rdf:type :Class ;
+                                              :intersectionOf ( :ExperimentSet
+                                                                [ rdf:type :Restriction ;
+                                                                  :onProperty :publication ;
+                                                                  :onClass :Publication ;
+                                                                  :minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                                ]
+                                                              )
+                                            ] ;
+                           
+                           rdfs:subClassOf :ExperimentSet .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Pathway
+
+:Pathway rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PathwayWithPublication
+
+:PathwayWithPublication rdf:type :Class ;
+                        
+                        :equivalentClass [ rdf:type :Class ;
+                                           :intersectionOf ( :Pathway
+                                                             [ rdf:type :Restriction ;
+                                                               :onProperty :publication ;
+                                                               :onClass :Publication ;
+                                                               :minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                             ]
+                                                           )
+                                         ] .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication
+
+:Publication rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Species
+
+:Species rdf:type :Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyExperiment_NoPublication
+
+:dummyExperiment_NoPublication rdf:type :Experiment ,
+                                        :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyExperiment_WithPublication
+
+:dummyExperiment_WithPublication rdf:type :Experiment ,
+                                          :NamedIndividual ;
+                                 
+                                 :publication :dummyPublication1 .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPathway_NoPublication
+
+:dummyPathway_NoPublication rdf:type :Pathway ,
+                                     :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPathway_WithPublication
+
+:dummyPathway_WithPublication rdf:type :Pathway ,
+                                       :NamedIndividual ;
+                              
+                              :publication :dummyPublication1 .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPublication1
+
+:dummyPublication1 rdf:type :Publication ,
+                            :NamedIndividual ;
+                   
+                   :title "Dummy publication 1"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#homo_sapien
+
+:homo_sapien rdf:type :Species ,
+                      :NamedIndividual .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+
+:expementset1rdf:type :ExperimentSet
+; :hasid "GSE25706"^^xsd:string 
+; :hasexperimenttype "methylation profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanMethylation27 BeadChip (HumanMethylation27_270596_v.1.2)"^^xsd:string
+; :hasexperimentdata "P-GSE25706-41"^^xsd:string
+; :hasexperimentdata "P-GSE25706-40"^^xsd:string
+; :hasexperimentdata "P-GSE25706-43"^^xsd:string
+; :hasexperimentdata "P-GSE25706-42"^^xsd:string
+; :hasexperimentdata "P-GSE25706-44"^^xsd:string
+; :hasexperimentdata "P-GSE25706-45"^^xsd:string
+; :hasexperimentdata "P-GSE25706-46"^^xsd:string
+; :hasexperimentdata "P-GSE25706-47"^^xsd:string
+; :hasexperimentdata "P-GSE25706-48"^^xsd:string
+; :hasexperimentdata "P-GSE25706-49"^^xsd:string
+; :hasexperimentdata "P-GSE25706-32"^^xsd:string
+; :hasexperimentdata "P-GSE25706-31"^^xsd:string
+; :hasexperimentdata "P-GSE25706-30"^^xsd:string
+; :hasexperimentdata "P-GSE25706-35"^^xsd:string
+; :hasexperimentdata "P-GSE25706-36"^^xsd:string
+; :hasexperimentdata "P-GSE25706-33"^^xsd:string
+; :hasexperimentdata "P-GSE25706-34"^^xsd:string
+; :hasexperimentdata "P-GSE25706-39"^^xsd:string
+; :hasexperimentdata "P-GSE25706-37"^^xsd:string
+; :hasexperimentdata "P-GSE25706-38"^^xsd:string
+; :hasexperimentdata "P-GSE25706-63"^^xsd:string
+; :hasexperimentdata "P-GSE25706-3"^^xsd:string
+; :hasexperimentdata "P-GSE25706-62"^^xsd:string
+; :hasexperimentdata "P-GSE25706-2"^^xsd:string
+; :hasexperimentdata "P-GSE25706-65"^^xsd:string
+; :hasexperimentdata "P-GSE25706-5"^^xsd:string
+; :hasexperimentdata "P-GSE25706-64"^^xsd:string
+; :hasexperimentdata "P-GSE25706-4"^^xsd:string
+; :hasexperimentdata "P-GSE25706-1"^^xsd:string
+; :hasexperimentdata "P-GSE25706-61"^^xsd:string
+; :hasexperimentdata "P-GSE25706-60"^^xsd:string
+; :hasexperimentdata "P-GSE25706-20"^^xsd:string
+; :hasexperimentdata "P-GSE25706-21"^^xsd:string
+; :hasexperimentdata "P-GSE25706-7"^^xsd:string
+; :hasexperimentdata "P-GSE25706-78"^^xsd:string
+; :hasexperimentdata "P-GSE25706-6"^^xsd:string
+; :hasexperimentdata "P-GSE25706-77"^^xsd:string
+; :hasexperimentdata "P-GSE25706-9"^^xsd:string
+; :hasexperimentdata "P-GSE25706-79"^^xsd:string
+; :hasexperimentdata "P-GSE25706-8"^^xsd:string
+; :hasexperimentdata "P-GSE25706-73"^^xsd:string
+; :hasexperimentdata "P-GSE25706-27"^^xsd:string
+; :hasexperimentdata "P-GSE25706-74"^^xsd:string
+; :hasexperimentdata "P-GSE25706-26"^^xsd:string
+; :hasexperimentdata "P-GSE25706-75"^^xsd:string
+; :hasexperimentdata "P-GSE25706-29"^^xsd:string
+; :hasexperimentdata "P-GSE25706-76"^^xsd:string
+; :hasexperimentdata "P-GSE25706-28"^^xsd:string
+; :hasexperimentdata "P-GSE25706-23"^^xsd:string
+; :hasexperimentdata "P-GSE25706-22"^^xsd:string
+; :hasexperimentdata "P-GSE25706-70"^^xsd:string
+; :hasexperimentdata "P-GSE25706-25"^^xsd:string
+; :hasexperimentdata "P-GSE25706-71"^^xsd:string
+; :hasexperimentdata "P-GSE25706-72"^^xsd:string
+; :hasexperimentdata "P-GSE25706-24"^^xsd:string
+; :hasexperimentdata "P-GSE25706-66"^^xsd:string
+; :hasexperimentdata "P-GSE25706-67"^^xsd:string
+; :hasexperimentdata "P-GSE25706-68"^^xsd:string
+; :hasexperimentdata "P-GSE25706-69"^^xsd:string
+; :hasexperimentdata "P-GSE25706-54"^^xsd:string
+; :hasexperimentdata "P-GSE25706-53"^^xsd:string
+; :hasexperimentdata "P-GSE25706-52"^^xsd:string
+; :hasexperimentdata "P-GSE25706-51"^^xsd:string
+; :hasexperimentdata "P-GSE25706-50"^^xsd:string
+; :hasexperimentdata "P-GSE25706-10"^^xsd:string
+; :hasexperimentdata "P-GSE25706-18"^^xsd:string
+; :hasexperimentdata "P-GSE25706-17"^^xsd:string
+; :hasexperimentdata "P-GSE25706-16"^^xsd:string
+; :hasexperimentdata "P-GSE25706-84"^^xsd:string
+; :hasexperimentdata "P-GSE25706-15"^^xsd:string
+; :hasexperimentdata "P-GSE25706-85"^^xsd:string
+; :hasexperimentdata "P-GSE25706-14"^^xsd:string
+; :hasexperimentdata "P-GSE25706-82"^^xsd:string
+; :hasexperimentdata "P-GSE25706-13"^^xsd:string
+; :hasexperimentdata "P-GSE25706-83"^^xsd:string
+; :hasexperimentdata "P-GSE25706-12"^^xsd:string
+; :hasexperimentdata "P-GSE25706-80"^^xsd:string
+; :hasexperimentdata "P-GSE25706-11"^^xsd:string
+; :hasexperimentdata "P-GSE25706-81"^^xsd:string
+; :hasexperimentdata "P-GSE25706-59"^^xsd:string
+; :hasexperimentdata "P-GSE25706-57"^^xsd:string
+; :hasexperimentdata "P-GSE25706-58"^^xsd:string
+; :hasexperimentdata "P-GSE25706-55"^^xsd:string
+; :hasexperimentdata "P-GSE25706-19"^^xsd:string
+; :hasexperimentdata "P-GSE25706-56"^^xsd:string
+.
+:expementset2rdf:type :ExperimentSet
+; :hasid "SRP021527"^^xsd:string 
+; :hasid "GSE46402"^^xsd:string 
+; :hasexperimenttype "methylation profiling by high throughput sequencing"^^xsd:string
+; :hasexperimentdata "P-GSE46402-4"^^xsd:string
+; :hasexperimentdata "P-GSE46402-3"^^xsd:string
+; :hasexperimentdata "P-GSE46402-2"^^xsd:string
+; :hasexperimentdata "P-GSE46402-1"^^xsd:string
+.
+:expementset3rdf:type :ExperimentSet
+; :hasid "GSE26900"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina MouseWG-6 v2.0 Expression BeadChip"^^xsd:string
+; :hasexperimentdata "P-GSE26900-3"^^xsd:string
+; :hasexperimentdata "P-GSE26900-4"^^xsd:string
+; :hasexperimentdata "P-GSE26900-5"^^xsd:string
+; :hasexperimentdata "P-GSE26900-6"^^xsd:string
+; :hasexperimentdata "P-GSE26900-7"^^xsd:string
+; :hasexperimentdata "P-GSE26900-8"^^xsd:string
+; :hasexperimentdata "P-GSE26900-2"^^xsd:string
+; :hasexperimentdata "P-GSE26900-1"^^xsd:string
+.
+:expementset4 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26832"^^xsd:string 
+; :hasid "SRP005456"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+.
+; :hasexperimentdata "P-GSE26832-1"^^xsd:string
+; :hasexperimentdata "P-GSE26832-2"^^xsd:string
+; :hasexperimentdata "P-GSE26832-3"^^xsd:string
+; :hasexperimentdata "P-GSE26832-4"^^xsd:string
+:expementset5 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26830"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Mouse Genome 430 2.0 [Mouse430_2]"
+.
+; :hasexperimentdata "P-GSE26830-1"^^xsd:string
+; :hasexperimentdata "P-GSE26830-2"^^xsd:string
+; :hasexperimentdata "P-GSE26830-5"^^xsd:string
+; :hasexperimentdata "P-GSE26830-6"^^xsd:string
+; :hasexperimentdata "P-GSE26830-3"^^xsd:string
+; :hasexperimentdata "P-GSE26830-4"^^xsd:string
+; :hasexperimentdata "P-GSE26830-8"^^xsd:string
+; :hasexperimentdata "P-GSE26830-7"^^xsd:string
+:expementset6 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26827"^^xsd:string 
+; :hasexperimenttype "ChIP-chip by tiling array"^^xsd:string
+; :hasexperimenttype "methylation profiling by array"^^xsd:string
+; :hasarraydesign "NimbleGen mouse (mm8) whole genome tiling array 3 of 4"
+; :hasarraydesign "NimbleGen mouse (mm8) whole genome tiling array 2 of 4"
+; :hasarraydesign "NimbleGen mouse (mm8) whole genome tiling array 1 of 4"
+; :hasarraydesign "NimbleGen mouse (mm8) whole genome tiling array 4 of 4"
+.
+; :hasexperimentdata "P-GSE26827-7"^^xsd:string
+; :hasexperimentdata "P-GSE26827-1"^^xsd:string
+; :hasexperimentdata "P-GSE26827-2"^^xsd:string
+; :hasexperimentdata "P-GSE26827-5"^^xsd:string
+; :hasexperimentdata "P-GSE26827-6"^^xsd:string
+; :hasexperimentdata "P-GSE26827-3"^^xsd:string
+; :hasexperimentdata "P-GSE26827-4"^^xsd:string
+:expementset7rdf:type :ExperimentSet
+; :hasid "GSE28254"^^xsd:string 
+; :hasid "SRP009269"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+; :hasexperimenttype "methylation profiling by high throughput sequencing"^^xsd:string
+; :hasexperimenttype "RNA-seq of coding RNA"^^xsd:string
+; :hasexperimentdata "P-GSE28254-10"^^xsd:string
+; :hasexperimentdata "P-GSE28254-11"^^xsd:string
+; :hasexperimentdata "P-GSE28254-3"^^xsd:string
+; :hasexperimentdata "P-GSE28254-4"^^xsd:string
+; :hasexperimentdata "P-GSE28254-1"^^xsd:string
+; :hasexperimentdata "P-GSE28254-2"^^xsd:string
+; :hasexperimentdata "P-GSE28254-7"^^xsd:string
+; :hasexperimentdata "P-GSE28254-8"^^xsd:string
+; :hasexperimentdata "P-GSE28254-5"^^xsd:string
+; :hasexperimentdata "P-GSE28254-12"^^xsd:string
+; :hasexperimentdata "P-GSE28254-6"^^xsd:string
+; :hasexperimentdata "P-GSE28254-9"^^xsd:string
+.
+:expementset8rdf:type :ExperimentSet
+; :hasid "SRP001801"^^xsd:string 
+; :hasid "GSE19365"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+; :hasexperimentdata "P-GSE19365-1"^^xsd:string
+; :hasexperimentdata "P-GSE19365-2"^^xsd:string
+; :hasexperimentdata "P-GSE19365-3"^^xsd:string
+.
+:expementset9rdf:type :ExperimentSet
+; :hasid "SRP001723"^^xsd:string 
+; :hasid "GSE19708"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+; :hasexperimentdata "P-GSE19708-2"^^xsd:string
+; :hasexperimentdata "P-GSE19708-1"^^xsd:string
+; :hasexperimentdata "P-GSE19708-3"^^xsd:string
+.
+:expementset10rdf:type :ExperimentSet
+; :hasid "GSE25197"^^xsd:string 
+; :hasid "SRP004556"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+; :hasexperimentdata "P-GSE25197-2"^^xsd:string
+; :hasexperimentdata "P-GSE25197-1"^^xsd:string
+.
+:expementset11rdf:type :ExperimentSet
+; :hasid "GSE16226"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Human lincRNA 364k Tiling Array V1"
+; :hasarraydesign "Human lincRNA 391k Tiling Array V2"
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+; :hasexperimentdata "P-GSE16226-6"^^xsd:string
+; :hasexperimentdata "P-GSE16226-5"^^xsd:string
+; :hasexperimentdata "P-GSE16226-4"^^xsd:string
+; :hasexperimentdata "P-GSE16226-3"^^xsd:string
+; :hasexperimentdata "P-GSE16226-2"^^xsd:string
+; :hasexperimentdata "P-GSE16226-1"^^xsd:string
+; :hasexperimentdata "P-GSE16226-18"^^xsd:string
+; :hasexperimentdata "P-GSE16226-19"^^xsd:string
+; :hasexperimentdata "P-GSE16226-7"^^xsd:string
+; :hasexperimentdata "P-GSE16226-15"^^xsd:string
+; :hasexperimentdata "P-GSE16226-14"^^xsd:string
+; :hasexperimentdata "P-GSE16226-8"^^xsd:string
+; :hasexperimentdata "P-GSE16226-17"^^xsd:string
+; :hasexperimentdata "P-GSE16226-9"^^xsd:string
+; :hasexperimentdata "P-GSE16226-16"^^xsd:string
+; :hasexperimentdata "P-GSE16226-11"^^xsd:string
+; :hasexperimentdata "P-GSE16226-10"^^xsd:string
+; :hasexperimentdata "P-GSE16226-13"^^xsd:string
+; :hasexperimentdata "P-GSE16226-12"^^xsd:string
+.
+:expementset12rdf:type :ExperimentSet
+; :hasid "SRP000711"^^xsd:string 
+; :hasid "GSE13084"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+; :hasexperimentdata "P-GSE13084-1"^^xsd:string
+; :hasexperimentdata "P-GSE13084-3"^^xsd:string
+; :hasexperimentdata "P-GSE13084-2"^^xsd:string
+.
+:expementset13 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22147"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22147-6"^^xsd:string
+; :hasexperimentdata "P-GSE22147-7"^^xsd:string
+; :hasexperimentdata "P-GSE22147-4"^^xsd:string
+; :hasexperimentdata "P-GSE22147-5"^^xsd:string
+; :hasexperimentdata "P-GSE22147-8"^^xsd:string
+; :hasexperimentdata "P-GSE22147-9"^^xsd:string
+; :hasexperimentdata "P-GSE22147-12"^^xsd:string
+; :hasexperimentdata "P-GSE22147-11"^^xsd:string
+; :hasexperimentdata "P-GSE22147-10"^^xsd:string
+; :hasexperimentdata "P-GSE22147-21"^^xsd:string
+; :hasexperimentdata "P-GSE22147-20"^^xsd:string
+; :hasexperimentdata "P-GSE22147-23"^^xsd:string
+; :hasexperimentdata "P-GSE22147-22"^^xsd:string
+; :hasexperimentdata "P-GSE22147-24"^^xsd:string
+; :hasexperimentdata "P-GSE22147-1"^^xsd:string
+; :hasexperimentdata "P-GSE22147-19"^^xsd:string
+; :hasexperimentdata "P-GSE22147-18"^^xsd:string
+; :hasexperimentdata "P-GSE22147-2"^^xsd:string
+; :hasexperimentdata "P-GSE22147-17"^^xsd:string
+; :hasexperimentdata "P-GSE22147-3"^^xsd:string
+; :hasexperimentdata "P-GSE22147-16"^^xsd:string
+; :hasexperimentdata "P-GSE22147-15"^^xsd:string
+; :hasexperimentdata "P-GSE22147-14"^^xsd:string
+; :hasexperimentdata "P-GSE22147-13"^^xsd:string
+:expementset14 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22146"^^xsd:string 
+; :hasid "SRP002578"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22146-5"^^xsd:string
+; :hasexperimentdata "P-GSE22146-2"^^xsd:string
+; :hasexperimentdata "P-GSE22146-1"^^xsd:string
+; :hasexperimentdata "P-GSE22146-4"^^xsd:string
+; :hasexperimentdata "P-GSE22146-3"^^xsd:string
+:expementset15 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22145"^^xsd:string 
+; :hasid "SRP002579"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22145-4"^^xsd:string
+; :hasexperimentdata "P-GSE22145-5"^^xsd:string
+; :hasexperimentdata "P-GSE22145-2"^^xsd:string
+; :hasexperimentdata "P-GSE22145-3"^^xsd:string
+; :hasexperimentdata "P-GSE22145-1"^^xsd:string
+:expementset16 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22144"^^xsd:string 
+; :hasid "SRP002577"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22144-4"^^xsd:string
+; :hasexperimentdata "P-GSE22144-3"^^xsd:string
+; :hasexperimentdata "P-GSE22144-5"^^xsd:string
+; :hasexperimentdata "P-GSE22144-2"^^xsd:string
+; :hasexperimentdata "P-GSE22144-1"^^xsd:string
+:expementset17 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22143"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22143-1"^^xsd:string
+; :hasexperimentdata "P-GSE22143-3"^^xsd:string
+; :hasexperimentdata "P-GSE22143-2"^^xsd:string
+; :hasexperimentdata "P-GSE22143-5"^^xsd:string
+; :hasexperimentdata "P-GSE22143-4"^^xsd:string
+; :hasexperimentdata "P-GSE22143-7"^^xsd:string
+; :hasexperimentdata "P-GSE22143-6"^^xsd:string
+; :hasexperimentdata "P-GSE22143-8"^^xsd:string
+:expementset18 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22142"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22142-5"^^xsd:string
+; :hasexperimentdata "P-GSE22142-6"^^xsd:string
+; :hasexperimentdata "P-GSE22142-7"^^xsd:string
+; :hasexperimentdata "P-GSE22142-8"^^xsd:string
+; :hasexperimentdata "P-GSE22142-1"^^xsd:string
+; :hasexperimentdata "P-GSE22142-2"^^xsd:string
+; :hasexperimentdata "P-GSE22142-3"^^xsd:string
+; :hasexperimentdata "P-GSE22142-4"^^xsd:string
+:expementset19 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22141"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE22141-1"^^xsd:string
+; :hasexperimentdata "P-GSE22141-2"^^xsd:string
+; :hasexperimentdata "P-GSE22141-3"^^xsd:string
+; :hasexperimentdata "P-GSE22141-4"^^xsd:string
+; :hasexperimentdata "P-GSE22141-5"^^xsd:string
+; :hasexperimentdata "P-GSE22141-6"^^xsd:string
+; :hasexperimentdata "P-GSE22141-7"^^xsd:string
+; :hasexperimentdata "P-GSE22141-8"^^xsd:string
+:expementset20 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26158"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26158-2"^^xsd:string
+; :hasexperimentdata "P-GSE26158-3"^^xsd:string
+; :hasexperimentdata "P-GSE26158-1"^^xsd:string
+; :hasexperimentdata "P-GSE26158-6"^^xsd:string
+; :hasexperimentdata "P-GSE26158-7"^^xsd:string
+; :hasexperimentdata "P-GSE26158-4"^^xsd:string
+; :hasexperimentdata "P-GSE26158-5"^^xsd:string
+; :hasexperimentdata "P-GSE26158-9"^^xsd:string
+; :hasexperimentdata "P-GSE26158-8"^^xsd:string
+; :hasexperimentdata "P-GSE26158-13"^^xsd:string
+; :hasexperimentdata "P-GSE26158-10"^^xsd:string
+; :hasexperimentdata "P-GSE26158-12"^^xsd:string
+; :hasexperimentdata "P-GSE26158-11"^^xsd:string
+:expementset21 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26157"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE26157-2"^^xsd:string
+; :hasexperimentdata "P-GSE26157-1"^^xsd:string
+; :hasexperimentdata "P-GSE26157-4"^^xsd:string
+; :hasexperimentdata "P-GSE26157-3"^^xsd:string
+; :hasexperimentdata "P-GSE26157-6"^^xsd:string
+; :hasexperimentdata "P-GSE26157-5"^^xsd:string
+; :hasexperimentdata "P-GSE26157-7"^^xsd:string
+:expementset22 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26156"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26156-6"^^xsd:string
+; :hasexperimentdata "P-GSE26156-7"^^xsd:string
+; :hasexperimentdata "P-GSE26156-2"^^xsd:string
+; :hasexperimentdata "P-GSE26156-3"^^xsd:string
+; :hasexperimentdata "P-GSE26156-4"^^xsd:string
+; :hasexperimentdata "P-GSE26156-5"^^xsd:string
+; :hasexperimentdata "P-GSE26156-1"^^xsd:string
+:expementset23rdf:type :ExperimentSet
+; :hasid "GSE22764"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string
+; :hasexperimentdata "P-GSE22764-5"^^xsd:string
+; :hasexperimentdata "P-GSE22764-6"^^xsd:string
+; :hasexperimentdata "P-GSE22764-3"^^xsd:string
+; :hasexperimentdata "P-GSE22764-4"^^xsd:string
+; :hasexperimentdata "P-GSE22764-1"^^xsd:string
+; :hasexperimentdata "P-GSE22764-2"^^xsd:string
+; :hasexperimentdata "P-GSE22764-7"^^xsd:string
+.
+:expementset24rdf:type :ExperimentSet
+; :hasid "GSE7754"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"^^xsd:string
+; :hasexperimentdata "Affymetrix:Protocol:Hybridization-Unknown"^^xsd:string
+; :hasexperimentdata "P-G7754-3"^^xsd:string
+; :hasexperimentdata "P-G7754-4"^^xsd:string
+; :hasexperimentdata "P-G7754-2"^^xsd:string
+; :hasexperimentdata "P-AFFY-6"^^xsd:string
+; :hasexperimentdata "P-G7754-1"^^xsd:string
+.
+:expementset25 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26158"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26158-2"^^xsd:string
+; :hasexperimentdata "P-GSE26158-3"^^xsd:string
+; :hasexperimentdata "P-GSE26158-1"^^xsd:string
+; :hasexperimentdata "P-GSE26158-6"^^xsd:string
+; :hasexperimentdata "P-GSE26158-7"^^xsd:string
+; :hasexperimentdata "P-GSE26158-4"^^xsd:string
+; :hasexperimentdata "P-GSE26158-5"^^xsd:string
+; :hasexperimentdata "P-GSE26158-9"^^xsd:string
+; :hasexperimentdata "P-GSE26158-8"^^xsd:string
+; :hasexperimentdata "P-GSE26158-13"^^xsd:string
+; :hasexperimentdata "P-GSE26158-10"^^xsd:string
+; :hasexperimentdata "P-GSE26158-12"^^xsd:string
+; :hasexperimentdata "P-GSE26158-11"^^xsd:string
+:expementset26 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26157"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE26157-2"^^xsd:string
+; :hasexperimentdata "P-GSE26157-1"^^xsd:string
+; :hasexperimentdata "P-GSE26157-4"^^xsd:string
+; :hasexperimentdata "P-GSE26157-3"^^xsd:string
+; :hasexperimentdata "P-GSE26157-6"^^xsd:string
+; :hasexperimentdata "P-GSE26157-5"^^xsd:string
+; :hasexperimentdata "P-GSE26157-7"^^xsd:string
+:expementset27 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26156"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26156-6"^^xsd:string
+; :hasexperimentdata "P-GSE26156-7"^^xsd:string
+; :hasexperimentdata "P-GSE26156-2"^^xsd:string
+; :hasexperimentdata "P-GSE26156-3"^^xsd:string
+; :hasexperimentdata "P-GSE26156-4"^^xsd:string
+; :hasexperimentdata "P-GSE26156-5"^^xsd:string
+; :hasexperimentdata "P-GSE26156-1"^^xsd:string
+:expementset28 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22147"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22147-6"^^xsd:string
+; :hasexperimentdata "P-GSE22147-7"^^xsd:string
+; :hasexperimentdata "P-GSE22147-4"^^xsd:string
+; :hasexperimentdata "P-GSE22147-5"^^xsd:string
+; :hasexperimentdata "P-GSE22147-8"^^xsd:string
+; :hasexperimentdata "P-GSE22147-9"^^xsd:string
+; :hasexperimentdata "P-GSE22147-12"^^xsd:string
+; :hasexperimentdata "P-GSE22147-11"^^xsd:string
+; :hasexperimentdata "P-GSE22147-10"^^xsd:string
+; :hasexperimentdata "P-GSE22147-21"^^xsd:string
+; :hasexperimentdata "P-GSE22147-20"^^xsd:string
+; :hasexperimentdata "P-GSE22147-23"^^xsd:string
+; :hasexperimentdata "P-GSE22147-22"^^xsd:string
+; :hasexperimentdata "P-GSE22147-24"^^xsd:string
+; :hasexperimentdata "P-GSE22147-1"^^xsd:string
+; :hasexperimentdata "P-GSE22147-19"^^xsd:string
+; :hasexperimentdata "P-GSE22147-18"^^xsd:string
+; :hasexperimentdata "P-GSE22147-2"^^xsd:string
+; :hasexperimentdata "P-GSE22147-17"^^xsd:string
+; :hasexperimentdata "P-GSE22147-3"^^xsd:string
+; :hasexperimentdata "P-GSE22147-16"^^xsd:string
+; :hasexperimentdata "P-GSE22147-15"^^xsd:string
+; :hasexperimentdata "P-GSE22147-14"^^xsd:string
+; :hasexperimentdata "P-GSE22147-13"^^xsd:string
+:expementset29 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22146"^^xsd:string 
+; :hasid "SRP002578"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22146-5"^^xsd:string
+; :hasexperimentdata "P-GSE22146-2"^^xsd:string
+; :hasexperimentdata "P-GSE22146-1"^^xsd:string
+; :hasexperimentdata "P-GSE22146-4"^^xsd:string
+; :hasexperimentdata "P-GSE22146-3"^^xsd:string
+:expementset30 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22145"^^xsd:string 
+; :hasid "SRP002579"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22145-4"^^xsd:string
+; :hasexperimentdata "P-GSE22145-5"^^xsd:string
+; :hasexperimentdata "P-GSE22145-2"^^xsd:string
+; :hasexperimentdata "P-GSE22145-3"^^xsd:string
+; :hasexperimentdata "P-GSE22145-1"^^xsd:string
+:expementset31 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22144"^^xsd:string 
+; :hasid "SRP002577"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22144-4"^^xsd:string
+; :hasexperimentdata "P-GSE22144-3"^^xsd:string
+; :hasexperimentdata "P-GSE22144-5"^^xsd:string
+; :hasexperimentdata "P-GSE22144-2"^^xsd:string
+; :hasexperimentdata "P-GSE22144-1"^^xsd:string
+:expementset32 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22143"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22143-1"^^xsd:string
+; :hasexperimentdata "P-GSE22143-3"^^xsd:string
+; :hasexperimentdata "P-GSE22143-2"^^xsd:string
+; :hasexperimentdata "P-GSE22143-5"^^xsd:string
+; :hasexperimentdata "P-GSE22143-4"^^xsd:string
+; :hasexperimentdata "P-GSE22143-7"^^xsd:string
+; :hasexperimentdata "P-GSE22143-6"^^xsd:string
+; :hasexperimentdata "P-GSE22143-8"^^xsd:string
+:expementset33 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22142"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22142-5"^^xsd:string
+; :hasexperimentdata "P-GSE22142-6"^^xsd:string
+; :hasexperimentdata "P-GSE22142-7"^^xsd:string
+; :hasexperimentdata "P-GSE22142-8"^^xsd:string
+; :hasexperimentdata "P-GSE22142-1"^^xsd:string
+; :hasexperimentdata "P-GSE22142-2"^^xsd:string
+; :hasexperimentdata "P-GSE22142-3"^^xsd:string
+; :hasexperimentdata "P-GSE22142-4"^^xsd:string
+:expementset34 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22141"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE22141-1"^^xsd:string
+; :hasexperimentdata "P-GSE22141-2"^^xsd:string
+; :hasexperimentdata "P-GSE22141-3"^^xsd:string
+; :hasexperimentdata "P-GSE22141-4"^^xsd:string
+; :hasexperimentdata "P-GSE22141-5"^^xsd:string
+; :hasexperimentdata "P-GSE22141-6"^^xsd:string
+; :hasexperimentdata "P-GSE22141-7"^^xsd:string
+; :hasexperimentdata "P-GSE22141-8"^^xsd:string
+:expementset35rdf:type :ExperimentSet
+; :hasid "GSE22764"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string
+; :hasexperimentdata "P-GSE22764-5"^^xsd:string
+; :hasexperimentdata "P-GSE22764-6"^^xsd:string
+; :hasexperimentdata "P-GSE22764-3"^^xsd:string
+; :hasexperimentdata "P-GSE22764-4"^^xsd:string
+; :hasexperimentdata "P-GSE22764-1"^^xsd:string
+; :hasexperimentdata "P-GSE22764-2"^^xsd:string
+; :hasexperimentdata "P-GSE22764-7"^^xsd:string
+.
+:expementset36 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE13632"^^xsd:string 
+; :hasexperimenttype "ChIP-chip by array"^^xsd:string
+; :hasarraydesign "Agilent-015436 Copy_of_Mouse Promoter ChIP-on-Chip Set 244K Microarray 2 of 2"
+; :hasarraydesign "Agilent-015435 Copy_of_Mouse Promoter ChIP-on-Chip Set 244K Microarray 1 of 2"
+.
+; :hasexperimentdata "P-GSE13632-10"^^xsd:string
+; :hasexperimentdata "P-GSE13632-4"^^xsd:string
+; :hasexperimentdata "P-GSE13632-2"^^xsd:string
+; :hasexperimentdata "P-GSE13632-1"^^xsd:string
+; :hasexperimentdata "P-GSE13632-9"^^xsd:string
+; :hasexperimentdata "P-GSE13632-5"^^xsd:string
+; :hasexperimentdata "P-GSE13632-13"^^xsd:string
+; :hasexperimentdata "P-GSE13632-6"^^xsd:string
+; :hasexperimentdata "P-GSE13632-12"^^xsd:string
+; :hasexperimentdata "P-GSE13632-7"^^xsd:string
+; :hasexperimentdata "P-GSE13632-8"^^xsd:string
+:expementset37 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE13635"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Mouse Genome 430 2.0 [Mouse430_2]"
+.
+; :hasexperimentdata "P-GSE13635-5"^^xsd:string
+; :hasexperimentdata "P-GSE13635-4"^^xsd:string
+; :hasexperimentdata "P-GSE13635-3"^^xsd:string
+; :hasexperimentdata "P-GSE13635-1"^^xsd:string
+; :hasexperimentdata "P-GSE13635-2"^^xsd:string
+; :hasexperimentdata "P-GSE13635-8"^^xsd:string
+; :hasexperimentdata "P-GSE13635-7"^^xsd:string
+; :hasexperimentdata "P-GSE13635-6"^^xsd:string
+:expementset38 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE13636"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasexperimenttype "ChIP-chip by array"^^xsd:string
+; :hasarraydesign "Agilent-015436 Copy_of_Mouse Promoter ChIP-on-Chip Set 244K Microarray 2 of 2"
+; :hasarraydesign "Agilent-015435 Copy_of_Mouse Promoter ChIP-on-Chip Set 244K Microarray 1 of 2"
+; :hasarraydesign "Affymetrix GeneChip Mouse Genome 430 2.0 [Mouse430_2]"
+.
+; :hasexperimentdata "P-GSE13636-15"^^xsd:string
+; :hasexperimentdata "P-GSE13636-14"^^xsd:string
+; :hasexperimentdata "P-GSE13636-13"^^xsd:string
+; :hasexperimentdata "P-GSE13636-12"^^xsd:string
+; :hasexperimentdata "P-GSE13636-20"^^xsd:string
+; :hasexperimentdata "P-GSE13636-11"^^xsd:string
+; :hasexperimentdata "P-GSE13636-10"^^xsd:string
+; :hasexperimentdata "P-GSE13636-21"^^xsd:string
+; :hasexperimentdata "P-GSE13636-19"^^xsd:string
+; :hasexperimentdata "P-GSE13636-18"^^xsd:string
+; :hasexperimentdata "P-GSE13636-17"^^xsd:string
+; :hasexperimentdata "P-GSE13636-16"^^xsd:string
+; :hasexperimentdata "P-GSE13636-9"^^xsd:string
+; :hasexperimentdata "P-GSE13636-3"^^xsd:string
+; :hasexperimentdata "P-GSE13636-1"^^xsd:string
+; :hasexperimentdata "P-GSE13636-2"^^xsd:string
+; :hasexperimentdata "P-GSE13636-7"^^xsd:string
+; :hasexperimentdata "P-GSE13636-8"^^xsd:string
+; :hasexperimentdata "P-GSE13636-5"^^xsd:string
+; :hasexperimentdata "P-GSE13636-6"^^xsd:string
+:expementset39rdf:type :ExperimentSet
+; :hasid "GSE19004"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Mouse Genome 430 2.0 [Mouse430_2]"^^xsd:string
+; :hasexperimentdata "P-GSE19004-7"^^xsd:string
+; :hasexperimentdata "P-GSE19004-6"^^xsd:string
+; :hasexperimentdata "P-GSE19004-5"^^xsd:string
+; :hasexperimentdata "P-GSE19004-4"^^xsd:string
+; :hasexperimentdata "P-GSE19004-3"^^xsd:string
+; :hasexperimentdata "P-GSE19004-2"^^xsd:string
+; :hasexperimentdata "P-GSE19004-1"^^xsd:string
+.
+:expementset40rdf:type :ExperimentSet
+; :hasid "GSE7754"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"^^xsd:string
+; :hasexperimentdata "Affymetrix:Protocol:Hybridization-Unknown"^^xsd:string
+; :hasexperimentdata "P-G7754-3"^^xsd:string
+; :hasexperimentdata "P-G7754-4"^^xsd:string
+; :hasexperimentdata "P-G7754-2"^^xsd:string
+; :hasexperimentdata "P-AFFY-6"^^xsd:string
+; :hasexperimentdata "P-G7754-1"^^xsd:string
+.
+:expementset41 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22147"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22147-6"^^xsd:string
+; :hasexperimentdata "P-GSE22147-7"^^xsd:string
+; :hasexperimentdata "P-GSE22147-4"^^xsd:string
+; :hasexperimentdata "P-GSE22147-5"^^xsd:string
+; :hasexperimentdata "P-GSE22147-8"^^xsd:string
+; :hasexperimentdata "P-GSE22147-9"^^xsd:string
+; :hasexperimentdata "P-GSE22147-12"^^xsd:string
+; :hasexperimentdata "P-GSE22147-11"^^xsd:string
+; :hasexperimentdata "P-GSE22147-10"^^xsd:string
+; :hasexperimentdata "P-GSE22147-21"^^xsd:string
+; :hasexperimentdata "P-GSE22147-20"^^xsd:string
+; :hasexperimentdata "P-GSE22147-23"^^xsd:string
+; :hasexperimentdata "P-GSE22147-22"^^xsd:string
+; :hasexperimentdata "P-GSE22147-24"^^xsd:string
+; :hasexperimentdata "P-GSE22147-1"^^xsd:string
+; :hasexperimentdata "P-GSE22147-19"^^xsd:string
+; :hasexperimentdata "P-GSE22147-18"^^xsd:string
+; :hasexperimentdata "P-GSE22147-2"^^xsd:string
+; :hasexperimentdata "P-GSE22147-17"^^xsd:string
+; :hasexperimentdata "P-GSE22147-3"^^xsd:string
+; :hasexperimentdata "P-GSE22147-16"^^xsd:string
+; :hasexperimentdata "P-GSE22147-15"^^xsd:string
+; :hasexperimentdata "P-GSE22147-14"^^xsd:string
+; :hasexperimentdata "P-GSE22147-13"^^xsd:string
+:expementset42 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22146"^^xsd:string 
+; :hasid "SRP002578"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22146-5"^^xsd:string
+; :hasexperimentdata "P-GSE22146-2"^^xsd:string
+; :hasexperimentdata "P-GSE22146-1"^^xsd:string
+; :hasexperimentdata "P-GSE22146-4"^^xsd:string
+; :hasexperimentdata "P-GSE22146-3"^^xsd:string
+:expementset43 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22145"^^xsd:string 
+; :hasid "SRP002579"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22145-4"^^xsd:string
+; :hasexperimentdata "P-GSE22145-5"^^xsd:string
+; :hasexperimentdata "P-GSE22145-2"^^xsd:string
+; :hasexperimentdata "P-GSE22145-3"^^xsd:string
+; :hasexperimentdata "P-GSE22145-1"^^xsd:string
+:expementset44 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22144"^^xsd:string 
+; :hasid "SRP002577"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22144-4"^^xsd:string
+; :hasexperimentdata "P-GSE22144-3"^^xsd:string
+; :hasexperimentdata "P-GSE22144-5"^^xsd:string
+; :hasexperimentdata "P-GSE22144-2"^^xsd:string
+; :hasexperimentdata "P-GSE22144-1"^^xsd:string
+:expementset45 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22143"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22143-1"^^xsd:string
+; :hasexperimentdata "P-GSE22143-3"^^xsd:string
+; :hasexperimentdata "P-GSE22143-2"^^xsd:string
+; :hasexperimentdata "P-GSE22143-5"^^xsd:string
+; :hasexperimentdata "P-GSE22143-4"^^xsd:string
+; :hasexperimentdata "P-GSE22143-7"^^xsd:string
+; :hasexperimentdata "P-GSE22143-6"^^xsd:string
+; :hasexperimentdata "P-GSE22143-8"^^xsd:string
+:expementset46 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22142"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22142-5"^^xsd:string
+; :hasexperimentdata "P-GSE22142-6"^^xsd:string
+; :hasexperimentdata "P-GSE22142-7"^^xsd:string
+; :hasexperimentdata "P-GSE22142-8"^^xsd:string
+; :hasexperimentdata "P-GSE22142-1"^^xsd:string
+; :hasexperimentdata "P-GSE22142-2"^^xsd:string
+; :hasexperimentdata "P-GSE22142-3"^^xsd:string
+; :hasexperimentdata "P-GSE22142-4"^^xsd:string
+:expementset47 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22141"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE22141-1"^^xsd:string
+; :hasexperimentdata "P-GSE22141-2"^^xsd:string
+; :hasexperimentdata "P-GSE22141-3"^^xsd:string
+; :hasexperimentdata "P-GSE22141-4"^^xsd:string
+; :hasexperimentdata "P-GSE22141-5"^^xsd:string
+; :hasexperimentdata "P-GSE22141-6"^^xsd:string
+; :hasexperimentdata "P-GSE22141-7"^^xsd:string
+; :hasexperimentdata "P-GSE22141-8"^^xsd:string
+:expementset48 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26158"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26158-2"^^xsd:string
+; :hasexperimentdata "P-GSE26158-3"^^xsd:string
+; :hasexperimentdata "P-GSE26158-1"^^xsd:string
+; :hasexperimentdata "P-GSE26158-6"^^xsd:string
+; :hasexperimentdata "P-GSE26158-7"^^xsd:string
+; :hasexperimentdata "P-GSE26158-4"^^xsd:string
+; :hasexperimentdata "P-GSE26158-5"^^xsd:string
+; :hasexperimentdata "P-GSE26158-9"^^xsd:string
+; :hasexperimentdata "P-GSE26158-8"^^xsd:string
+; :hasexperimentdata "P-GSE26158-13"^^xsd:string
+; :hasexperimentdata "P-GSE26158-10"^^xsd:string
+; :hasexperimentdata "P-GSE26158-12"^^xsd:string
+; :hasexperimentdata "P-GSE26158-11"^^xsd:string
+:expementset49 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26157"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE26157-2"^^xsd:string
+; :hasexperimentdata "P-GSE26157-1"^^xsd:string
+; :hasexperimentdata "P-GSE26157-4"^^xsd:string
+; :hasexperimentdata "P-GSE26157-3"^^xsd:string
+; :hasexperimentdata "P-GSE26157-6"^^xsd:string
+; :hasexperimentdata "P-GSE26157-5"^^xsd:string
+; :hasexperimentdata "P-GSE26157-7"^^xsd:string
+:expementset50 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26156"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26156-6"^^xsd:string
+; :hasexperimentdata "P-GSE26156-7"^^xsd:string
+; :hasexperimentdata "P-GSE26156-2"^^xsd:string
+; :hasexperimentdata "P-GSE26156-3"^^xsd:string
+; :hasexperimentdata "P-GSE26156-4"^^xsd:string
+; :hasexperimentdata "P-GSE26156-5"^^xsd:string
+; :hasexperimentdata "P-GSE26156-1"^^xsd:string
+:expementset51rdf:type :ExperimentSet
+; :hasid "GSE22764"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string
+; :hasexperimentdata "P-GSE22764-5"^^xsd:string
+; :hasexperimentdata "P-GSE22764-6"^^xsd:string
+; :hasexperimentdata "P-GSE22764-3"^^xsd:string
+; :hasexperimentdata "P-GSE22764-4"^^xsd:string
+; :hasexperimentdata "P-GSE22764-1"^^xsd:string
+; :hasexperimentdata "P-GSE22764-2"^^xsd:string
+; :hasexperimentdata "P-GSE22764-7"^^xsd:string
+.
+:expementset52rdf:type :ExperimentSet
+; :hasid "GSE5827"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"^^xsd:string
+; :hasexperimentdata "P-G5827-1"^^xsd:string
+; :hasexperimentdata "P-G5827-2"^^xsd:string
+; :hasexperimentdata "P-G5827-3"^^xsd:string
+; :hasexperimentdata "P-G5827-4"^^xsd:string
+; :hasexperimentdata "P-G5827-5"^^xsd:string
+; :hasexperimentdata "P-G5827-6"^^xsd:string
+; :hasexperimentdata "P-G5827-7"^^xsd:string
+; :hasexperimentdata "P-G5827-8"^^xsd:string
+.
+:expementset53rdf:type :ExperimentSet
+; :hasid "GSE5827"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"^^xsd:string
+; :hasexperimentdata "P-G5827-1"^^xsd:string
+; :hasexperimentdata "P-G5827-2"^^xsd:string
+; :hasexperimentdata "P-G5827-3"^^xsd:string
+; :hasexperimentdata "P-G5827-4"^^xsd:string
+; :hasexperimentdata "P-G5827-5"^^xsd:string
+; :hasexperimentdata "P-G5827-6"^^xsd:string
+; :hasexperimentdata "P-G5827-7"^^xsd:string
+; :hasexperimentdata "P-G5827-8"^^xsd:string
+.
+:expementset54 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22147"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22147-6"^^xsd:string
+; :hasexperimentdata "P-GSE22147-7"^^xsd:string
+; :hasexperimentdata "P-GSE22147-4"^^xsd:string
+; :hasexperimentdata "P-GSE22147-5"^^xsd:string
+; :hasexperimentdata "P-GSE22147-8"^^xsd:string
+; :hasexperimentdata "P-GSE22147-9"^^xsd:string
+; :hasexperimentdata "P-GSE22147-12"^^xsd:string
+; :hasexperimentdata "P-GSE22147-11"^^xsd:string
+; :hasexperimentdata "P-GSE22147-10"^^xsd:string
+; :hasexperimentdata "P-GSE22147-21"^^xsd:string
+; :hasexperimentdata "P-GSE22147-20"^^xsd:string
+; :hasexperimentdata "P-GSE22147-23"^^xsd:string
+; :hasexperimentdata "P-GSE22147-22"^^xsd:string
+; :hasexperimentdata "P-GSE22147-24"^^xsd:string
+; :hasexperimentdata "P-GSE22147-1"^^xsd:string
+; :hasexperimentdata "P-GSE22147-19"^^xsd:string
+; :hasexperimentdata "P-GSE22147-18"^^xsd:string
+; :hasexperimentdata "P-GSE22147-2"^^xsd:string
+; :hasexperimentdata "P-GSE22147-17"^^xsd:string
+; :hasexperimentdata "P-GSE22147-3"^^xsd:string
+; :hasexperimentdata "P-GSE22147-16"^^xsd:string
+; :hasexperimentdata "P-GSE22147-15"^^xsd:string
+; :hasexperimentdata "P-GSE22147-14"^^xsd:string
+; :hasexperimentdata "P-GSE22147-13"^^xsd:string
+:expementset55 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22146"^^xsd:string 
+; :hasid "SRP002578"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22146-5"^^xsd:string
+; :hasexperimentdata "P-GSE22146-2"^^xsd:string
+; :hasexperimentdata "P-GSE22146-1"^^xsd:string
+; :hasexperimentdata "P-GSE22146-4"^^xsd:string
+; :hasexperimentdata "P-GSE22146-3"^^xsd:string
+:expementset56 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22145"^^xsd:string 
+; :hasid "SRP002579"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22145-4"^^xsd:string
+; :hasexperimentdata "P-GSE22145-5"^^xsd:string
+; :hasexperimentdata "P-GSE22145-2"^^xsd:string
+; :hasexperimentdata "P-GSE22145-3"^^xsd:string
+; :hasexperimentdata "P-GSE22145-1"^^xsd:string
+:expementset57 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22144"^^xsd:string 
+; :hasid "SRP002577"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22144-4"^^xsd:string
+; :hasexperimentdata "P-GSE22144-3"^^xsd:string
+; :hasexperimentdata "P-GSE22144-5"^^xsd:string
+; :hasexperimentdata "P-GSE22144-2"^^xsd:string
+; :hasexperimentdata "P-GSE22144-1"^^xsd:string
+:expementset58 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22143"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22143-1"^^xsd:string
+; :hasexperimentdata "P-GSE22143-3"^^xsd:string
+; :hasexperimentdata "P-GSE22143-2"^^xsd:string
+; :hasexperimentdata "P-GSE22143-5"^^xsd:string
+; :hasexperimentdata "P-GSE22143-4"^^xsd:string
+; :hasexperimentdata "P-GSE22143-7"^^xsd:string
+; :hasexperimentdata "P-GSE22143-6"^^xsd:string
+; :hasexperimentdata "P-GSE22143-8"^^xsd:string
+:expementset59 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22142"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22142-5"^^xsd:string
+; :hasexperimentdata "P-GSE22142-6"^^xsd:string
+; :hasexperimentdata "P-GSE22142-7"^^xsd:string
+; :hasexperimentdata "P-GSE22142-8"^^xsd:string
+; :hasexperimentdata "P-GSE22142-1"^^xsd:string
+; :hasexperimentdata "P-GSE22142-2"^^xsd:string
+; :hasexperimentdata "P-GSE22142-3"^^xsd:string
+; :hasexperimentdata "P-GSE22142-4"^^xsd:string
+:expementset60 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22141"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE22141-1"^^xsd:string
+; :hasexperimentdata "P-GSE22141-2"^^xsd:string
+; :hasexperimentdata "P-GSE22141-3"^^xsd:string
+; :hasexperimentdata "P-GSE22141-4"^^xsd:string
+; :hasexperimentdata "P-GSE22141-5"^^xsd:string
+; :hasexperimentdata "P-GSE22141-6"^^xsd:string
+; :hasexperimentdata "P-GSE22141-7"^^xsd:string
+; :hasexperimentdata "P-GSE22141-8"^^xsd:string
+:expementset61 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26158"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26158-2"^^xsd:string
+; :hasexperimentdata "P-GSE26158-3"^^xsd:string
+; :hasexperimentdata "P-GSE26158-1"^^xsd:string
+; :hasexperimentdata "P-GSE26158-6"^^xsd:string
+; :hasexperimentdata "P-GSE26158-7"^^xsd:string
+; :hasexperimentdata "P-GSE26158-4"^^xsd:string
+; :hasexperimentdata "P-GSE26158-5"^^xsd:string
+; :hasexperimentdata "P-GSE26158-9"^^xsd:string
+; :hasexperimentdata "P-GSE26158-8"^^xsd:string
+; :hasexperimentdata "P-GSE26158-13"^^xsd:string
+; :hasexperimentdata "P-GSE26158-10"^^xsd:string
+; :hasexperimentdata "P-GSE26158-12"^^xsd:string
+; :hasexperimentdata "P-GSE26158-11"^^xsd:string
+:expementset62 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26157"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE26157-2"^^xsd:string
+; :hasexperimentdata "P-GSE26157-1"^^xsd:string
+; :hasexperimentdata "P-GSE26157-4"^^xsd:string
+; :hasexperimentdata "P-GSE26157-3"^^xsd:string
+; :hasexperimentdata "P-GSE26157-6"^^xsd:string
+; :hasexperimentdata "P-GSE26157-5"^^xsd:string
+; :hasexperimentdata "P-GSE26157-7"^^xsd:string
+:expementset63 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26156"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26156-6"^^xsd:string
+; :hasexperimentdata "P-GSE26156-7"^^xsd:string
+; :hasexperimentdata "P-GSE26156-2"^^xsd:string
+; :hasexperimentdata "P-GSE26156-3"^^xsd:string
+; :hasexperimentdata "P-GSE26156-4"^^xsd:string
+; :hasexperimentdata "P-GSE26156-5"^^xsd:string
+; :hasexperimentdata "P-GSE26156-1"^^xsd:string
+:expementset64rdf:type :ExperimentSet
+; :hasid "GSE22764"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string
+; :hasexperimentdata "P-GSE22764-5"^^xsd:string
+; :hasexperimentdata "P-GSE22764-6"^^xsd:string
+; :hasexperimentdata "P-GSE22764-3"^^xsd:string
+; :hasexperimentdata "P-GSE22764-4"^^xsd:string
+; :hasexperimentdata "P-GSE22764-1"^^xsd:string
+; :hasexperimentdata "P-GSE22764-2"^^xsd:string
+; :hasexperimentdata "P-GSE22764-7"^^xsd:string
+.
+:expementset65 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22147"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22147-6"^^xsd:string
+; :hasexperimentdata "P-GSE22147-7"^^xsd:string
+; :hasexperimentdata "P-GSE22147-4"^^xsd:string
+; :hasexperimentdata "P-GSE22147-5"^^xsd:string
+; :hasexperimentdata "P-GSE22147-8"^^xsd:string
+; :hasexperimentdata "P-GSE22147-9"^^xsd:string
+; :hasexperimentdata "P-GSE22147-12"^^xsd:string
+; :hasexperimentdata "P-GSE22147-11"^^xsd:string
+; :hasexperimentdata "P-GSE22147-10"^^xsd:string
+; :hasexperimentdata "P-GSE22147-21"^^xsd:string
+; :hasexperimentdata "P-GSE22147-20"^^xsd:string
+; :hasexperimentdata "P-GSE22147-23"^^xsd:string
+; :hasexperimentdata "P-GSE22147-22"^^xsd:string
+; :hasexperimentdata "P-GSE22147-24"^^xsd:string
+; :hasexperimentdata "P-GSE22147-1"^^xsd:string
+; :hasexperimentdata "P-GSE22147-19"^^xsd:string
+; :hasexperimentdata "P-GSE22147-18"^^xsd:string
+; :hasexperimentdata "P-GSE22147-2"^^xsd:string
+; :hasexperimentdata "P-GSE22147-17"^^xsd:string
+; :hasexperimentdata "P-GSE22147-3"^^xsd:string
+; :hasexperimentdata "P-GSE22147-16"^^xsd:string
+; :hasexperimentdata "P-GSE22147-15"^^xsd:string
+; :hasexperimentdata "P-GSE22147-14"^^xsd:string
+; :hasexperimentdata "P-GSE22147-13"^^xsd:string
+:expementset66 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22146"^^xsd:string 
+; :hasid "SRP002578"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22146-5"^^xsd:string
+; :hasexperimentdata "P-GSE22146-2"^^xsd:string
+; :hasexperimentdata "P-GSE22146-1"^^xsd:string
+; :hasexperimentdata "P-GSE22146-4"^^xsd:string
+; :hasexperimentdata "P-GSE22146-3"^^xsd:string
+:expementset67 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22145"^^xsd:string 
+; :hasid "SRP002579"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22145-4"^^xsd:string
+; :hasexperimentdata "P-GSE22145-5"^^xsd:string
+; :hasexperimentdata "P-GSE22145-2"^^xsd:string
+; :hasexperimentdata "P-GSE22145-3"^^xsd:string
+; :hasexperimentdata "P-GSE22145-1"^^xsd:string
+:expementset68 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22144"^^xsd:string 
+; :hasid "SRP002577"^^xsd:string 
+; :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22144-4"^^xsd:string
+; :hasexperimentdata "P-GSE22144-3"^^xsd:string
+; :hasexperimentdata "P-GSE22144-5"^^xsd:string
+; :hasexperimentdata "P-GSE22144-2"^^xsd:string
+; :hasexperimentdata "P-GSE22144-1"^^xsd:string
+:expementset69 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22143"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22143-1"^^xsd:string
+; :hasexperimentdata "P-GSE22143-3"^^xsd:string
+; :hasexperimentdata "P-GSE22143-2"^^xsd:string
+; :hasexperimentdata "P-GSE22143-5"^^xsd:string
+; :hasexperimentdata "P-GSE22143-4"^^xsd:string
+; :hasexperimentdata "P-GSE22143-7"^^xsd:string
+; :hasexperimentdata "P-GSE22143-6"^^xsd:string
+; :hasexperimentdata "P-GSE22143-8"^^xsd:string
+:expementset70 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22142"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Gene 1.0 ST Array [HuGene-1_0-st-v1]"
+.
+; :hasexperimentdata "P-GSE22142-5"^^xsd:string
+; :hasexperimentdata "P-GSE22142-6"^^xsd:string
+; :hasexperimentdata "P-GSE22142-7"^^xsd:string
+; :hasexperimentdata "P-GSE22142-8"^^xsd:string
+; :hasexperimentdata "P-GSE22142-1"^^xsd:string
+; :hasexperimentdata "P-GSE22142-2"^^xsd:string
+; :hasexperimentdata "P-GSE22142-3"^^xsd:string
+; :hasexperimentdata "P-GSE22142-4"^^xsd:string
+:expementset71 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22141"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE22141-1"^^xsd:string
+; :hasexperimentdata "P-GSE22141-2"^^xsd:string
+; :hasexperimentdata "P-GSE22141-3"^^xsd:string
+; :hasexperimentdata "P-GSE22141-4"^^xsd:string
+; :hasexperimentdata "P-GSE22141-5"^^xsd:string
+; :hasexperimentdata "P-GSE22141-6"^^xsd:string
+; :hasexperimentdata "P-GSE22141-7"^^xsd:string
+; :hasexperimentdata "P-GSE22141-8"^^xsd:string
+:expementset72 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26158"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26158-2"^^xsd:string
+; :hasexperimentdata "P-GSE26158-3"^^xsd:string
+; :hasexperimentdata "P-GSE26158-1"^^xsd:string
+; :hasexperimentdata "P-GSE26158-6"^^xsd:string
+; :hasexperimentdata "P-GSE26158-7"^^xsd:string
+; :hasexperimentdata "P-GSE26158-4"^^xsd:string
+; :hasexperimentdata "P-GSE26158-5"^^xsd:string
+; :hasexperimentdata "P-GSE26158-9"^^xsd:string
+; :hasexperimentdata "P-GSE26158-8"^^xsd:string
+; :hasexperimentdata "P-GSE26158-13"^^xsd:string
+; :hasexperimentdata "P-GSE26158-10"^^xsd:string
+; :hasexperimentdata "P-GSE26158-12"^^xsd:string
+; :hasexperimentdata "P-GSE26158-11"^^xsd:string
+:expementset73 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26157"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Agilent-019118 Human miRNA Microarray 2.0 G4470B (GeneView version)"
+.
+; :hasexperimentdata "P-GSE26157-2"^^xsd:string
+; :hasexperimentdata "P-GSE26157-1"^^xsd:string
+; :hasexperimentdata "P-GSE26157-4"^^xsd:string
+; :hasexperimentdata "P-GSE26157-3"^^xsd:string
+; :hasexperimentdata "P-GSE26157-6"^^xsd:string
+; :hasexperimentdata "P-GSE26157-5"^^xsd:string
+; :hasexperimentdata "P-GSE26157-7"^^xsd:string
+:expementset74 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE26156"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+.
+; :hasexperimentdata "P-GSE26156-6"^^xsd:string
+; :hasexperimentdata "P-GSE26156-7"^^xsd:string
+; :hasexperimentdata "P-GSE26156-2"^^xsd:string
+; :hasexperimentdata "P-GSE26156-3"^^xsd:string
+; :hasexperimentdata "P-GSE26156-4"^^xsd:string
+; :hasexperimentdata "P-GSE26156-5"^^xsd:string
+; :hasexperimentdata "P-GSE26156-1"^^xsd:string
+:expementset75rdf:type :ExperimentSet
+; :hasid "GSE22764"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string
+; :hasexperimentdata "P-GSE22764-5"^^xsd:string
+; :hasexperimentdata "P-GSE22764-6"^^xsd:string
+; :hasexperimentdata "P-GSE22764-3"^^xsd:string
+; :hasexperimentdata "P-GSE22764-4"^^xsd:string
+; :hasexperimentdata "P-GSE22764-1"^^xsd:string
+; :hasexperimentdata "P-GSE22764-2"^^xsd:string
+; :hasexperimentdata "P-GSE22764-7"^^xsd:string
+.
+:expementset76rdf:type :ExperimentSet
+; :hasid "GSE5827"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"^^xsd:string
+; :hasexperimentdata "P-G5827-1"^^xsd:string
+; :hasexperimentdata "P-G5827-2"^^xsd:string
+; :hasexperimentdata "P-G5827-3"^^xsd:string
+; :hasexperimentdata "P-G5827-4"^^xsd:string
+; :hasexperimentdata "P-G5827-5"^^xsd:string
+; :hasexperimentdata "P-G5827-6"^^xsd:string
+; :hasexperimentdata "P-G5827-7"^^xsd:string
+; :hasexperimentdata "P-G5827-8"^^xsd:string
+.
+:expementset77 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "SRP001264"^^xsd:string 
+; :hasid "GSE18292"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+.
+; :hasexperimentdata "P-GSE18292-2"^^xsd:string
+; :hasexperimentdata "P-GSE18292-1"^^xsd:string
+:expementset78 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE17917"^^xsd:string 
+; :hasid "SRP001251"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+.
+; :hasexperimentdata "P-GSE17917-2"^^xsd:string
+; :hasexperimentdata "P-GSE17917-1"^^xsd:string
+; :hasexperimentdata "P-GSE17917-3"^^xsd:string
+:expementset79 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "E-MTAB-606"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanHT-12 V4.0 expression beadchip"
+.
+; :hasexperimentdata "P-MTAB-19856"^^xsd:string
+; :hasexperimentdata "P-MTAB-19857"^^xsd:string
+; :hasexperimentdata "P-MTAB-19858"^^xsd:string
+; :hasexperimentdata "P-MTAB-19859"^^xsd:string
+; :hasexperimentdata "P-MTAB-19860"^^xsd:string
+; :hasexperimentdata "P-MTAB-19861"^^xsd:string
+; :hasexperimentdata "P-MTAB-19862"^^xsd:string
+; :hasexperimentdata "P-MTAB-19863"^^xsd:string
+:expementset80 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "SRP002216"^^xsd:string 
+; :hasid "GSE19461"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+.
+; :hasexperimentdata "P-GSE19461-2"^^xsd:string
+; :hasexperimentdata "P-GSE19461-1"^^xsd:string
+; :hasexperimentdata "P-GSE19461-4"^^xsd:string
+; :hasexperimentdata "P-GSE19461-3"^^xsd:string
+:expementset81 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22795"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanHT-12 v3.0 Expression BeadChip"
+.
+; :hasexperimentdata "P-GSE22795-6"^^xsd:string
+; :hasexperimentdata "P-GSE22795-5"^^xsd:string
+; :hasexperimentdata "P-GSE22795-8"^^xsd:string
+; :hasexperimentdata "P-GSE22795-7"^^xsd:string
+; :hasexperimentdata "P-GSE22795-3"^^xsd:string
+; :hasexperimentdata "P-GSE22795-4"^^xsd:string
+; :hasexperimentdata "P-GSE22795-1"^^xsd:string
+; :hasexperimentdata "P-GSE22795-2"^^xsd:string
+:expementset82 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22792"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanHT-12 v3.0 Expression BeadChip"
+.
+; :hasexperimentdata "P-GSE22792-5"^^xsd:string
+; :hasexperimentdata "P-GSE22792-4"^^xsd:string
+; :hasexperimentdata "P-GSE22792-7"^^xsd:string
+; :hasexperimentdata "P-GSE22792-6"^^xsd:string
+; :hasexperimentdata "P-GSE22792-1"^^xsd:string
+; :hasexperimentdata "P-GSE22792-3"^^xsd:string
+; :hasexperimentdata "P-GSE22792-2"^^xsd:string
+:expementset83 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE22767"^^xsd:string 
+; :hasid "SRP002814"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+.
+; :hasexperimentdata "P-GSE22767-1"^^xsd:string
+; :hasexperimentdata "P-GSE22767-2"^^xsd:string
+; :hasexperimentdata "P-GSE22767-3"^^xsd:string
+; :hasexperimentdata "P-GSE22767-4"^^xsd:string
+; :hasexperimentdata "P-GSE22767-5"^^xsd:string
+:expementset84rdf:type :ExperimentSet
+; :hasid "GSE608"^^xsd:string 
+; :hasexperimenttype "transcription profiling by SAGE"^^xsd:string
+; :hasexperimentdata "P-GSE608-1"^^xsd:string
+.
+:expementset85rdf:type :ExperimentSet
+; :hasid "GSE21056"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasexperimenttype "ChIP-chip by tiling array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Mouse Promoter 1.0R Array Mm_PromPR_v02-1_NCBIv36"
+; :hasarraydesign "Affymetrix GeneChip Mouse Genome 430 2.0 [Mouse430_2]"
+; :hasexperimentdata "P-GSE21056-15"^^xsd:string
+; :hasexperimentdata "P-GSE21056-1"^^xsd:string
+; :hasexperimentdata "P-GSE21056-16"^^xsd:string
+; :hasexperimentdata "P-GSE21056-13"^^xsd:string
+; :hasexperimentdata "P-GSE21056-2"^^xsd:string
+; :hasexperimentdata "P-GSE21056-3"^^xsd:string
+; :hasexperimentdata "P-GSE21056-14"^^xsd:string
+; :hasexperimentdata "P-GSE21056-4"^^xsd:string
+; :hasexperimentdata "P-GSE21056-11"^^xsd:string
+; :hasexperimentdata "P-GSE21056-5"^^xsd:string
+; :hasexperimentdata "P-GSE21056-12"^^xsd:string
+; :hasexperimentdata "P-GSE21056-10"^^xsd:string
+; :hasexperimentdata "P-GSE21056-6"^^xsd:string
+; :hasexperimentdata "P-GSE21056-7"^^xsd:string
+; :hasexperimentdata "P-GSE21056-8"^^xsd:string
+; :hasexperimentdata "P-GSE21056-9"^^xsd:string
+.
+:expementset86 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE5936"^^xsd:string 
+; :hasexperimenttype "unknown experiment type"^^xsd:string
+; :hasarraydesign "Agilent Mouse Development Oligo Microarray 011472 G4120A"
+; :hasarraydesign "NIA Mouse 22K Microarray v1.0 (Development 60-mer Oligo)"
+.
+; :hasexperimentdata "P-GSE5936-3"^^xsd:string
+; :hasexperimentdata "P-GSE5936-4"^^xsd:string
+; :hasexperimentdata "P-GSE5936-1"^^xsd:string
+; :hasexperimentdata "P-GSE5936-2"^^xsd:string
+; :hasexperimentdata "P-GSE5936-7"^^xsd:string
+; :hasexperimentdata "P-GSE5936-8"^^xsd:string
+; :hasexperimentdata "P-GSE5936-5"^^xsd:string
+; :hasexperimentdata "P-GSE5936-6"^^xsd:string
+:expementset87 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "E-MNIA-61"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "old identifiers - Agilent Mouse (Development) Oligo (60-mer) Microarray [G4120A]"
+; :hasarraydesign "NIA mouse 22k Ver1"
+.
+; :hasexperimentdata "P-MNIA-292"^^xsd:string
+; :hasexperimentdata "P-MNIA-401"^^xsd:string
+; :hasexperimentdata "P-MNIA-52"^^xsd:string
+; :hasexperimentdata "P-MNIA-51"^^xsd:string
+; :hasexperimentdata "P-MNIA-290"^^xsd:string
+; :hasexperimentdata "P-MNIA-74"^^xsd:string
+; :hasexperimentdata "P-MNIA-402"^^xsd:string
+; :hasexperimentdata "P-MNIA-214"^^xsd:string
+; :hasexperimentdata "P-MNIA-228"^^xsd:string
+:expementset88rdf:type :ExperimentSet
+; :hasid "GSE11450"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome HG-U133A [HG-U133A]"
+; :hasarraydesign "Affymetrix GeneChip Human Genome U133 Plus 2.0 [HG-U133_Plus_2]"
+; :hasexperimentdata "P-G11450-5"^^xsd:string
+; :hasexperimentdata "P-G11450-6"^^xsd:string
+; :hasexperimentdata "P-G11450-3"^^xsd:string
+; :hasexperimentdata "P-G11450-4"^^xsd:string
+; :hasexperimentdata "P-G11450-1"^^xsd:string
+; :hasexperimentdata "P-G11450-2"^^xsd:string
+; :hasexperimentdata "P-G11450-7"^^xsd:string
+.
+:expementset89rdf:type :ExperimentSet
+; :hasid "SRP002706"^^xsd:string 
+; :hasid "GSE21717"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+; :hasexperimentdata "P-GSE21717-3"^^xsd:string
+; :hasexperimentdata "P-GSE21717-2"^^xsd:string
+; :hasexperimentdata "P-GSE21717-1"^^xsd:string
+.
+:expementset90rdf:type :ExperimentSet
+; :hasid "E-MEXP-641"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Affymetrix GeneChip Human Genome HG-U133A [HG-U133A]"^^xsd:string
+; :hasexperimentdata "P-MEXP-22235"^^xsd:string
+; :hasexperimentdata "P-MEXP-22234"^^xsd:string
+; :hasexperimentdata "Affymetrix:Protocol:Hybridization-EukGE-WS2v4"^^xsd:string
+; :hasexperimentdata "P-MEXP-22237"^^xsd:string
+; :hasexperimentdata "P-MEXP-22236"^^xsd:string
+; :hasexperimentdata "P-MEXP-22239"^^xsd:string
+; :hasexperimentdata "Affymetrix:Protocol:Hybridization-FlexGE-WS2v4"^^xsd:string
+; :hasexperimentdata "P-AFFY-6"^^xsd:string
+; :hasexperimentdata "P-MEXP-22396"^^xsd:string
+; :hasexperimentdata "Affymetrix:Protocol:ExpressionStat"^^xsd:string
+.
+:expementset91rdf:type :ExperimentSet
+; :hasid "GSE13412"^^xsd:string 
+; :hasexperimenttype "ChIP-chip by tiling array"^^xsd:string
+; :hasarraydesign "NimbleGen Homo sapiens HG18 promoter 1 of 2"^^xsd:string
+; :hasexperimentdata "P-GSE13412-3"^^xsd:string
+; :hasexperimentdata "P-GSE13412-5"^^xsd:string
+; :hasexperimentdata "P-GSE13412-4"^^xsd:string
+; :hasexperimentdata "P-GSE13412-6"^^xsd:string
+; :hasexperimentdata "P-GSE13412-7"^^xsd:string
+; :hasexperimentdata "P-GSE13412-1"^^xsd:string
+; :hasexperimentdata "P-GSE13412-2"^^xsd:string
+; :hasexperimentdata "P-GSE13412-8"^^xsd:string
+.
+:expementset92rdf:type :ExperimentSet
+; :hasid "GSE14309"^^xsd:string 
+; :hasexperimenttype "ChIP-chip by tiling array"^^xsd:string
+; :hasarraydesign "NimbleGen human (hg17) ENCODE tiling array"^^xsd:string
+; :hasexperimentdata "P-GSE14309-1"^^xsd:string
+; :hasexperimentdata "P-GSE14309-2"^^xsd:string
+; :hasexperimentdata "P-GSE14309-5"^^xsd:string
+; :hasexperimentdata "P-GSE14309-6"^^xsd:string
+; :hasexperimentdata "P-GSE14309-3"^^xsd:string
+; :hasexperimentdata "P-GSE14309-4"^^xsd:string
+; :hasexperimentdata "P-GSE14309-7"^^xsd:string
+; :hasexperimentdata "P-GSE14309-8"^^xsd:string
+.
+:expementset93 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE33221"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanHT-12 v3.0 Expression BeadChip"
+; :hasarraydesign "Illumina HumanHT-12 V4.0 expression beadchip"
+; :hasarraydesign "Illumina HumanRef-8 v3.0 [gene-centered version]"
+.
+; :hasexperimentdata "P-GSE33221-10"^^xsd:string
+; :hasexperimentdata "P-GSE33221-2"^^xsd:string
+; :hasexperimentdata "P-GSE33221-1"^^xsd:string
+; :hasexperimentdata "P-GSE33221-4"^^xsd:string
+; :hasexperimentdata "P-GSE33221-3"^^xsd:string
+; :hasexperimentdata "P-GSE33221-6"^^xsd:string
+; :hasexperimentdata "P-GSE33221-5"^^xsd:string
+; :hasexperimentdata "P-GSE33221-9"^^xsd:string
+; :hasexperimentdata "P-GSE33221-7"^^xsd:string
+; :hasexperimentdata "P-GSE33221-8"^^xsd:string
+:expementset94 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE33220"^^xsd:string 
+; :hasexperimenttype "transcription profiling by array"^^xsd:string
+; :hasarraydesign "Illumina HumanHT-12 v3.0 Expression BeadChip"
+; :hasarraydesign "Illumina HumanHT-12 V4.0 expression beadchip"
+; :hasarraydesign "Illumina HumanRef-8 v3.0 [gene-centered version]"
+.
+; :hasexperimentdata "P-GSE33220-8"^^xsd:string
+; :hasexperimentdata "P-GSE33220-4"^^xsd:string
+; :hasexperimentdata "P-GSE33220-5"^^xsd:string
+; :hasexperimentdata "P-GSE33220-6"^^xsd:string
+; :hasexperimentdata "P-GSE33220-7"^^xsd:string
+; :hasexperimentdata "P-GSE33220-1"^^xsd:string
+; :hasexperimentdata "P-GSE33220-2"^^xsd:string
+; :hasexperimentdata "P-GSE33220-3"^^xsd:string
+:expementset95 rdf:type :ExperimentSet, :NamedIndividual;
+; :hasid "GSE33007"^^xsd:string 
+; :hasid "SRP008926"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+.
+; :hasexperimentdata "P-GSE33007-1"^^xsd:string
+; :hasexperimentdata "P-GSE33007-2"^^xsd:string
+:expementset96rdf:type :ExperimentSet
+; :hasid "ERP001422"^^xsd:string 
+; :hasexperimenttype "ChIP-seq"^^xsd:string
+; :hasexperimentdata "P-MTAB-25273"^^xsd:string
+; :hasexperimentdata "P-MTAB-27089"^^xsd:string
+; :hasexperimentdata "P-MTAB-25274"^^xsd:string
+; :hasexperimentdata "P-MTAB-25275"^^xsd:string
+; :hasexperimentdata "P-MTAB-25276"^^xsd:string
+; :hasexperimentdata "P-MTAB-27090"^^xsd:string
+.
+
