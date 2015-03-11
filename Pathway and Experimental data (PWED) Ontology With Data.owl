@@ -749,7 +749,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway1
 
-:Pathway1 rdf:type :NamedIndividual ;
+:Pathway1 rdf:type bp:Pathway , :NamedIndividual ;
           
           bp:comment "Authored: Jassal, B, 2004-12-15 13:08:03"^^xsd:string ;
           
@@ -789,7 +789,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway10
 
-:Pathway10 rdf:type :NamedIndividual ;
+:Pathway10 rdf:type bp:Pathway , :NamedIndividual ;
            
            bp:comment "Authored: Orlic-Milacic, M, 2013-01-11"^^xsd:string ,
                       "Edited: Haw, R, 2013-01-14"^^xsd:string ;
@@ -845,7 +845,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway11
 
-:Pathway11 rdf:type :NamedIndividual ;
+:Pathway11 rdf:type bp:Pathway , :NamedIndividual ;
            
            bp:comment "Authored: Orlic-Milacic, M, 2013-01-11"^^xsd:string ,
                       "Edited: Haw, R, 2013-01-14"^^xsd:string ,
@@ -894,7 +894,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway12
 
-:Pathway12 rdf:type :NamedIndividual ;
+:Pathway12 rdf:type bp:Pathway , :NamedIndividual ;
            
            bp:comment "Authored: Jassal, B, 2004-12-15 13:08:03"^^xsd:string ,
                       "Edited: Orlic-Milacic, M, 2012-02-10"^^xsd:string ,
@@ -926,7 +926,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway13
 
-:Pathway13 rdf:type :NamedIndividual ;
+:Pathway13 rdf:type bp:Pathway , :NamedIndividual ;
            
            bp:comment "Authored: Jassal, B, 2004-12-15 13:08:03"^^xsd:string ,
                       "Edited: Orlic-Milacic, M, 2012-02-10"^^xsd:string ,
@@ -958,7 +958,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway2
 
-:Pathway2 rdf:type :NamedIndividual ;
+:Pathway2 rdf:type bp:Pathway , :NamedIndividual ;
           
           bp:comment "Authored: Egan, SE, Orlic-Milacic, M, 2011-11-14"^^xsd:string ,
                      "Edited: D'Eustachio, P, 2012-02-06"^^xsd:string ,
@@ -1013,7 +1013,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway3
 
-:Pathway3 rdf:type :NamedIndividual ;
+:Pathway3 rdf:type bp:Pathway , :NamedIndividual ;
           
           bp:comment "Authored: Egan, SE, Orlic-Milacic, M, 2011-11-14"^^xsd:string ,
                      "Edited: D'Eustachio, P, 2012-02-06"^^xsd:string ,
@@ -1104,7 +1104,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway4
 
-:Pathway4 rdf:type :NamedIndividual ;
+:Pathway4 rdf:type bp:Pathway , :NamedIndividual ;
           
           bp:comment "Authored: Egan, SE, Orlic-Milacic, M, 2011-11-14"^^xsd:string ,
                      "Edited: D'Eustachio, P, 2012-02-06"^^xsd:string ,
@@ -1138,7 +1138,8 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway5
 
-:Pathway5 rdf:type :NamedIndividual ;
+:Pathway5 rdf:type :Pathway ,
+						:NamedIndividual ;
           
           bp:comment "Authored: Jassal, B, 2004-12-15 13:08:03"^^xsd:string ,
                      "Edited: D'Eustachio, P, 2012-02-06"^^xsd:string ,
@@ -1198,7 +1199,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway6
 
-:Pathway6 rdf:type :NamedIndividual ;
+:Pathway6 rdf:type bp:Pathway , :NamedIndividual ;
           
           bp:comment "Authored: Egan, SE, Orlic-Milacic, M, 2011-11-14"^^xsd:string ,
                      "Edited: D'Eustachio, P, 2012-02-06"^^xsd:string ,
@@ -1279,7 +1280,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway7
 
-:Pathway7 rdf:type :NamedIndividual ;
+:Pathway7 rdf:type bp:Pathway , :NamedIndividual ;
           
           bp:displayName "Activated NOTCH1 Transmits Signal to the Nucleus"^^xsd:string ;
           
@@ -1376,7 +1377,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway8
 
-:Pathway8 rdf:type :NamedIndividual ;
+:Pathway8 rdf:type bp:Pathway , :NamedIndividual ;
           
           bp:comment "Authored: Egan, SE, Orlic-Milacic, M, 2011-11-14"^^xsd:string ,
                      "Edited: D'Eustachio, P, 2012-02-06"^^xsd:string ,
@@ -1454,7 +1455,7 @@
 
 ###  http://www.w3.org/2002/07/owl#Pathway9
 
-:Pathway9 rdf:type :NamedIndividual ;
+:Pathway9 rdf:type bp:Pathway , :NamedIndividual ;
           
           bp:comment "Authored: Jassal, B, 2004-12-15 13:08:03"^^xsd:string ,
                      "Edited: Orlic-Milacic, M, 2012-02-10"^^xsd:string ,
