@@ -27,16 +27,6 @@
 
 
 
-###  http://www.w3.org/2002/07/owl#publication
-
-:publication rdf:type :ObjectProperty ;
-             
-             rdfs:comment "Publication associated with the pathway or experiment." ;
-             
-             rdfs:range :Publication .
-
-
-
 ###  http://www.w3.org/2002/07/owl#species
 
 :species rdf:type :ObjectProperty ;
@@ -107,9 +97,7 @@
        
        rdfs:comment "The title of the publication." ;
        
-       rdfs:range xsd:string ;
-       
-       rdfs:domain :Publication .
+       rdfs:range xsd:string .
 
 
 
@@ -143,8 +131,8 @@
                            :equivalentClass [ rdf:type :Class ;
                                               :intersectionOf ( :Experiment
                                                                 [ rdf:type :Restriction ;
-                                                                  :onProperty :publication ;
-                                                                  :onClass :Publication ;
+                                                                  :onProperty bp:xref ;
+                                                                  :onClass bp:PublicationXref ;
                                                                   :minQualifiedCardinality "1"^^xsd:nonNegativeInteger
                                                                 ]
                                                               )
@@ -154,13 +142,17 @@
 
 ###  http://www.w3.org/2002/07/owl#PathwayWithPublication
 
-:PathwayWithPublication rdf:type :Class .
-
-
-
-###  http://www.w3.org/2002/07/owl#Publication
-
-:Publication rdf:type :Class .
+:PathwayWithPublication rdf:type :Class ;
+                        
+                        :equivalentClass [ rdf:type :Class ;
+                                           :intersectionOf ( bp:Pathway
+                                                             [ rdf:type :Restriction ;
+                                                               :onProperty bp:xref ;
+                                                               :onClass bp:PublicationXref ;
+                                                               :minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                             ]
+                                                           )
+                                         ] .
 
 
 
@@ -7040,7 +7032,7 @@
 :dummyExperiment_WithPublication rdf:type :Experiment ,
                                           :NamedIndividual ;
                                  
-                                 :publication :dummyPublication1 ;
+                                 bp:xref :PublicationXref1 ;
                                  
                                  :species :homo_sapien .
 
@@ -7049,23 +7041,6 @@
 ###  http://www.w3.org/2002/07/owl#dummyPathway_NoPublication
 
 :dummyPathway_NoPublication rdf:type :NamedIndividual .
-
-
-
-###  http://www.w3.org/2002/07/owl#dummyPathway_WithPublication
-
-:dummyPathway_WithPublication rdf:type :NamedIndividual ;
-                              
-                              :publication :dummyPublication1 .
-
-
-
-###  http://www.w3.org/2002/07/owl#dummyPublication1
-
-:dummyPublication1 rdf:type :NamedIndividual ,
-                            :Publication ;
-                   
-                   :title "Dummy publication 1"^^xsd:string .
 
 
 
