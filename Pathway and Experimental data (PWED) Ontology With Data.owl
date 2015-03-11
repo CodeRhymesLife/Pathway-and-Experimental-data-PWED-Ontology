@@ -1,0 +1,335 @@
+@prefix : <http://www.w3.org/2002/07/owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24> .
+
+<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24> rdf:type :Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#pathwayComponent
+
+:pathwayComponent rdf:type :ObjectProperty ;
+                  
+                  rdfs:comment "Represents a isub-pathway within a parent pathway." ;
+                  
+                  rdfs:domain :Pathway ;
+                  
+                  rdfs:range :Pathway .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#publication
+
+:publication rdf:type :ObjectProperty ;
+             
+             rdfs:comment "Publication associated with the pathway or experiment." ;
+             
+             rdfs:range :Publication ;
+             
+             rdfs:domain [ rdf:type :Class ;
+                           :unionOf ( :Experiment
+                                      :Pathway
+                                    )
+                         ] .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#species
+
+:species rdf:type :ObjectProperty ;
+         
+         rdfs:comment "The species the expreiment was run on." ;
+         
+         rdfs:range :Species ;
+         
+         rdfs:domain [ rdf:type :Class ;
+                       :unionOf ( :Experiment
+                                  :Pathway
+                                )
+                     ] .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#author
+
+:author rdf:type :DatatypeProperty ,
+                 :FunctionalProperty ;
+        
+        rdfs:comment "The authors of this publication, one per property value."^^xsd:string ;
+        
+        rdfs:range xsd:string ;
+        
+        rdfs:domain [ rdf:type :Class ;
+                      :unionOf ( :Experiment
+                                 :Pathway
+                                 :Publication
+                               )
+                    ] .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#description
+
+:description rdf:type :DatatypeProperty ;
+             
+             rdfs:comment "Experiment description" ;
+             
+             rdfs:domain :Experiment ;
+             
+             rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#id
+
+:id rdf:type :DatatypeProperty ,
+             :FunctionalProperty ;
+    
+    rdfs:comment "Unique identifier"^^xsd:string ;
+    
+    rdfs:range xsd:string ;
+    
+    rdfs:domain [ rdf:type :Class ;
+                  :unionOf ( :Experiment
+                             :Pathway
+                             :Publication
+                           )
+                ] .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#name
+
+:name rdf:type :DatatypeProperty ;
+      
+      rdfs:comment "Name of entity"^^xsd:string ;
+      
+      rdfs:range xsd:string ;
+      
+      rdfs:domain [ rdf:type :Class ;
+                    :unionOf ( :Experiment
+                               :Pathway
+                               :Publication
+                             )
+                  ] .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#title
+
+:title rdf:type :DatatypeProperty ,
+                :FunctionalProperty ;
+       
+       rdfs:comment "The title of the publication." ;
+       
+       rdfs:domain :Publication ;
+       
+       rdfs:range xsd:string .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#year
+
+:year rdf:type :DatatypeProperty ;
+      
+      rdfs:range xsd:string ;
+      
+      rdfs:domain [ rdf:type :Class ;
+                    :unionOf ( :Experiment
+                               :Pathway
+                               :Publication
+                             )
+                  ] .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Experiment
+
+:Experiment rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#ExperimentWithPublication
+
+:ExperimentWithPublication rdf:type :Class ;
+                           
+                           :equivalentClass [ rdf:type :Class ;
+                                              :intersectionOf ( :Experiment
+                                                                [ rdf:type :Restriction ;
+                                                                  :onProperty :publication ;
+                                                                  :onClass :Publication ;
+                                                                  :minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                                ]
+                                                              )
+                                            ] .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Pathway
+
+:Pathway rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PathwayWithPublication
+
+:PathwayWithPublication rdf:type :Class ;
+                        
+                        :equivalentClass [ rdf:type :Class ;
+                                           :intersectionOf ( :Pathway
+                                                             [ rdf:type :Restriction ;
+                                                               :onProperty :publication ;
+                                                               :onClass :Publication ;
+                                                               :minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+                                                             ]
+                                                           )
+                                         ] .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication
+
+:Publication rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Species
+
+:Species rdf:type :Class .
+
+
+
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyExperiment_NoPublication
+
+:dummyExperiment_NoPublication rdf:type :Experiment ,
+                                        :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyExperiment_WithPublication
+
+:dummyExperiment_WithPublication rdf:type :Experiment ,
+                                          :NamedIndividual ;
+                                 
+                                 :publication :dummyPublication1 ;
+                                 
+                                 :species :homo_sapien .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPathway_NoPublication
+
+:dummyPathway_NoPublication rdf:type :Pathway ,
+                                     :NamedIndividual .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPathway_WithPublication
+
+:dummyPathway_WithPublication rdf:type :Pathway ,
+                                       :NamedIndividual ;
+                              
+                              :publication :dummyPublication1 .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPublication1
+
+:dummyPublication1 rdf:type :Publication ,
+                            :NamedIndividual ;
+                   
+                   :title "Dummy publication 1"^^xsd:string .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#homo_sapien
+
+:homo_sapien rdf:type :Species ,
+                      :NamedIndividual .
+
+
+
+
+###  Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net
+
+:exp_E-GEOD-25706 rdf:type :Experiment , :NamedIndividual ;
+        :species :homo_sapien ;
+        :name "Epigenome analysis of patients with various myeloid malignancies including differential levels of 5-hydro
+xymethylcytosine"^^xsd:string ;
+        :year "2010-12-11"^^xsd:string ;
+        :publication :pub_21057493 ;
+        :description "TET2 is a close relative of TET1, an enzyme that converts 5-methylcytosine (5mC) to 5-hydroxymethy
+lcytosine (5hmC) in DNA. The gene encoding TET2 resides at chromosome 4q24, in a region showing recurrent microdeletions
+ and copy-neutral loss of heterozygosity (CN-LOH) in patients with diverse myeloid malignancies. Somatic TET2 mutations
+are frequently observed in myelodysplastic syndromes (MDS), myeloproliferative neoplasms (MPN), MDS/MPN overlap syndrome
+s including chronic myelomonocytic leukaemia (CMML), acute myeloid leukaemias (AML) and secondary AML (sAML). We show he
+re that TET2 mutations associated with myeloid malignancies compromise catalytic activity. Bone marrow samples from pati
+ents with TET2 mutations displayed uniformly low levels of 5hmC in genomic DNA compared to bone marrow samples from heal
+thy controls. Moreover, small hairpin RNA (shRNA)-mediated depletion of Tet2 in mouse haematopoietic precursors skewed t
+heir differentiation towards monocyte/macrophage lineages in culture. There was no significant difference in DNA methyla
+tion between bone marrow samples from patients with high 5hmC versus healthy controls, but samples from patients with lo
+w 5hmC showed hypomethylation relative to controls at the majority of differentially methylated CpG sites. Our results d
+emonstrate that Tet2 is important for normal myelopoiesis, and suggest that disruption of TET2 enzymatic activity favour
+s myeloid tumorigenesis. Measurement of 5hmC levels in myeloid malignancies may prove valuable as a diagnostic and progn
+ostic tool, to tailor therapies and assess responses to anticancer drugs. Genome wide DNA methylation profiling of patie
+nts samples with various myeloid malignancies and diffrential levels of 5hmC.The Illumina Infinium 27k Human DNA methyla
+tion Beadchip v1.2 was used to obtain DNA methylation profiles across approximately 27,000 CpGs in bone marrow samples a
+nd occasionally peripheral blood samples. Samples included 28 control healthy bone marrows, 29 patients samples with low
+ 5hmC levels (7 patients with wild-type TET2 and 22 mutant TET2) and 24 with high levels of 5hmC (22 with wild-type TET2
+ and 2 mutant TET2). Bisulphite converted DNA from 81 samples was hybridised to the Illumina Infinium 27k Human Methylat
+ion Beadchip v1.2"^^xsd:string .
+
+:pub_21057493 rdf:type :Publication , :NamedIndividual ;
+        :author "Ko M"^^xsd:string ;
+        :author "Huang Y"^^xsd:string ;
+        :author "Jankowska AM"^^xsd:string ;
+        :author "Pape UJ"^^xsd:string ;
+        :author "Tahiliani M"^^xsd:string ;
+        :author "Bandukwala HS"^^xsd:string ;
+        :author "An J"^^xsd:string ;
+        :author "Lamperti ED"^^xsd:string ;
+        :author "Koh KP"^^xsd:string ;
+        :author "Ganetzky R"^^xsd:string ;
+        :author "Liu XS"^^xsd:string ;
+        :author "Aravind L"^^xsd:string ;
+        :author "Agarwal S"^^xsd:string ;
+        :author "Maciejewski JP"^^xsd:string ;
+        :author "Rao A"^^xsd:string ;
+        :title "Impaired hydroxylation of 5-methylcytosine in myeloid cancers with mutant TET2."^^xsd:string .
