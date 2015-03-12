@@ -1700,6 +1700,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                :hasid "P-GSE13084-2"^^xsd:string .
 
 
+
 ###  http://www.w3.org/2002/07/owl#Experiment159
 
 :Experiment159 rdf:type :Experiment ,
@@ -2372,7 +2373,6 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                          :af1_8141066 ,
                          :af1_8153043 ,
                          :af1_8165011 .
-
 
 
 
@@ -12613,6 +12613,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 
 
+
 ###  http://www.w3.org/2002/07/owl#expementset1
 
 :expementset1 rdf:type :ExperimentSet ,
@@ -12624,7 +12625,95 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
               
               :hasarraydesign "Illumina HumanMethylation27 BeadChip (HumanMethylation27_270596_v.1.2)"^^xsd:string ;
               
-              :hasexperimenttype "methylation profiling by array"^^xsd:string .
+              :hasexperimenttype "methylation profiling by array"^^xsd:string ;
+              
+              :hasexperimentdata :Experiment1 ,
+                                 :Experiment10 ,
+                                 :Experiment11 ,
+                                 :Experiment12 ,
+                                 :Experiment13 ,
+                                 :Experiment14 ,
+                                 :Experiment15 ,
+                                 :Experiment16 ,
+                                 :Experiment17 ,
+                                 :Experiment18 ,
+                                 :Experiment19 ,
+                                 :Experiment2 ,
+                                 :Experiment20 ,
+                                 :Experiment21 ,
+                                 :Experiment22 ,
+                                 :Experiment23 ,
+                                 :Experiment24 ,
+                                 :Experiment25 ,
+                                 :Experiment26 ,
+                                 :Experiment27 ,
+                                 :Experiment28 ,
+                                 :Experiment29 ,
+                                 :Experiment3 ,
+                                 :Experiment30 ,
+                                 :Experiment31 ,
+                                 :Experiment32 ,
+                                 :Experiment33 ,
+                                 :Experiment34 ,
+                                 :Experiment35 ,
+                                 :Experiment36 ,
+                                 :Experiment37 ,
+                                 :Experiment38 ,
+                                 :Experiment39 ,
+                                 :Experiment4 ,
+                                 :Experiment40 ,
+                                 :Experiment41 ,
+                                 :Experiment42 ,
+                                 :Experiment43 ,
+                                 :Experiment44 ,
+                                 :Experiment45 ,
+                                 :Experiment46 ,
+                                 :Experiment47 ,
+                                 :Experiment48 ,
+                                 :Experiment49 ,
+                                 :Experiment5 ,
+                                 :Experiment50 ,
+                                 :Experiment51 ,
+                                 :Experiment52 ,
+                                 :Experiment53 ,
+                                 :Experiment54 ,
+                                 :Experiment55 ,
+                                 :Experiment56 ,
+                                 :Experiment57 ,
+                                 :Experiment58 ,
+                                 :Experiment59 ,
+                                 :Experiment6 ,
+                                 :Experiment60 ,
+                                 :Experiment61 ,
+                                 :Experiment62 ,
+                                 :Experiment63 ,
+                                 :Experiment64 ,
+                                 :Experiment65 ,
+                                 :Experiment66 ,
+                                 :Experiment67 ,
+                                 :Experiment68 ,
+                                 :Experiment69 ,
+                                 :Experiment7 ,
+                                 :Experiment70 ,
+                                 :Experiment71 ,
+                                 :Experiment72 ,
+                                 :Experiment73 ,
+                                 :Experiment74 ,
+                                 :Experiment75 ,
+                                 :Experiment76 ,
+                                 :Experiment77 ,
+                                 :Experiment78 ,
+                                 :Experiment79 ,
+                                 :Experiment8 ,
+                                 :Experiment80 ,
+                                 :Experiment81 ,
+                                 :Experiment82 ,
+                                 :Experiment83 ,
+                                 :Experiment84 ,
+                                 :Experiment85 ,
+                                 :Experiment9 ;
+              
+              :haspmid :pmid_21057493 .
 
 
 
@@ -12639,7 +12728,12 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Mus musculus"^^xsd:string ;
                
-               :hasid "SRP004556"^^xsd:string .
+               :hasid "SRP004556"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment135 ,
+                                  :Experiment136 ;
+               
+               :haspmid :pmid_21170310 .
 
 
 
@@ -12657,7 +12751,29 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                :hasarraydesign "Human lincRNA 364k Tiling Array V1"^^xsd:string ,
                                "Human lincRNA 391k Tiling Array V2"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment137 ,
+                                  :Experiment138 ,
+                                  :Experiment139 ,
+                                  :Experiment140 ,
+                                  :Experiment141 ,
+                                  :Experiment142 ,
+                                  :Experiment143 ,
+                                  :Experiment144 ,
+                                  :Experiment145 ,
+                                  :Experiment146 ,
+                                  :Experiment147 ,
+                                  :Experiment148 ,
+                                  :Experiment149 ,
+                                  :Experiment150 ,
+                                  :Experiment151 ,
+                                  :Experiment152 ,
+                                  :Experiment153 ,
+                                  :Experiment154 ,
+                                  :Experiment155 ;
+               
+               :haspmid :pmid_19571010 .
 
 
 
@@ -12673,7 +12789,13 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                :hasorganism "Homo sapiens"^^xsd:string ,
                             "Mus musculus"^^xsd:string ;
                
-               :hasid "SRP000711"^^xsd:string .
+               :hasid "SRP000711"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment156 ,
+                                  :Experiment157 ,
+                                  :Experiment158 ;
+               
+               :haspmid :pmid_18974828 .
 
 
 
@@ -12693,7 +12815,34 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Xenopus laevis"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment159 ,
+                                  :Experiment160 ,
+                                  :Experiment161 ,
+                                  :Experiment162 ,
+                                  :Experiment163 ,
+                                  :Experiment164 ,
+                                  :Experiment165 ,
+                                  :Experiment166 ,
+                                  :Experiment167 ,
+                                  :Experiment168 ,
+                                  :Experiment169 ,
+                                  :Experiment170 ,
+                                  :Experiment171 ,
+                                  :Experiment172 ,
+                                  :Experiment173 ,
+                                  :Experiment174 ,
+                                  :Experiment175 ,
+                                  :Experiment176 ,
+                                  :Experiment177 ,
+                                  :Experiment178 ,
+                                  :Experiment179 ,
+                                  :Experiment180 ,
+                                  :Experiment181 ,
+                                  :Experiment182 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -12708,7 +12857,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasid "SRP002578"^^xsd:string ;
                
-               :hasorganism "Xenopus laevis"^^xsd:string .
+               :hasorganism "Xenopus laevis"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment183 ,
+                                  :Experiment184 ,
+                                  :Experiment185 ,
+                                  :Experiment186 ,
+                                  :Experiment187 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -12723,7 +12880,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002579"^^xsd:string .
+               :hasid "SRP002579"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment188 ,
+                                  :Experiment189 ,
+                                  :Experiment190 ,
+                                  :Experiment191 ,
+                                  :Experiment192 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -12738,7 +12903,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002577"^^xsd:string .
+               :hasid "SRP002577"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment193 ,
+                                  :Experiment194 ,
+                                  :Experiment195 ,
+                                  :Experiment196 ,
+                                  :Experiment197 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -12753,7 +12926,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment198 ,
+                                  :Experiment199 ,
+                                  :Experiment200 ,
+                                  :Experiment201 ,
+                                  :Experiment202 ,
+                                  :Experiment203 ,
+                                  :Experiment204 ,
+                                  :Experiment205 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -12768,7 +12952,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment206 ,
+                                  :Experiment207 ,
+                                  :Experiment208 ,
+                                  :Experiment209 ,
+                                  :Experiment210 ,
+                                  :Experiment211 ,
+                                  :Experiment212 ,
+                                  :Experiment213 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -12783,7 +12978,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment214 ,
+                                  :Experiment215 ,
+                                  :Experiment216 ,
+                                  :Experiment217 ,
+                                  :Experiment218 ,
+                                  :Experiment219 ,
+                                  :Experiment220 ,
+                                  :Experiment221 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -12798,7 +13004,14 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
               
               :hasid "SRP021527"^^xsd:string ;
               
-              :hasexperimenttype "methylation profiling by high throughput sequencing"^^xsd:string .
+              :hasexperimenttype "methylation profiling by high throughput sequencing"^^xsd:string ;
+              
+              :hasexperimentdata :Experiment86 ,
+                                 :Experiment87 ,
+                                 :Experiment88 ,
+                                 :Experiment89 ;
+              
+              :haspmid :pmid_23812591 .
 
 
 
@@ -12814,7 +13027,23 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment222 ,
+                                  :Experiment223 ,
+                                  :Experiment224 ,
+                                  :Experiment225 ,
+                                  :Experiment226 ,
+                                  :Experiment227 ,
+                                  :Experiment228 ,
+                                  :Experiment229 ,
+                                  :Experiment230 ,
+                                  :Experiment231 ,
+                                  :Experiment232 ,
+                                  :Experiment233 ,
+                                  :Experiment234 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -12829,7 +13058,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment235 ,
+                                  :Experiment236 ,
+                                  :Experiment237 ,
+                                  :Experiment238 ,
+                                  :Experiment239 ,
+                                  :Experiment240 ,
+                                  :Experiment241 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -12844,7 +13083,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment242 ,
+                                  :Experiment243 ,
+                                  :Experiment244 ,
+                                  :Experiment245 ,
+                                  :Experiment246 ,
+                                  :Experiment247 ,
+                                  :Experiment248 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -12859,7 +13108,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment249 ,
+                                  :Experiment250 ,
+                                  :Experiment251 ,
+                                  :Experiment252 ,
+                                  :Experiment253 ,
+                                  :Experiment254 ,
+                                  :Experiment255 ;
+               
+               :haspmid :pmid_20805998 .
 
 
 
@@ -12874,7 +13133,16 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment256 ,
+                                  :Experiment257 ,
+                                  :Experiment258 ,
+                                  :Experiment259 ,
+                                  :Experiment260 ,
+                                  :Experiment261 ;
+               
+               :haspmid :pmid_17540599 .
 
 
 
@@ -12890,7 +13158,23 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment222 ,
+                                  :Experiment223 ,
+                                  :Experiment224 ,
+                                  :Experiment225 ,
+                                  :Experiment226 ,
+                                  :Experiment227 ,
+                                  :Experiment228 ,
+                                  :Experiment229 ,
+                                  :Experiment230 ,
+                                  :Experiment231 ,
+                                  :Experiment232 ,
+                                  :Experiment233 ,
+                                  :Experiment234 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -12905,7 +13189,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment235 ,
+                                  :Experiment236 ,
+                                  :Experiment237 ,
+                                  :Experiment238 ,
+                                  :Experiment239 ,
+                                  :Experiment240 ,
+                                  :Experiment241 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -12920,7 +13214,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment242 ,
+                                  :Experiment243 ,
+                                  :Experiment244 ,
+                                  :Experiment245 ,
+                                  :Experiment246 ,
+                                  :Experiment247 ,
+                                  :Experiment248 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -12940,7 +13244,34 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Xenopus laevis"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment159 ,
+                                  :Experiment160 ,
+                                  :Experiment161 ,
+                                  :Experiment162 ,
+                                  :Experiment163 ,
+                                  :Experiment164 ,
+                                  :Experiment165 ,
+                                  :Experiment166 ,
+                                  :Experiment167 ,
+                                  :Experiment168 ,
+                                  :Experiment169 ,
+                                  :Experiment170 ,
+                                  :Experiment171 ,
+                                  :Experiment172 ,
+                                  :Experiment173 ,
+                                  :Experiment174 ,
+                                  :Experiment175 ,
+                                  :Experiment176 ,
+                                  :Experiment177 ,
+                                  :Experiment178 ,
+                                  :Experiment179 ,
+                                  :Experiment180 ,
+                                  :Experiment181 ,
+                                  :Experiment182 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -12955,7 +13286,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasid "SRP002578"^^xsd:string ;
                
-               :hasorganism "Xenopus laevis"^^xsd:string .
+               :hasorganism "Xenopus laevis"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment183 ,
+                                  :Experiment184 ,
+                                  :Experiment185 ,
+                                  :Experiment186 ,
+                                  :Experiment187 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -12970,7 +13309,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
               
               :hasorganism "Mus musculus"^^xsd:string ;
               
-              :hasexperimenttype "transcription profiling by array"^^xsd:string .
+              :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+              
+              :hasexperimentdata :Experiment90 ,
+                                 :Experiment91 ,
+                                 :Experiment92 ,
+                                 :Experiment93 ,
+                                 :Experiment94 ,
+                                 :Experiment95 ,
+                                 :Experiment96 ,
+                                 :Experiment97 ;
+              
+              :haspmid :pmid_21295276 .
 
 
 
@@ -12985,7 +13335,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002579"^^xsd:string .
+               :hasid "SRP002579"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment188 ,
+                                  :Experiment189 ,
+                                  :Experiment190 ,
+                                  :Experiment191 ,
+                                  :Experiment192 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13000,7 +13358,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002577"^^xsd:string .
+               :hasid "SRP002577"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment193 ,
+                                  :Experiment194 ,
+                                  :Experiment195 ,
+                                  :Experiment196 ,
+                                  :Experiment197 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13015,7 +13381,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment198 ,
+                                  :Experiment199 ,
+                                  :Experiment200 ,
+                                  :Experiment201 ,
+                                  :Experiment202 ,
+                                  :Experiment203 ,
+                                  :Experiment204 ,
+                                  :Experiment205 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13030,7 +13407,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment206 ,
+                                  :Experiment207 ,
+                                  :Experiment208 ,
+                                  :Experiment209 ,
+                                  :Experiment210 ,
+                                  :Experiment211 ,
+                                  :Experiment212 ,
+                                  :Experiment213 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13045,7 +13433,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment214 ,
+                                  :Experiment215 ,
+                                  :Experiment216 ,
+                                  :Experiment217 ,
+                                  :Experiment218 ,
+                                  :Experiment219 ,
+                                  :Experiment220 ,
+                                  :Experiment221 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13060,7 +13459,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment249 ,
+                                  :Experiment250 ,
+                                  :Experiment251 ,
+                                  :Experiment252 ,
+                                  :Experiment253 ,
+                                  :Experiment254 ,
+                                  :Experiment255 ;
+               
+               :haspmid :pmid_20805998 .
 
 
 
@@ -13076,7 +13485,21 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasid "GSE13632"^^xsd:string ;
                
-               :hasorganism "Mus musculus"^^xsd:string .
+               :hasorganism "Mus musculus"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment262 ,
+                                  :Experiment263 ,
+                                  :Experiment264 ,
+                                  :Experiment265 ,
+                                  :Experiment266 ,
+                                  :Experiment267 ,
+                                  :Experiment268 ,
+                                  :Experiment269 ,
+                                  :Experiment270 ,
+                                  :Experiment271 ,
+                                  :Experiment272 ;
+               
+               :haspmid :pmid_20090754 .
 
 
 
@@ -13091,7 +13514,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Mus musculus"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment273 ,
+                                  :Experiment274 ,
+                                  :Experiment275 ,
+                                  :Experiment276 ,
+                                  :Experiment277 ,
+                                  :Experiment278 ,
+                                  :Experiment279 ,
+                                  :Experiment280 ;
+               
+               :haspmid :pmid_20090754 .
 
 
 
@@ -13110,7 +13544,30 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Mus musculus"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment281 ,
+                                  :Experiment282 ,
+                                  :Experiment283 ,
+                                  :Experiment284 ,
+                                  :Experiment285 ,
+                                  :Experiment286 ,
+                                  :Experiment287 ,
+                                  :Experiment288 ,
+                                  :Experiment289 ,
+                                  :Experiment290 ,
+                                  :Experiment291 ,
+                                  :Experiment292 ,
+                                  :Experiment293 ,
+                                  :Experiment294 ,
+                                  :Experiment295 ,
+                                  :Experiment296 ,
+                                  :Experiment297 ,
+                                  :Experiment298 ,
+                                  :Experiment299 ,
+                                  :Experiment300 ;
+               
+               :haspmid :pmid_20090754 .
 
 
 
@@ -13125,7 +13582,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Mus musculus"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment301 ,
+                                  :Experiment302 ,
+                                  :Experiment303 ,
+                                  :Experiment304 ,
+                                  :Experiment305 ,
+                                  :Experiment306 ,
+                                  :Experiment307 ;
+               
+               :haspmid :pmid_21875955 .
 
 
 
@@ -13140,7 +13607,14 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
               
               :hasorganism "Mus musculus"^^xsd:string ;
               
-              :hasid "SRP005456"^^xsd:string .
+              :hasid "SRP005456"^^xsd:string ;
+              
+              :hasexperimentdata :Experiment100 ,
+                                 :Experiment101 ,
+                                 :Experiment98 ,
+                                 :Experiment99 ;
+              
+              :haspmid :pmid_21451524 .
 
 
 
@@ -13155,7 +13629,16 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment256 ,
+                                  :Experiment257 ,
+                                  :Experiment258 ,
+                                  :Experiment259 ,
+                                  :Experiment260 ,
+                                  :Experiment261 ;
+               
+               :haspmid :pmid_17540599 .
 
 
 
@@ -13175,7 +13658,34 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Xenopus laevis"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment159 ,
+                                  :Experiment160 ,
+                                  :Experiment161 ,
+                                  :Experiment162 ,
+                                  :Experiment163 ,
+                                  :Experiment164 ,
+                                  :Experiment165 ,
+                                  :Experiment166 ,
+                                  :Experiment167 ,
+                                  :Experiment168 ,
+                                  :Experiment169 ,
+                                  :Experiment170 ,
+                                  :Experiment171 ,
+                                  :Experiment172 ,
+                                  :Experiment173 ,
+                                  :Experiment174 ,
+                                  :Experiment175 ,
+                                  :Experiment176 ,
+                                  :Experiment177 ,
+                                  :Experiment178 ,
+                                  :Experiment179 ,
+                                  :Experiment180 ,
+                                  :Experiment181 ,
+                                  :Experiment182 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13190,7 +13700,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasid "SRP002578"^^xsd:string ;
                
-               :hasorganism "Xenopus laevis"^^xsd:string .
+               :hasorganism "Xenopus laevis"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment183 ,
+                                  :Experiment184 ,
+                                  :Experiment185 ,
+                                  :Experiment186 ,
+                                  :Experiment187 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13205,7 +13723,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002579"^^xsd:string .
+               :hasid "SRP002579"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment188 ,
+                                  :Experiment189 ,
+                                  :Experiment190 ,
+                                  :Experiment191 ,
+                                  :Experiment192 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13220,7 +13746,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002577"^^xsd:string .
+               :hasid "SRP002577"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment193 ,
+                                  :Experiment194 ,
+                                  :Experiment195 ,
+                                  :Experiment196 ,
+                                  :Experiment197 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13235,7 +13769,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment198 ,
+                                  :Experiment199 ,
+                                  :Experiment200 ,
+                                  :Experiment201 ,
+                                  :Experiment202 ,
+                                  :Experiment203 ,
+                                  :Experiment204 ,
+                                  :Experiment205 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13250,7 +13795,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment206 ,
+                                  :Experiment207 ,
+                                  :Experiment208 ,
+                                  :Experiment209 ,
+                                  :Experiment210 ,
+                                  :Experiment211 ,
+                                  :Experiment212 ,
+                                  :Experiment213 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13265,7 +13821,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment214 ,
+                                  :Experiment215 ,
+                                  :Experiment216 ,
+                                  :Experiment217 ,
+                                  :Experiment218 ,
+                                  :Experiment219 ,
+                                  :Experiment220 ,
+                                  :Experiment221 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13281,7 +13848,23 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment222 ,
+                                  :Experiment223 ,
+                                  :Experiment224 ,
+                                  :Experiment225 ,
+                                  :Experiment226 ,
+                                  :Experiment227 ,
+                                  :Experiment228 ,
+                                  :Experiment229 ,
+                                  :Experiment230 ,
+                                  :Experiment231 ,
+                                  :Experiment232 ,
+                                  :Experiment233 ,
+                                  :Experiment234 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -13296,7 +13879,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment235 ,
+                                  :Experiment236 ,
+                                  :Experiment237 ,
+                                  :Experiment238 ,
+                                  :Experiment239 ,
+                                  :Experiment240 ,
+                                  :Experiment241 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -13311,7 +13904,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
               
               :hasorganism "Mus musculus"^^xsd:string ;
               
-              :hasexperimenttype "transcription profiling by array"^^xsd:string .
+              :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+              
+              :hasexperimentdata :Experiment102 ,
+                                 :Experiment103 ,
+                                 :Experiment104 ,
+                                 :Experiment105 ,
+                                 :Experiment106 ,
+                                 :Experiment107 ,
+                                 :Experiment108 ,
+                                 :Experiment109 ;
+              
+              :haspmid :pmid_21451524 .
 
 
 
@@ -13326,7 +13930,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment242 ,
+                                  :Experiment243 ,
+                                  :Experiment244 ,
+                                  :Experiment245 ,
+                                  :Experiment246 ,
+                                  :Experiment247 ,
+                                  :Experiment248 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -13341,7 +13955,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment249 ,
+                                  :Experiment250 ,
+                                  :Experiment251 ,
+                                  :Experiment252 ,
+                                  :Experiment253 ,
+                                  :Experiment254 ,
+                                  :Experiment255 ;
+               
+               :haspmid :pmid_20805998 .
 
 
 
@@ -13356,7 +13980,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment308 ,
+                                  :Experiment309 ,
+                                  :Experiment310 ,
+                                  :Experiment311 ,
+                                  :Experiment312 ,
+                                  :Experiment313 ,
+                                  :Experiment314 ,
+                                  :Experiment315 ;
+               
+               :haspmid :pmid_17114293 .
 
 
 
@@ -13371,7 +14006,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment308 ,
+                                  :Experiment309 ,
+                                  :Experiment310 ,
+                                  :Experiment311 ,
+                                  :Experiment312 ,
+                                  :Experiment313 ,
+                                  :Experiment314 ,
+                                  :Experiment315 ;
+               
+               :haspmid :pmid_17114293 .
 
 
 
@@ -13391,7 +14037,34 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Xenopus laevis"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment159 ,
+                                  :Experiment160 ,
+                                  :Experiment161 ,
+                                  :Experiment162 ,
+                                  :Experiment163 ,
+                                  :Experiment164 ,
+                                  :Experiment165 ,
+                                  :Experiment166 ,
+                                  :Experiment167 ,
+                                  :Experiment168 ,
+                                  :Experiment169 ,
+                                  :Experiment170 ,
+                                  :Experiment171 ,
+                                  :Experiment172 ,
+                                  :Experiment173 ,
+                                  :Experiment174 ,
+                                  :Experiment175 ,
+                                  :Experiment176 ,
+                                  :Experiment177 ,
+                                  :Experiment178 ,
+                                  :Experiment179 ,
+                                  :Experiment180 ,
+                                  :Experiment181 ,
+                                  :Experiment182 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13406,7 +14079,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasid "SRP002578"^^xsd:string ;
                
-               :hasorganism "Xenopus laevis"^^xsd:string .
+               :hasorganism "Xenopus laevis"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment183 ,
+                                  :Experiment184 ,
+                                  :Experiment185 ,
+                                  :Experiment186 ,
+                                  :Experiment187 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13421,7 +14102,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002579"^^xsd:string .
+               :hasid "SRP002579"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment188 ,
+                                  :Experiment189 ,
+                                  :Experiment190 ,
+                                  :Experiment191 ,
+                                  :Experiment192 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13436,7 +14125,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002577"^^xsd:string .
+               :hasid "SRP002577"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment193 ,
+                                  :Experiment194 ,
+                                  :Experiment195 ,
+                                  :Experiment196 ,
+                                  :Experiment197 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13451,7 +14148,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment198 ,
+                                  :Experiment199 ,
+                                  :Experiment200 ,
+                                  :Experiment201 ,
+                                  :Experiment202 ,
+                                  :Experiment203 ,
+                                  :Experiment204 ,
+                                  :Experiment205 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13466,7 +14174,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment206 ,
+                                  :Experiment207 ,
+                                  :Experiment208 ,
+                                  :Experiment209 ,
+                                  :Experiment210 ,
+                                  :Experiment211 ,
+                                  :Experiment212 ,
+                                  :Experiment213 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13486,7 +14205,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                               "NimbleGen mouse (mm8) whole genome tiling array 3 of 4"^^xsd:string ,
                               "NimbleGen mouse (mm8) whole genome tiling array 4 of 4"^^xsd:string ;
               
-              :hasexperimenttype "methylation profiling by array"^^xsd:string .
+              :hasexperimenttype "methylation profiling by array"^^xsd:string ;
+              
+              :hasexperimentdata :Experiment110 ,
+                                 :Experiment111 ,
+                                 :Experiment112 ,
+                                 :Experiment113 ,
+                                 :Experiment114 ,
+                                 :Experiment115 ,
+                                 :Experiment116 ;
+              
+              :haspmid :pmid_21451524 .
 
 
 
@@ -13501,7 +14230,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment214 ,
+                                  :Experiment215 ,
+                                  :Experiment216 ,
+                                  :Experiment217 ,
+                                  :Experiment218 ,
+                                  :Experiment219 ,
+                                  :Experiment220 ,
+                                  :Experiment221 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13517,7 +14257,23 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment222 ,
+                                  :Experiment223 ,
+                                  :Experiment224 ,
+                                  :Experiment225 ,
+                                  :Experiment226 ,
+                                  :Experiment227 ,
+                                  :Experiment228 ,
+                                  :Experiment229 ,
+                                  :Experiment230 ,
+                                  :Experiment231 ,
+                                  :Experiment232 ,
+                                  :Experiment233 ,
+                                  :Experiment234 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -13532,7 +14288,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment235 ,
+                                  :Experiment236 ,
+                                  :Experiment237 ,
+                                  :Experiment238 ,
+                                  :Experiment239 ,
+                                  :Experiment240 ,
+                                  :Experiment241 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -13547,7 +14313,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment242 ,
+                                  :Experiment243 ,
+                                  :Experiment244 ,
+                                  :Experiment245 ,
+                                  :Experiment246 ,
+                                  :Experiment247 ,
+                                  :Experiment248 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -13562,7 +14338,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment249 ,
+                                  :Experiment250 ,
+                                  :Experiment251 ,
+                                  :Experiment252 ,
+                                  :Experiment253 ,
+                                  :Experiment254 ,
+                                  :Experiment255 ;
+               
+               :haspmid :pmid_20805998 .
 
 
 
@@ -13582,7 +14368,34 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Xenopus laevis"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment159 ,
+                                  :Experiment160 ,
+                                  :Experiment161 ,
+                                  :Experiment162 ,
+                                  :Experiment163 ,
+                                  :Experiment164 ,
+                                  :Experiment165 ,
+                                  :Experiment166 ,
+                                  :Experiment167 ,
+                                  :Experiment168 ,
+                                  :Experiment169 ,
+                                  :Experiment170 ,
+                                  :Experiment171 ,
+                                  :Experiment172 ,
+                                  :Experiment173 ,
+                                  :Experiment174 ,
+                                  :Experiment175 ,
+                                  :Experiment176 ,
+                                  :Experiment177 ,
+                                  :Experiment178 ,
+                                  :Experiment179 ,
+                                  :Experiment180 ,
+                                  :Experiment181 ,
+                                  :Experiment182 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13597,7 +14410,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasid "SRP002578"^^xsd:string ;
                
-               :hasorganism "Xenopus laevis"^^xsd:string .
+               :hasorganism "Xenopus laevis"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment183 ,
+                                  :Experiment184 ,
+                                  :Experiment185 ,
+                                  :Experiment186 ,
+                                  :Experiment187 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13612,7 +14433,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002579"^^xsd:string .
+               :hasid "SRP002579"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment188 ,
+                                  :Experiment189 ,
+                                  :Experiment190 ,
+                                  :Experiment191 ,
+                                  :Experiment192 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13627,7 +14456,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasexperimenttype "RNA-seq of non coding RNA"^^xsd:string ;
                
-               :hasid "SRP002577"^^xsd:string .
+               :hasid "SRP002577"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment193 ,
+                                  :Experiment194 ,
+                                  :Experiment195 ,
+                                  :Experiment196 ,
+                                  :Experiment197 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13642,7 +14479,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment198 ,
+                                  :Experiment199 ,
+                                  :Experiment200 ,
+                                  :Experiment201 ,
+                                  :Experiment202 ,
+                                  :Experiment203 ,
+                                  :Experiment204 ,
+                                  :Experiment205 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13662,7 +14510,22 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
               
               :hasid "SRP009269"^^xsd:string ;
               
-              :hasexperimenttype "methylation profiling by high throughput sequencing"^^xsd:string .
+              :hasexperimenttype "methylation profiling by high throughput sequencing"^^xsd:string ;
+              
+              :hasexperimentdata :Experiment117 ,
+                                 :Experiment118 ,
+                                 :Experiment119 ,
+                                 :Experiment120 ,
+                                 :Experiment121 ,
+                                 :Experiment122 ,
+                                 :Experiment123 ,
+                                 :Experiment124 ,
+                                 :Experiment125 ,
+                                 :Experiment126 ,
+                                 :Experiment127 ,
+                                 :Experiment128 ;
+              
+              :haspmid :pmid_22466170 .
 
 
 
@@ -13677,7 +14540,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment206 ,
+                                  :Experiment207 ,
+                                  :Experiment208 ,
+                                  :Experiment209 ,
+                                  :Experiment210 ,
+                                  :Experiment211 ,
+                                  :Experiment212 ,
+                                  :Experiment213 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13692,7 +14566,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment214 ,
+                                  :Experiment215 ,
+                                  :Experiment216 ,
+                                  :Experiment217 ,
+                                  :Experiment218 ,
+                                  :Experiment219 ,
+                                  :Experiment220 ,
+                                  :Experiment221 ;
+               
+               :haspmid :pmid_21602795 .
 
 
 
@@ -13708,7 +14593,23 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment222 ,
+                                  :Experiment223 ,
+                                  :Experiment224 ,
+                                  :Experiment225 ,
+                                  :Experiment226 ,
+                                  :Experiment227 ,
+                                  :Experiment228 ,
+                                  :Experiment229 ,
+                                  :Experiment230 ,
+                                  :Experiment231 ,
+                                  :Experiment232 ,
+                                  :Experiment233 ,
+                                  :Experiment234 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -13723,7 +14624,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment235 ,
+                                  :Experiment236 ,
+                                  :Experiment237 ,
+                                  :Experiment238 ,
+                                  :Experiment239 ,
+                                  :Experiment240 ,
+                                  :Experiment241 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -13738,7 +14649,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment242 ,
+                                  :Experiment243 ,
+                                  :Experiment244 ,
+                                  :Experiment245 ,
+                                  :Experiment246 ,
+                                  :Experiment247 ,
+                                  :Experiment248 ;
+               
+               :haspmid :pmid_21551231 .
 
 
 
@@ -13753,7 +14674,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasarraydesign "Illumina HumanWG-6 v3.0 Expression BeadChip"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment249 ,
+                                  :Experiment250 ,
+                                  :Experiment251 ,
+                                  :Experiment252 ,
+                                  :Experiment253 ,
+                                  :Experiment254 ,
+                                  :Experiment255 ;
+               
+               :haspmid :pmid_20805998 .
 
 
 
@@ -13768,7 +14699,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment308 ,
+                                  :Experiment309 ,
+                                  :Experiment310 ,
+                                  :Experiment311 ,
+                                  :Experiment312 ,
+                                  :Experiment313 ,
+                                  :Experiment314 ,
+                                  :Experiment315 ;
+               
+               :haspmid :pmid_17114293 .
 
 
 
@@ -13783,7 +14725,12 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasid "SRP001264"^^xsd:string .
+               :hasid "SRP001264"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment316 ,
+                                  :Experiment317 ;
+               
+               :haspmid :pmid_19829295 .
 
 
 
@@ -13798,7 +14745,13 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasid "SRP001251"^^xsd:string .
+               :hasid "SRP001251"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment318 ,
+                                  :Experiment319 ,
+                                  :Experiment320 ;
+               
+               :haspmid :pmid_19829295 .
 
 
 
@@ -13813,7 +14766,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasarraydesign "Illumina HumanHT-12 V4.0 expression beadchip"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment321 ,
+                                  :Experiment322 ,
+                                  :Experiment323 ,
+                                  :Experiment324 ,
+                                  :Experiment325 ,
+                                  :Experiment326 ,
+                                  :Experiment327 ,
+                                  :Experiment328 ;
+               
+               :haspmid :pmid_21630377 .
 
 
 
@@ -13828,7 +14792,13 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
               
               :hasorganism "Mus musculus"^^xsd:string ;
               
-              :hasid "SRP001801"^^xsd:string .
+              :hasid "SRP001801"^^xsd:string ;
+              
+              :hasexperimentdata :Experiment129 ,
+                                 :Experiment130 ,
+                                 :Experiment131 ;
+              
+              :haspmid :pmid_20075857 .
 
 
 
@@ -13843,7 +14813,14 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasid "SRP002216"^^xsd:string .
+               :hasid "SRP002216"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment329 ,
+                                  :Experiment330 ,
+                                  :Experiment331 ,
+                                  :Experiment332 ;
+               
+               :haspmid :pmid_21630377 .
 
 
 
@@ -13858,7 +14835,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasarraydesign "Illumina HumanHT-12 v3.0 Expression BeadChip"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment333 ,
+                                  :Experiment334 ,
+                                  :Experiment335 ,
+                                  :Experiment336 ,
+                                  :Experiment337 ,
+                                  :Experiment338 ,
+                                  :Experiment339 ,
+                                  :Experiment340 ;
+               
+               :haspmid :pmid_20953172 .
 
 
 
@@ -13873,7 +14861,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasarraydesign "Illumina HumanHT-12 v3.0 Expression BeadChip"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment341 ,
+                                  :Experiment342 ,
+                                  :Experiment343 ,
+                                  :Experiment344 ,
+                                  :Experiment345 ,
+                                  :Experiment346 ,
+                                  :Experiment347 ;
+               
+               :haspmid :pmid_20953172 .
 
 
 
@@ -13888,7 +14886,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasid "SRP002814"^^xsd:string .
+               :hasid "SRP002814"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment348 ,
+                                  :Experiment349 ,
+                                  :Experiment350 ,
+                                  :Experiment351 ,
+                                  :Experiment352 ;
+               
+               :haspmid :pmid_20953172 .
 
 
 
@@ -13901,7 +14907,11 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by SAGE"^^xsd:string .
+               :hasexperimenttype "transcription profiling by SAGE"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment353 ;
+               
+               :haspmid :pmid_14688391 .
 
 
 
@@ -13919,7 +14929,26 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Mus musculus"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment354 ,
+                                  :Experiment355 ,
+                                  :Experiment356 ,
+                                  :Experiment357 ,
+                                  :Experiment358 ,
+                                  :Experiment359 ,
+                                  :Experiment360 ,
+                                  :Experiment361 ,
+                                  :Experiment362 ,
+                                  :Experiment363 ,
+                                  :Experiment364 ,
+                                  :Experiment365 ,
+                                  :Experiment366 ,
+                                  :Experiment367 ,
+                                  :Experiment368 ,
+                                  :Experiment369 ;
+               
+               :haspmid :pmid_20837710 .
 
 
 
@@ -13936,7 +14965,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasarraydesign "NIA Mouse 22K Microarray v1.0 (Development 60-mer Oligo)"^^xsd:string ;
                
-               :hasexperimenttype "unknown experiment type"^^xsd:string .
+               :hasexperimenttype "unknown experiment type"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment370 ,
+                                  :Experiment371 ,
+                                  :Experiment372 ,
+                                  :Experiment373 ,
+                                  :Experiment374 ,
+                                  :Experiment375 ,
+                                  :Experiment376 ,
+                                  :Experiment377 ;
+               
+               :haspmid :pmid_17183653 .
 
 
 
@@ -13952,7 +14992,19 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                :hasarraydesign "NIA mouse 22k Ver1"^^xsd:string ,
                                "old identifiers - Agilent Mouse (Development) Oligo (60-mer) Microarray [G4120A]"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment378 ,
+                                  :Experiment379 ,
+                                  :Experiment380 ,
+                                  :Experiment381 ,
+                                  :Experiment382 ,
+                                  :Experiment383 ,
+                                  :Experiment384 ,
+                                  :Experiment385 ,
+                                  :Experiment386 ;
+               
+               :haspmid :pmid_17183653 .
 
 
 
@@ -13968,7 +15020,17 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment387 ,
+                                  :Experiment388 ,
+                                  :Experiment389 ,
+                                  :Experiment390 ,
+                                  :Experiment391 ,
+                                  :Experiment392 ,
+                                  :Experiment393 ;
+               
+               :haspmid :pmid_19128516 .
 
 
 
@@ -13983,7 +15045,13 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Mus musculus"^^xsd:string ;
                
-               :hasid "SRP002706"^^xsd:string .
+               :hasid "SRP002706"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment394 ,
+                                  :Experiment395 ,
+                                  :Experiment396 ;
+               
+               :haspmid :pmid_20508642 .
 
 
 
@@ -13998,7 +15066,13 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
               
               :hasorganism "Mus musculus"^^xsd:string ;
               
-              :hasid "SRP001723"^^xsd:string .
+              :hasid "SRP001723"^^xsd:string ;
+              
+              :hasexperimentdata :Experiment132 ,
+                                 :Experiment133 ,
+                                 :Experiment134 ;
+              
+              :haspmid :pmid_20123894 .
 
 
 
@@ -14013,7 +15087,20 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment260 ,
+                                  :Experiment397 ,
+                                  :Experiment398 ,
+                                  :Experiment399 ,
+                                  :Experiment400 ,
+                                  :Experiment401 ,
+                                  :Experiment402 ,
+                                  :Experiment403 ,
+                                  :Experiment404 ,
+                                  :Experiment405 ;
+               
+               :haspmid :pmid_16713582 .
 
 
 
@@ -14028,7 +15115,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasarraydesign "NimbleGen Homo sapiens HG18 promoter 1 of 2"^^xsd:string .
+               :hasarraydesign "NimbleGen Homo sapiens HG18 promoter 1 of 2"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment406 ,
+                                  :Experiment407 ,
+                                  :Experiment408 ,
+                                  :Experiment409 ,
+                                  :Experiment410 ,
+                                  :Experiment411 ,
+                                  :Experiment412 ,
+                                  :Experiment413 ;
+               
+               :haspmid :pmid_19187765 .
 
 
 
@@ -14043,7 +15141,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasarraydesign "NimbleGen human (hg17) ENCODE tiling array"^^xsd:string .
+               :hasarraydesign "NimbleGen human (hg17) ENCODE tiling array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment414 ,
+                                  :Experiment415 ,
+                                  :Experiment416 ,
+                                  :Experiment417 ,
+                                  :Experiment418 ,
+                                  :Experiment419 ,
+                                  :Experiment420 ,
+                                  :Experiment421 ;
+               
+               :haspmid :pmid_19187766 .
 
 
 
@@ -14062,7 +15171,20 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                "Illumina HumanHT-12 v3.0 Expression BeadChip"^^xsd:string ,
                                "Illumina HumanRef-8 v3.0 [gene-centered version]"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment422 ,
+                                  :Experiment423 ,
+                                  :Experiment424 ,
+                                  :Experiment425 ,
+                                  :Experiment426 ,
+                                  :Experiment427 ,
+                                  :Experiment428 ,
+                                  :Experiment429 ,
+                                  :Experiment430 ,
+                                  :Experiment431 ;
+               
+               :haspmid :pmid_22144582 .
 
 
 
@@ -14079,7 +15201,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                "Illumina HumanHT-12 v3.0 Expression BeadChip"^^xsd:string ,
                                "Illumina HumanRef-8 v3.0 [gene-centered version]"^^xsd:string ;
                
-               :hasexperimenttype "transcription profiling by array"^^xsd:string .
+               :hasexperimenttype "transcription profiling by array"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment432 ,
+                                  :Experiment433 ,
+                                  :Experiment434 ,
+                                  :Experiment435 ,
+                                  :Experiment436 ,
+                                  :Experiment437 ,
+                                  :Experiment438 ,
+                                  :Experiment439 ;
+               
+               :haspmid :pmid_22144582 .
 
 
 
@@ -14094,7 +15227,12 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Homo sapiens"^^xsd:string ;
                
-               :hasid "SRP008926"^^xsd:string .
+               :hasid "SRP008926"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment440 ,
+                                  :Experiment441 ;
+               
+               :haspmid :pmid_22144582 .
 
 
 
@@ -14107,7 +15245,16 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                
                :hasorganism "Drosophila melanogaster"^^xsd:string ;
                
-               :hasid "ERP001422"^^xsd:string .
+               :hasid "ERP001422"^^xsd:string ;
+               
+               :hasexperimentdata :Experiment442 ,
+                                  :Experiment443 ,
+                                  :Experiment444 ,
+                                  :Experiment445 ,
+                                  :Experiment446 ,
+                                  :Experiment447 ;
+               
+               :haspmid :pmid_22421046 .
 
 
 
@@ -14640,12 +15787,40 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 <urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#exp> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest rdf:nil ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasexperimentdata ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                                          ]
+                                                              ] ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperiment> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                               ]
+                                                   ] ;
                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ] ;
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperimentset> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                 rdf:rest rdf:nil ;
@@ -14660,7 +15835,11 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y> ;
                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
                                                                ]
-                                                   ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ]
                                         ] ;
   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                           rdf:rest rdf:nil ;
@@ -14668,6 +15847,50 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperiment> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#exp> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                          ] ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                                                     ] ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasprobe ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                                                                ]
+                                                                                    ]
+                                                                         ]
+                                                              ] ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :probe ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                               ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
                                                     ]
                                         ]
 ] .
