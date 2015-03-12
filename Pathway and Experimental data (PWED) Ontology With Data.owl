@@ -1700,13 +1700,30 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                :hasid "P-GSE13084-2"^^xsd:string .
 
 
-
 ###  http://www.w3.org/2002/07/owl#Experiment159
 
 :Experiment159 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-6"^^xsd:string .
+               :hasid "P-GSE22147-6"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1724,7 +1741,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment160 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-7"^^xsd:string .
+               :hasid "P-GSE22147-7"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1733,7 +1768,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment161 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-4"^^xsd:string .
+               :hasid "P-GSE22147-4"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1742,7 +1795,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment162 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-5"^^xsd:string .
+               :hasid "P-GSE22147-5"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1751,7 +1822,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment163 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-8"^^xsd:string .
+               :hasid "P-GSE22147-8"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1760,7 +1849,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment164 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-9"^^xsd:string .
+               :hasid "P-GSE22147-9"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1769,7 +1876,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment165 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-12"^^xsd:string .
+               :hasid "P-GSE22147-12"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1778,7 +1903,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment166 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-11"^^xsd:string .
+               :hasid "P-GSE22147-11"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1787,7 +1930,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment167 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-10"^^xsd:string .
+               :hasid "P-GSE22147-10"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1796,7 +1957,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment168 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-21"^^xsd:string .
+               :hasid "P-GSE22147-21"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1805,7 +1984,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment169 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-20"^^xsd:string .
+               :hasid "P-GSE22147-20"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1823,7 +2020,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment170 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-23"^^xsd:string .
+               :hasid "P-GSE22147-23"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1832,7 +2047,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment171 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-22"^^xsd:string .
+               :hasid "P-GSE22147-22"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1841,7 +2074,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment172 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-24"^^xsd:string .
+               :hasid "P-GSE22147-24"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1850,7 +2101,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment173 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-1"^^xsd:string .
+               :hasid "P-GSE22147-1"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1859,7 +2128,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment174 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-19"^^xsd:string .
+               :hasid "P-GSE22147-19"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1868,7 +2155,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment175 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-18"^^xsd:string .
+               :hasid "P-GSE22147-18"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1877,7 +2182,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment176 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-2"^^xsd:string .
+               :hasid "P-GSE22147-2"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1886,7 +2209,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment177 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-17"^^xsd:string .
+               :hasid "P-GSE22147-17"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1895,7 +2236,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment178 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-3"^^xsd:string .
+               :hasid "P-GSE22147-3"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1904,7 +2263,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment179 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-16"^^xsd:string .
+               :hasid "P-GSE22147-16"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1922,7 +2299,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment180 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-15"^^xsd:string .
+               :hasid "P-GSE22147-15"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1931,7 +2326,25 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment181 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-14"^^xsd:string .
+               :hasid "P-GSE22147-14"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
 
 
 
@@ -1940,7 +2353,26 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :Experiment182 rdf:type :Experiment ,
                         :NamedIndividual ;
                
-               :hasid "P-GSE22147-13"^^xsd:string .
+               :hasid "P-GSE22147-13"^^xsd:string ;
+               
+               :hasprobe :af1_7898902 ,
+                         :af1_7949277 ,
+                         :af1_7951591 ,
+                         :af1_7951593 ,
+                         :af1_7951596 ,
+                         :af1_7963567 ,
+                         :af1_7987511 ,
+                         :af1_8038177 ,
+                         :af1_8040488 ,
+                         :af1_8040490 ,
+                         :af1_8064432 ,
+                         :af1_8064438 ,
+                         :af1_8101893 ,
+                         :af1_8125835 ,
+                         :af1_8141066 ,
+                         :af1_8153043 ,
+                         :af1_8165011 .
+
 
 
 
