@@ -60,13 +60,13 @@
 
 ###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperiment
 
-<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperiment> rdf:type :ObjectProperty .
+:hasinferredexperiment rdf:type :ObjectProperty .
 
 
 
 ###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperimentset
 
-<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperimentset> rdf:type :ObjectProperty .
+:hasinferredexperimentset rdf:type :ObjectProperty .
 
 
 
@@ -279,6 +279,40 @@
 #################################################################
 
 
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PathwayWithExperimentData
+
+:PathwayWithExperimentData rdf:type :Class ;
+                           
+                           :equivalentClass [ rdf:type :Class ;
+                                              :intersectionOf ( bp:Pathway
+                                                                [ rdf:type :Restriction ;
+                                                                  :onProperty :hasinferredexperiment ;
+                                                                  :someValuesFrom :Experiment
+                                                                ]
+                                                              )
+                                            ] ;
+                           
+                           rdfs:subClassOf bp:Pathway .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PathwayWithExperimentSet
+
+:PathwayWithExperimentSet rdf:type :Class ;
+                          
+                          :equivalentClass [ rdf:type :Class ;
+                                             :intersectionOf ( bp:Pathway
+                                                               [ rdf:type :Restriction ;
+                                                                 :onProperty :hasinferredexperimentset ;
+                                                                 :someValuesFrom :ExperimentSet
+                                                               ]
+                                                             )
+                                           ] ;
+                          
+                          rdfs:subClassOf bp:Pathway .
+
+
+
 ###  http://www.w3.org/2002/07/owl#ArrayDesign
 
 :ArrayDesign rdf:type :Class .
@@ -386,22 +420,47 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#GeneticInteraction_test
 
-<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#GeneticInteraction_test> rdf:type bp:GeneticInteraction ,
-                                                                                                          :NamedIndividual ;
-                                                                                                 
-                                                                                                 bp:participant :LYPLA2 ,
-                                                                                                                :MACC1 ,
-                                                                                                                :MAPK1 ,
-                                                                                                                :MIR4435-1HG .
+:GeneticInteraction_test rdf:type bp:GeneticInteraction ,
+                                  :NamedIndividual ;
+                         
+                         bp:participant :LYPLA2 ,
+                                        :MACC1 ,
+                                        :MAPK1 ,
+                                        :MIR4435-1HG .
 
 
 
 ###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Pathway_test
 
-<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Pathway_test> rdf:type bp:Pathway ,
-                                                                                               :NamedIndividual ;
-                                                                                      
-                                                                                      :pathwayComponent <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#GeneticInteraction_test> .
+:Pathway_test rdf:type bp:Pathway ,
+                       :NamedIndividual ;
+              
+              :pathwayComponent :GeneticInteraction_test .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyExperimentSet
+
+:dummyExperimentSet rdf:type :ExperimentSet ,
+                             :NamedIndividual ;
+                    
+                    :hasexperimentdata :dummyExperiment_WithPublication .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPathway_WithPublication
+
+:dummyPathway_WithPublication rdf:type bp:Pathway ,
+                                       :NamedIndividual ;
+                              
+                              bp:xref :PublicationXref1 .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPathway_WithoutPublication
+
+:dummyPathway_WithoutPublication rdf:type bp:Pathway ,
+                                          :NamedIndividual .
 
 
 
@@ -12613,7 +12672,6 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 
 
-
 ###  http://www.w3.org/2002/07/owl#expementset1
 
 :expementset1 rdf:type :ExperimentSet ,
@@ -15784,42 +15842,21 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 #################################################################
 
 
-<urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-<urn:swrl#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-<urn:swrl#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#pathway> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#publication> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#exp> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                rdf:rest rdf:nil ;
-                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasexperimentdata ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
-                                                                          ]
-                                                              ] ;
-                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperiment> ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
-                                                               ]
-                                                   ] ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ]
-                                        ] ;
   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                           rdf:rest rdf:nil ;
                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperimentset> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
                                                     ]
-                                        ]
-] .
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+                                        ] ;
   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -15840,26 +15877,22 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
                                                     ]
-                                        ] ;
-  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest rdf:nil ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
-                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
-                                                    ]
                                         ]
 ] .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                           rdf:rest rdf:nil ;
                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperiment> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#exp> ;
                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
                                                     ]
                                         ] ;
   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ] ;
                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
@@ -15868,11 +15901,6 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
                                                                           ] ;
                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
-                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
-                                                                                     ] ;
                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                                       rdf:rest rdf:nil ;
                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
@@ -15880,20 +15908,95 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp> ;
                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
                                                                                                 ]
-                                                                                    ]
+                                                                                    ] ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                                                     ]
                                                                          ]
                                                               ] ;
                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :probe ;
                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
                                                                ]
-                                                   ] ;
+                                                   ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ] ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest rdf:nil ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasexperimentdata ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                                          ]
+                                                              ] ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                               ]
+                                                   ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperimentset ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pathway>
+                                                    ] ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:xref ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pathway> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#publication>
+                                                               ] ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#classPredicate> bp:PublicationXref ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#publication>
+                                                                          ] ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:xref ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#publication>
+                                                                                                ]
+                                                                                    ] ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Experiment ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp>
+                                                                                     ]
+                                                                         ]
+                                                              ]
+                                                   ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#exp> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pathway>
                                                     ]
                                         ]
 ] .
 
-###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
 
