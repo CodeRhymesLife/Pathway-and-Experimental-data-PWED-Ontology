@@ -15549,7 +15549,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_14688391 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "14688391"^^xsd:string .
+               :id "14688391"^^xsd:string .
 
 
 
@@ -15558,7 +15558,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_16713582 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "16713582"^^xsd:string .
+               :id "16713582"^^xsd:string .
 
 
 
@@ -15567,7 +15567,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_17114293 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "17114293"^^xsd:string .
+               :id "17114293"^^xsd:string .
 
 
 
@@ -15576,7 +15576,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_17183653 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "17183653"^^xsd:string .
+               :id "17183653"^^xsd:string .
 
 
 
@@ -15585,7 +15585,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_17540599 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "17540599"^^xsd:string .
+               :id "17540599"^^xsd:string .
 
 
 
@@ -15594,7 +15594,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_18974828 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "18974828"^^xsd:string .
+               :id "18974828"^^xsd:string .
 
 
 
@@ -15603,7 +15603,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_19128516 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "19128516"^^xsd:string .
+               :id "19128516"^^xsd:string .
 
 
 
@@ -15612,7 +15612,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_19187765 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "19187765"^^xsd:string .
+               :id "19187765"^^xsd:string .
 
 
 
@@ -15621,7 +15621,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_19187766 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "19187766"^^xsd:string .
+               :id "19187766"^^xsd:string .
 
 
 
@@ -15630,7 +15630,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_19571010 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "19571010"^^xsd:string .
+               :id "19571010"^^xsd:string .
 
 
 
@@ -15639,7 +15639,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_19829295 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "19829295"^^xsd:string .
+               :id "19829295"^^xsd:string .
 
 
 
@@ -15648,7 +15648,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_20075857 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "20075857"^^xsd:string .
+               :id "20075857"^^xsd:string .
 
 
 
@@ -15657,7 +15657,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_20090754 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "20090754"^^xsd:string .
+               :id "20090754"^^xsd:string .
 
 
 
@@ -15666,7 +15666,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_20123894 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "20123894"^^xsd:string .
+               :id "20123894"^^xsd:string .
 
 
 
@@ -15675,7 +15675,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_20508642 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "20508642"^^xsd:string .
+               :id "20508642"^^xsd:string .
 
 
 
@@ -15684,7 +15684,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_20805998 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "20805998"^^xsd:string .
+               :id "20805998"^^xsd:string .
 
 
 
@@ -15693,7 +15693,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_20837710 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "20837710"^^xsd:string .
+               :id "20837710"^^xsd:string .
 
 
 
@@ -15702,7 +15702,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_20953172 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "20953172"^^xsd:string .
+               :id "20953172"^^xsd:string .
 
 
 
@@ -15711,7 +15711,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_21057493 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "21057493"^^xsd:string .
+               :id "21057493"^^xsd:string .
 
 
 
@@ -15720,7 +15720,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_21170310 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "21170310"^^xsd:string .
+               :id "21170310"^^xsd:string .
 
 
 
@@ -15729,7 +15729,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_21295276 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "21295276"^^xsd:string .
+               :id "21295276"^^xsd:string .
 
 
 
@@ -15738,7 +15738,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_21451524 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "21451524"^^xsd:string .
+               :id "21451524"^^xsd:string .
 
 
 
@@ -15747,7 +15747,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_21551231 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "21551231"^^xsd:string .
+               :id "21551231"^^xsd:string .
 
 
 
@@ -15756,7 +15756,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_21602795 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "21602795"^^xsd:string .
+               :id "21602795"^^xsd:string .
 
 
 
@@ -15765,7 +15765,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_21630377 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "21630377"^^xsd:string .
+               :id "21630377"^^xsd:string .
 
 
 
@@ -15774,7 +15774,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_21875955 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "21875955"^^xsd:string .
+               :id "21875955"^^xsd:string .
 
 
 
@@ -15783,7 +15783,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_22144582 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "22144582"^^xsd:string .
+               :id "22144582"^^xsd:string .
 
 
 
@@ -15792,7 +15792,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_22421046 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "22421046"^^xsd:string .
+               :id "22421046"^^xsd:string .
 
 
 
@@ -15801,7 +15801,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_22466170 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "22466170"^^xsd:string .
+               :id "22466170"^^xsd:string .
 
 
 
@@ -15810,7 +15810,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :pmid_23812591 rdf:type :NamedIndividual ,
                         :Publication ;
                
-               :hasid "23812591"^^xsd:string .
+               :id "23812591"^^xsd:string .
 
 
 
