@@ -21,31 +21,31 @@
 
 ###  http://www.w3.org/2002/07/owl#hasarraydesign
 
-:hasarraydesign rdf:type :AnnotationProperty .
+:hasarraydesign rdf:type :DatatypeProperty .
 
 
 
 ###  http://www.w3.org/2002/07/owl#hasexperimenttype
 
-:hasexperimenttype rdf:type :AnnotationProperty .
+:hasexperimenttype rdf:type :DatatypeProperty .
 
 
 
 ###  http://www.w3.org/2002/07/owl#hasid
 
-:hasid rdf:type :AnnotationProperty .
+:hasid rdf:type :DatatypeProperty .
 
 
 
 ###  http://www.w3.org/2002/07/owl#hasorganism
 
-:hasorganism rdf:type :AnnotationProperty .
+:hasorganism rdf:type :DatatypeProperty .
 
 
 
 ###  http://www.w3.org/2002/07/owl#probename
 
-:probename rdf:type :AnnotationProperty .
+:probename rdf:type :DatatypeProperty .
 
 
 
