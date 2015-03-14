@@ -310,7 +310,7 @@ bp:xref rdfs:domain :ExperimentSet .
                                               :intersectionOf ( :Experiment
                                                                 [ rdf:type :Restriction ;
                                                                   :onProperty bp:xref ;
-                                                                  :onClass bp:PublicationXref ;
+                                                                  :onClass <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ;
                                                                   :minQualifiedCardinality "1"^^xsd:nonNegativeInteger
                                                                 ]
                                                               )
@@ -376,7 +376,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                            :intersectionOf ( bp:Pathway
                                                              [ rdf:type :Restriction ;
                                                                :onProperty bp:xref ;
-                                                               :onClass bp:PublicationXref ;
+                                                               :onClass <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ;
                                                                :minQualifiedCardinality "1"^^xsd:nonNegativeInteger
                                                              ]
                                                            )
@@ -7189,7 +7189,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref1
 
-:PublicationXref1 rdf:type bp:PublicationXref ,
+:PublicationXref1 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                            :NamedIndividual ;
                   
                   bp:id "20090754"^^xsd:string ;
@@ -7228,7 +7228,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref10
 
-:PublicationXref10 rdf:type bp:PublicationXref ,
+:PublicationXref10 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2011"^^xsd:int ;
@@ -7258,7 +7258,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref100
 
-:PublicationXref100 rdf:type bp:PublicationXref ,
+:PublicationXref100 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11226752"^^xsd:string ;
@@ -7293,7 +7293,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref101
 
-:PublicationXref101 rdf:type bp:PublicationXref ,
+:PublicationXref101 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "14567914"^^xsd:string ;
@@ -7338,7 +7338,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref102
 
-:PublicationXref102 rdf:type bp:PublicationXref ,
+:PublicationXref102 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "15965470"^^xsd:string ;
@@ -7365,7 +7365,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref103
 
-:PublicationXref103 rdf:type bp:PublicationXref ,
+:PublicationXref103 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "16284625"^^xsd:string ;
@@ -7390,7 +7390,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref104
 
-:PublicationXref104 rdf:type bp:PublicationXref ,
+:PublicationXref104 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2011"^^xsd:int ;
@@ -7414,7 +7414,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref105
 
-:PublicationXref105 rdf:type bp:PublicationXref ,
+:PublicationXref105 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "17028573"^^xsd:string ;
@@ -7436,7 +7436,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref106
 
-:PublicationXref106 rdf:type bp:PublicationXref ,
+:PublicationXref106 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "17028573"^^xsd:string ;
@@ -7458,7 +7458,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref107
 
-:PublicationXref107 rdf:type bp:PublicationXref ,
+:PublicationXref107 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2010"^^xsd:int ;
@@ -7486,7 +7486,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref108
 
-:PublicationXref108 rdf:type bp:PublicationXref ,
+:PublicationXref108 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "18660822"^^xsd:string ;
@@ -7519,7 +7519,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref109
 
-:PublicationXref109 rdf:type bp:PublicationXref ,
+:PublicationXref109 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "18700817"^^xsd:string ;
@@ -7549,7 +7549,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref11
 
-:PublicationXref11 rdf:type bp:PublicationXref ,
+:PublicationXref11 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "14991602"^^xsd:string ;
@@ -7569,7 +7569,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref110
 
-:PublicationXref110 rdf:type bp:PublicationXref ,
+:PublicationXref110 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "18237417"^^xsd:string ;
@@ -7593,7 +7593,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref111
 
-:PublicationXref111 rdf:type bp:PublicationXref ,
+:PublicationXref111 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "15652348"^^xsd:string ;
@@ -7621,7 +7621,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref112
 
-:PublicationXref112 rdf:type bp:PublicationXref ,
+:PublicationXref112 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1994"^^xsd:int ;
@@ -7643,7 +7643,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref113
 
-:PublicationXref113 rdf:type bp:PublicationXref ,
+:PublicationXref113 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "19567869"^^xsd:string ;
@@ -7667,7 +7667,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref114
 
-:PublicationXref114 rdf:type bp:PublicationXref ,
+:PublicationXref114 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "18628966"^^xsd:string ;
@@ -7688,7 +7688,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref115
 
-:PublicationXref115 rdf:type bp:PublicationXref ,
+:PublicationXref115 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "14980219"^^xsd:string ;
@@ -7713,7 +7713,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref116
 
-:PublicationXref116 rdf:type bp:PublicationXref ,
+:PublicationXref116 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "18374649"^^xsd:string ;
@@ -7741,7 +7741,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref117
 
-:PublicationXref117 rdf:type bp:PublicationXref ,
+:PublicationXref117 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1998"^^xsd:int ;
@@ -7769,7 +7769,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref118
 
-:PublicationXref118 rdf:type bp:PublicationXref ,
+:PublicationXref118 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1995"^^xsd:int ;
@@ -7799,7 +7799,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref119
 
-:PublicationXref119 rdf:type bp:PublicationXref ,
+:PublicationXref119 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "10713164"^^xsd:string ;
@@ -7825,7 +7825,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref12
 
-:PublicationXref12 rdf:type bp:PublicationXref ,
+:PublicationXref12 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "17685488"^^xsd:string ;
@@ -7849,7 +7849,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref120
 
-:PublicationXref120 rdf:type bp:PublicationXref ,
+:PublicationXref120 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "16530044"^^xsd:string ;
@@ -7874,7 +7874,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref121
 
-:PublicationXref121 rdf:type bp:PublicationXref ,
+:PublicationXref121 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "12050117"^^xsd:string ;
@@ -7899,7 +7899,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref122
 
-:PublicationXref122 rdf:type bp:PublicationXref ,
+:PublicationXref122 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "12391150"^^xsd:string ;
@@ -7923,7 +7923,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref123
 
-:PublicationXref123 rdf:type bp:PublicationXref ,
+:PublicationXref123 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1995"^^xsd:int ;
@@ -7948,7 +7948,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref124
 
-:PublicationXref124 rdf:type bp:PublicationXref ,
+:PublicationXref124 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1996"^^xsd:int ;
@@ -7969,7 +7969,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref125
 
-:PublicationXref125 rdf:type bp:PublicationXref ,
+:PublicationXref125 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1996"^^xsd:int ;
@@ -7991,7 +7991,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref126
 
-:PublicationXref126 rdf:type bp:PublicationXref ,
+:PublicationXref126 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1994"^^xsd:int ;
@@ -8019,7 +8019,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref127
 
-:PublicationXref127 rdf:type bp:PublicationXref ,
+:PublicationXref127 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "17114293"^^xsd:string ;
@@ -8056,7 +8056,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref128
 
-:PublicationXref128 rdf:type bp:PublicationXref ,
+:PublicationXref128 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2010"^^xsd:int ;
@@ -8081,7 +8081,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref129
 
-:PublicationXref129 rdf:type bp:PublicationXref ,
+:PublicationXref129 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "10964718"^^xsd:string ;
@@ -8101,7 +8101,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref13
 
-:PublicationXref13 rdf:type bp:PublicationXref ,
+:PublicationXref13 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "15472075"^^xsd:string ;
@@ -8130,7 +8130,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref130
 
-:PublicationXref130 rdf:type bp:PublicationXref ,
+:PublicationXref130 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "15107403"^^xsd:string ;
@@ -8155,7 +8155,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref131
 
-:PublicationXref131 rdf:type bp:PublicationXref ,
+:PublicationXref131 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11044625"^^xsd:string ;
@@ -8178,7 +8178,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref132
 
-:PublicationXref132 rdf:type bp:PublicationXref ,
+:PublicationXref132 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "15546612"^^xsd:string ;
@@ -8200,7 +8200,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref133
 
-:PublicationXref133 rdf:type bp:PublicationXref ,
+:PublicationXref133 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11585921"^^xsd:string ;
@@ -8229,7 +8229,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref134
 
-:PublicationXref134 rdf:type bp:PublicationXref ,
+:PublicationXref134 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "18094723"^^xsd:string ;
@@ -8250,7 +8250,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref135
 
-:PublicationXref135 rdf:type bp:PublicationXref ,
+:PublicationXref135 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11461910"^^xsd:string ;
@@ -8276,7 +8276,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref136
 
-:PublicationXref136 rdf:type bp:PublicationXref ,
+:PublicationXref136 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "16256737"^^xsd:string ;
@@ -8307,7 +8307,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref137
 
-:PublicationXref137 rdf:type bp:PublicationXref ,
+:PublicationXref137 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2011"^^xsd:int ;
@@ -8340,7 +8340,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref138
 
-:PublicationXref138 rdf:type bp:PublicationXref ,
+:PublicationXref138 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "18418349"^^xsd:string ;
@@ -8368,7 +8368,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref139
 
-:PublicationXref139 rdf:type bp:PublicationXref ,
+:PublicationXref139 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "10958687"^^xsd:string ;
@@ -8396,7 +8396,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref14
 
-:PublicationXref14 rdf:type bp:PublicationXref ,
+:PublicationXref14 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "16773578"^^xsd:string ;
@@ -8423,7 +8423,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref140
 
-:PublicationXref140 rdf:type bp:PublicationXref ,
+:PublicationXref140 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "10934472"^^xsd:string ;
@@ -8449,7 +8449,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref141
 
-:PublicationXref141 rdf:type bp:PublicationXref ,
+:PublicationXref141 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11861489"^^xsd:string ;
@@ -8470,7 +8470,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref142
 
-:PublicationXref142 rdf:type bp:PublicationXref ,
+:PublicationXref142 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11171333"^^xsd:string ;
@@ -8499,7 +8499,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref143
 
-:PublicationXref143 rdf:type bp:PublicationXref ,
+:PublicationXref143 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1975"^^xsd:int ;
@@ -8522,7 +8522,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref144
 
-:PublicationXref144 rdf:type bp:PublicationXref ,
+:PublicationXref144 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1997"^^xsd:int ;
@@ -8553,7 +8553,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref145
 
-:PublicationXref145 rdf:type bp:PublicationXref ,
+:PublicationXref145 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "10551863"^^xsd:string ;
@@ -8582,7 +8582,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref146
 
-:PublicationXref146 rdf:type bp:PublicationXref ,
+:PublicationXref146 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1997"^^xsd:int ;
@@ -8618,7 +8618,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref147
 
-:PublicationXref147 rdf:type bp:PublicationXref ,
+:PublicationXref147 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1987"^^xsd:int ;
@@ -8644,7 +8644,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref148
 
-:PublicationXref148 rdf:type bp:PublicationXref ,
+:PublicationXref148 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "15569487"^^xsd:string ;
@@ -8670,7 +8670,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref149
 
-:PublicationXref149 rdf:type bp:PublicationXref ,
+:PublicationXref149 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2012"^^xsd:int ;
@@ -8695,7 +8695,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref15
 
-:PublicationXref15 rdf:type bp:PublicationXref ,
+:PublicationXref15 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1994"^^xsd:int ;
@@ -8718,7 +8718,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref150
 
-:PublicationXref150 rdf:type bp:PublicationXref ,
+:PublicationXref150 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11823422"^^xsd:string ;
@@ -8746,7 +8746,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref151
 
-:PublicationXref151 rdf:type bp:PublicationXref ,
+:PublicationXref151 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2012"^^xsd:int ;
@@ -8771,7 +8771,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref152
 
-:PublicationXref152 rdf:type bp:PublicationXref ,
+:PublicationXref152 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2010"^^xsd:int ;
@@ -8802,7 +8802,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref153
 
-:PublicationXref153 rdf:type bp:PublicationXref ,
+:PublicationXref153 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11518718"^^xsd:string ;
@@ -8825,7 +8825,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref154
 
-:PublicationXref154 rdf:type bp:PublicationXref ,
+:PublicationXref154 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "18469519"^^xsd:string ;
@@ -8850,7 +8850,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref155
 
-:PublicationXref155 rdf:type bp:PublicationXref ,
+:PublicationXref155 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "1997"^^xsd:int ;
@@ -8878,7 +8878,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref156
 
-:PublicationXref156 rdf:type bp:PublicationXref ,
+:PublicationXref156 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2011"^^xsd:int ;
@@ -8906,7 +8906,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref157
 
-:PublicationXref157 rdf:type bp:PublicationXref ,
+:PublicationXref157 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11101851"^^xsd:string ;
@@ -8931,7 +8931,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref158
 
-:PublicationXref158 rdf:type bp:PublicationXref ,
+:PublicationXref158 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "17284587"^^xsd:string ;
@@ -8956,7 +8956,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref159
 
-:PublicationXref159 rdf:type bp:PublicationXref ,
+:PublicationXref159 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11866432"^^xsd:string ;
@@ -8982,7 +8982,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref16
 
-:PublicationXref16 rdf:type bp:PublicationXref ,
+:PublicationXref16 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "11187898"^^xsd:string ;
@@ -9005,7 +9005,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref160
 
-:PublicationXref160 rdf:type bp:PublicationXref ,
+:PublicationXref160 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11986231"^^xsd:string ;
@@ -9032,7 +9032,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref161
 
-:PublicationXref161 rdf:type bp:PublicationXref ,
+:PublicationXref161 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "18724371"^^xsd:string ;
@@ -9064,7 +9064,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref162
 
-:PublicationXref162 rdf:type bp:PublicationXref ,
+:PublicationXref162 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2013"^^xsd:int ;
@@ -9094,7 +9094,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref163
 
-:PublicationXref163 rdf:type bp:PublicationXref ,
+:PublicationXref163 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2012"^^xsd:int ;
@@ -9120,7 +9120,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref164
 
-:PublicationXref164 rdf:type bp:PublicationXref ,
+:PublicationXref164 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2013"^^xsd:int ;
@@ -9148,7 +9148,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref165
 
-:PublicationXref165 rdf:type bp:PublicationXref ,
+:PublicationXref165 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2010"^^xsd:int ;
@@ -9170,7 +9170,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref166
 
-:PublicationXref166 rdf:type bp:PublicationXref ,
+:PublicationXref166 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2010"^^xsd:int ;
@@ -9191,7 +9191,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref167
 
-:PublicationXref167 rdf:type bp:PublicationXref ,
+:PublicationXref167 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2011"^^xsd:int ;
@@ -9226,7 +9226,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref168
 
-:PublicationXref168 rdf:type bp:PublicationXref ,
+:PublicationXref168 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "19379690"^^xsd:string ;
@@ -9246,7 +9246,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref169
 
-:PublicationXref169 rdf:type bp:PublicationXref ,
+:PublicationXref169 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2011"^^xsd:int ;
@@ -9285,7 +9285,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref17
 
-:PublicationXref17 rdf:type bp:PublicationXref ,
+:PublicationXref17 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "19150886"^^xsd:string ;
@@ -9306,7 +9306,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref170
 
-:PublicationXref170 rdf:type bp:PublicationXref ,
+:PublicationXref170 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:year "2011"^^xsd:int ;
@@ -9338,7 +9338,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref171
 
-:PublicationXref171 rdf:type bp:PublicationXref ,
+:PublicationXref171 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "10079256"^^xsd:string ;
@@ -9368,7 +9368,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref172
 
-:PublicationXref172 rdf:type bp:PublicationXref ,
+:PublicationXref172 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "12794186"^^xsd:string ;
@@ -9392,7 +9392,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref173
 
-:PublicationXref173 rdf:type bp:PublicationXref ,
+:PublicationXref173 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "14986688"^^xsd:string ;
@@ -9411,7 +9411,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref174
 
-:PublicationXref174 rdf:type bp:PublicationXref ,
+:PublicationXref174 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "10889061"^^xsd:string ;
@@ -9430,7 +9430,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref175
 
-:PublicationXref175 rdf:type bp:PublicationXref ,
+:PublicationXref175 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "10221902"^^xsd:string ;
@@ -9452,7 +9452,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref176
 
-:PublicationXref176 rdf:type bp:PublicationXref ,
+:PublicationXref176 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                              :NamedIndividual ;
                     
                     bp:id "11112321"^^xsd:string ;
@@ -9472,7 +9472,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref18
 
-:PublicationXref18 rdf:type bp:PublicationXref ,
+:PublicationXref18 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1996"^^xsd:int ;
@@ -9510,7 +9510,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref19
 
-:PublicationXref19 rdf:type bp:PublicationXref ,
+:PublicationXref19 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "15684396"^^xsd:string ;
@@ -9539,7 +9539,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref2
 
-:PublicationXref2 rdf:type bp:PublicationXref ,
+:PublicationXref2 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                            :NamedIndividual ;
                   
                   bp:year "2011"^^xsd:int ;
@@ -9575,7 +9575,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref20
 
-:PublicationXref20 rdf:type bp:PublicationXref ,
+:PublicationXref20 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1998"^^xsd:int ;
@@ -9608,7 +9608,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref21
 
-:PublicationXref21 rdf:type bp:PublicationXref ,
+:PublicationXref21 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "17540599"^^xsd:string ;
@@ -9643,7 +9643,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref22
 
-:PublicationXref22 rdf:type bp:PublicationXref ,
+:PublicationXref22 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "17823410"^^xsd:string ;
@@ -9668,7 +9668,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref23
 
-:PublicationXref23 rdf:type bp:PublicationXref ,
+:PublicationXref23 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "17554337"^^xsd:string ;
@@ -9703,7 +9703,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref24
 
-:PublicationXref24 rdf:type bp:PublicationXref ,
+:PublicationXref24 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "17540598"^^xsd:string ;
@@ -9731,7 +9731,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref25
 
-:PublicationXref25 rdf:type bp:PublicationXref ,
+:PublicationXref25 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "19773441"^^xsd:string ;
@@ -9765,7 +9765,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref26
 
-:PublicationXref26 rdf:type bp:PublicationXref ,
+:PublicationXref26 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "19714243"^^xsd:string ;
@@ -9797,7 +9797,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref27
 
-:PublicationXref27 rdf:type bp:PublicationXref ,
+:PublicationXref27 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2010"^^xsd:int ;
@@ -9825,7 +9825,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref28
 
-:PublicationXref28 rdf:type bp:PublicationXref ,
+:PublicationXref28 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2010"^^xsd:int ;
@@ -9852,7 +9852,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref29
 
-:PublicationXref29 rdf:type bp:PublicationXref ,
+:PublicationXref29 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2011"^^xsd:int ;
@@ -9889,7 +9889,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref3
 
-:PublicationXref3 rdf:type bp:PublicationXref ,
+:PublicationXref3 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                            :NamedIndividual ;
                   
                   bp:year "2012"^^xsd:int ;
@@ -9915,7 +9915,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref30
 
-:PublicationXref30 rdf:type bp:PublicationXref ,
+:PublicationXref30 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2011"^^xsd:int ;
@@ -9955,7 +9955,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref31
 
-:PublicationXref31 rdf:type bp:PublicationXref ,
+:PublicationXref31 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "19723635"^^xsd:string ;
@@ -9976,7 +9976,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref32
 
-:PublicationXref32 rdf:type bp:PublicationXref ,
+:PublicationXref32 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "20080834"^^xsd:string ;
@@ -10002,7 +10002,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref33
 
-:PublicationXref33 rdf:type bp:PublicationXref ,
+:PublicationXref33 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2009"^^xsd:int ;
@@ -10031,7 +10031,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref34
 
-:PublicationXref34 rdf:type bp:PublicationXref ,
+:PublicationXref34 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "1425352"^^xsd:string ;
@@ -10058,7 +10058,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref35
 
-:PublicationXref35 rdf:type bp:PublicationXref ,
+:PublicationXref35 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10545110"^^xsd:string ;
@@ -10078,7 +10078,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref36
 
-:PublicationXref36 rdf:type bp:PublicationXref ,
+:PublicationXref36 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "1764995"^^xsd:string ;
@@ -10100,7 +10100,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref37
 
-:PublicationXref37 rdf:type bp:PublicationXref ,
+:PublicationXref37 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "15692013"^^xsd:string ;
@@ -10123,7 +10123,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref38
 
-:PublicationXref38 rdf:type bp:PublicationXref ,
+:PublicationXref38 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2011"^^xsd:int ;
@@ -10153,7 +10153,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref39
 
-:PublicationXref39 rdf:type bp:PublicationXref ,
+:PublicationXref39 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "18347015"^^xsd:string ;
@@ -10178,7 +10178,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref4
 
-:PublicationXref4 rdf:type bp:PublicationXref ,
+:PublicationXref4 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                            :NamedIndividual ;
                   
                   bp:id "17344417"^^xsd:string ;
@@ -10213,7 +10213,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref40
 
-:PublicationXref40 rdf:type bp:PublicationXref ,
+:PublicationXref40 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "12486116"^^xsd:string ;
@@ -10236,7 +10236,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref41
 
-:PublicationXref41 rdf:type bp:PublicationXref ,
+:PublicationXref41 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "11524432"^^xsd:string ;
@@ -10262,7 +10262,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref42
 
-:PublicationXref42 rdf:type bp:PublicationXref ,
+:PublicationXref42 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2011"^^xsd:int ;
@@ -10288,7 +10288,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref43
 
-:PublicationXref43 rdf:type bp:PublicationXref ,
+:PublicationXref43 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "18243100"^^xsd:string ;
@@ -10318,7 +10318,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref44
 
-:PublicationXref44 rdf:type bp:PublicationXref ,
+:PublicationXref44 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2010"^^xsd:int ;
@@ -10351,7 +10351,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref45
 
-:PublicationXref45 rdf:type bp:PublicationXref ,
+:PublicationXref45 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1994"^^xsd:int ;
@@ -10372,7 +10372,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref46
 
-:PublicationXref46 rdf:type bp:PublicationXref ,
+:PublicationXref46 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1996"^^xsd:int ;
@@ -10397,7 +10397,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref47
 
-:PublicationXref47 rdf:type bp:PublicationXref ,
+:PublicationXref47 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1997"^^xsd:int ;
@@ -10420,7 +10420,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref48
 
-:PublicationXref48 rdf:type bp:PublicationXref ,
+:PublicationXref48 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1993"^^xsd:int ;
@@ -10441,7 +10441,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref49
 
-:PublicationXref49 rdf:type bp:PublicationXref ,
+:PublicationXref49 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2010"^^xsd:int ;
@@ -10465,7 +10465,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref5
 
-:PublicationXref5 rdf:type bp:PublicationXref ,
+:PublicationXref5 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                            :NamedIndividual ;
                   
                   bp:year "2010"^^xsd:int ;
@@ -10487,7 +10487,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref50
 
-:PublicationXref50 rdf:type bp:PublicationXref ,
+:PublicationXref50 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10459009"^^xsd:string ;
@@ -10508,7 +10508,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref51
 
-:PublicationXref51 rdf:type bp:PublicationXref ,
+:PublicationXref51 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "1295745"^^xsd:string ;
@@ -10530,7 +10530,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref52
 
-:PublicationXref52 rdf:type bp:PublicationXref ,
+:PublicationXref52 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1996"^^xsd:int ;
@@ -10550,7 +10550,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref53
 
-:PublicationXref53 rdf:type bp:PublicationXref ,
+:PublicationXref53 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1998"^^xsd:int ;
@@ -10570,7 +10570,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref54
 
-:PublicationXref54 rdf:type bp:PublicationXref ,
+:PublicationXref54 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10669757"^^xsd:string ;
@@ -10597,7 +10597,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref55
 
-:PublicationXref55 rdf:type bp:PublicationXref ,
+:PublicationXref55 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1998"^^xsd:int ;
@@ -10620,7 +10620,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref56
 
-:PublicationXref56 rdf:type bp:PublicationXref ,
+:PublicationXref56 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "12049766"^^xsd:string ;
@@ -10640,7 +10640,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref57
 
-:PublicationXref57 rdf:type bp:PublicationXref ,
+:PublicationXref57 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "19701457"^^xsd:string ;
@@ -10671,7 +10671,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref58
 
-:PublicationXref58 rdf:type bp:PublicationXref ,
+:PublicationXref58 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "2011"^^xsd:int ;
@@ -10700,7 +10700,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref59
 
-:PublicationXref59 rdf:type bp:PublicationXref ,
+:PublicationXref59 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10935637"^^xsd:string ;
@@ -10723,7 +10723,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref6
 
-:PublicationXref6 rdf:type bp:PublicationXref ,
+:PublicationXref6 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                            :NamedIndividual ;
                   
                   bp:year "2010"^^xsd:int ;
@@ -10750,7 +10750,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref60
 
-:PublicationXref60 rdf:type bp:PublicationXref ,
+:PublicationXref60 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1997"^^xsd:int ;
@@ -10786,7 +10786,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref61
 
-:PublicationXref61 rdf:type bp:PublicationXref ,
+:PublicationXref61 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10935626"^^xsd:string ;
@@ -10818,7 +10818,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref62
 
-:PublicationXref62 rdf:type bp:PublicationXref ,
+:PublicationXref62 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1997"^^xsd:int ;
@@ -10843,7 +10843,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref63
 
-:PublicationXref63 rdf:type bp:PublicationXref ,
+:PublicationXref63 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "11707585"^^xsd:string ;
@@ -10866,7 +10866,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref64
 
-:PublicationXref64 rdf:type bp:PublicationXref ,
+:PublicationXref64 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "11530204"^^xsd:string ;
@@ -10892,7 +10892,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref65
 
-:PublicationXref65 rdf:type bp:PublicationXref ,
+:PublicationXref65 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10075724"^^xsd:string ;
@@ -10919,7 +10919,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref66
 
-:PublicationXref66 rdf:type bp:PublicationXref ,
+:PublicationXref66 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "11135303"^^xsd:string ;
@@ -10939,7 +10939,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref67
 
-:PublicationXref67 rdf:type bp:PublicationXref ,
+:PublicationXref67 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10366590"^^xsd:string ;
@@ -10960,7 +10960,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref68
 
-:PublicationXref68 rdf:type bp:PublicationXref ,
+:PublicationXref68 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1998"^^xsd:int ;
@@ -10990,7 +10990,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref69
 
-:PublicationXref69 rdf:type bp:PublicationXref ,
+:PublicationXref69 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "18296446"^^xsd:string ;
@@ -11017,7 +11017,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref7
 
-:PublicationXref7 rdf:type bp:PublicationXref ,
+:PublicationXref7 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                            :NamedIndividual ;
                   
                   bp:id "16612405"^^xsd:string ;
@@ -11039,7 +11039,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref70
 
-:PublicationXref70 rdf:type bp:PublicationXref ,
+:PublicationXref70 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "15574878"^^xsd:string ;
@@ -11065,7 +11065,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref71
 
-:PublicationXref71 rdf:type bp:PublicationXref ,
+:PublicationXref71 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "18824585"^^xsd:string ;
@@ -11096,7 +11096,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref72
 
-:PublicationXref72 rdf:type bp:PublicationXref ,
+:PublicationXref72 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "18824583"^^xsd:string ;
@@ -11127,7 +11127,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref73
 
-:PublicationXref73 rdf:type bp:PublicationXref ,
+:PublicationXref73 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "19524514"^^xsd:string ;
@@ -11154,7 +11154,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref74
 
-:PublicationXref74 rdf:type bp:PublicationXref ,
+:PublicationXref74 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1998"^^xsd:int ;
@@ -11185,7 +11185,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref75
 
-:PublicationXref75 rdf:type bp:PublicationXref ,
+:PublicationXref75 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1997"^^xsd:int ;
@@ -11210,7 +11210,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref76
 
-:PublicationXref76 rdf:type bp:PublicationXref ,
+:PublicationXref76 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "11006133"^^xsd:string ;
@@ -11234,7 +11234,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref77
 
-:PublicationXref77 rdf:type bp:PublicationXref ,
+:PublicationXref77 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "15824097"^^xsd:string ;
@@ -11261,7 +11261,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref78
 
-:PublicationXref78 rdf:type bp:PublicationXref ,
+:PublicationXref78 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "17003037"^^xsd:string ;
@@ -11293,7 +11293,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref79
 
-:PublicationXref79 rdf:type bp:PublicationXref ,
+:PublicationXref79 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "18077452"^^xsd:string ;
@@ -11323,7 +11323,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref8
 
-:PublicationXref8 rdf:type bp:PublicationXref ,
+:PublicationXref8 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                            :NamedIndividual ;
                   
                   bp:year "2011"^^xsd:int ;
@@ -11345,7 +11345,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref80
 
-:PublicationXref80 rdf:type bp:PublicationXref ,
+:PublicationXref80 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "12530964"^^xsd:string ;
@@ -11380,7 +11380,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref81
 
-:PublicationXref81 rdf:type bp:PublicationXref ,
+:PublicationXref81 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "18043734"^^xsd:string ;
@@ -11408,7 +11408,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref82
 
-:PublicationXref82 rdf:type bp:PublicationXref ,
+:PublicationXref82 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "11740940"^^xsd:string ;
@@ -11432,7 +11432,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref83
 
-:PublicationXref83 rdf:type bp:PublicationXref ,
+:PublicationXref83 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "15760269"^^xsd:string ;
@@ -11455,7 +11455,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref84
 
-:PublicationXref84 rdf:type bp:PublicationXref ,
+:PublicationXref84 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "15829515"^^xsd:string ;
@@ -11479,7 +11479,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref85
 
-:PublicationXref85 rdf:type bp:PublicationXref ,
+:PublicationXref85 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "16093323"^^xsd:string ;
@@ -11500,7 +11500,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref86
 
-:PublicationXref86 rdf:type bp:PublicationXref ,
+:PublicationXref86 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "17401372"^^xsd:string ;
@@ -11526,7 +11526,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref87
 
-:PublicationXref87 rdf:type bp:PublicationXref ,
+:PublicationXref87 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "12354787"^^xsd:string ;
@@ -11558,7 +11558,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref88
 
-:PublicationXref88 rdf:type bp:PublicationXref ,
+:PublicationXref88 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "19726682"^^xsd:string ;
@@ -11583,7 +11583,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref89
 
-:PublicationXref89 rdf:type bp:PublicationXref ,
+:PublicationXref89 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1997"^^xsd:int ;
@@ -11604,7 +11604,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref9
 
-:PublicationXref9 rdf:type bp:PublicationXref ,
+:PublicationXref9 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                            :NamedIndividual ;
                   
                   bp:id "1831692"^^xsd:string ;
@@ -11632,7 +11632,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref90
 
-:PublicationXref90 rdf:type bp:PublicationXref ,
+:PublicationXref90 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10882063"^^xsd:string ;
@@ -11661,7 +11661,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref91
 
-:PublicationXref91 rdf:type bp:PublicationXref ,
+:PublicationXref91 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10879540"^^xsd:string ;
@@ -11687,7 +11687,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref92
 
-:PublicationXref92 rdf:type bp:PublicationXref ,
+:PublicationXref92 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "12209127"^^xsd:string ;
@@ -11706,7 +11706,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref93
 
-:PublicationXref93 rdf:type bp:PublicationXref ,
+:PublicationXref93 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1998"^^xsd:int ;
@@ -11728,7 +11728,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref94
 
-:PublicationXref94 rdf:type bp:PublicationXref ,
+:PublicationXref94 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "10206645"^^xsd:string ;
@@ -11759,7 +11759,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref95
 
-:PublicationXref95 rdf:type bp:PublicationXref ,
+:PublicationXref95 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "19151708"^^xsd:string ;
@@ -11791,7 +11791,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref96
 
-:PublicationXref96 rdf:type bp:PublicationXref ,
+:PublicationXref96 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1998"^^xsd:int ;
@@ -11812,7 +11812,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref97
 
-:PublicationXref97 rdf:type bp:PublicationXref ,
+:PublicationXref97 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1998"^^xsd:int ;
@@ -11833,7 +11833,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref98
 
-:PublicationXref98 rdf:type bp:PublicationXref ,
+:PublicationXref98 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:id "19000840"^^xsd:string ;
@@ -11864,7 +11864,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#PublicationXref99
 
-:PublicationXref99 rdf:type bp:PublicationXref ,
+:PublicationXref99 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ,
                             :NamedIndividual ;
                    
                    bp:year "1998"^^xsd:int ;
@@ -15845,159 +15845,16 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 #################################################################
 
 
-<urn:swrl#pubref> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-<urn:swrl#someid> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#expset> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#pxref> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#pmid> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-<urn:swrl#exp> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#pubref> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#pub> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest rdf:nil ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperimentset ;
-                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#expset> ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ]
-                                        ] ;
-  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ] ;
-                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                                      rdf:rest rdf:nil ;
-                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :haspmid ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#expset> ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#pmid>
-                                                                                                ]
-                                                                                    ] ;
-                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasxref> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pmid> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#pxref>
-                                                                                     ]
-                                                                         ] ;
-                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:xref ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#pxref> ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                                          ]
-                                                              ] ;
-                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :ExperimentSet ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#expset>
-                                                               ]
-                                                   ]
-                                        ]
-] .
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest rdf:nil ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :b_id ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref> ;
-                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
-                                                    ]
-                                        ] ;
-  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:PublicationXref ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref>
-                                                    ] ;
-                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                     rdf:rest rdf:nil ;
-                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :id ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref> ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
-                                                               ]
-                                                   ]
-                                        ]
-] .
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                rdf:rest rdf:nil ;
-                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :pathwayComponent ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
-                                                                          ]
-                                                              ] ;
-                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:participant ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y> ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
-                                                               ]
-                                                   ] ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ]
-                                        ] ;
-  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest rdf:nil ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
-                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
-                                                    ]
-                                        ]
-] .
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ] ;
-                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :probe ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
-                                                               ] ;
-                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
-                                                                          ] ;
-                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                                      rdf:rest rdf:nil ;
-                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasprobe ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp> ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
-                                                                                                ]
-                                                                                    ] ;
-                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
-                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
-                                                                                     ]
-                                                                         ]
-                                                              ]
-                                                   ]
-                                        ] ;
-  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest rdf:nil ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
-                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#exp> ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ]
-                                        ]
-] .
+<urn:swrl#someid> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#exp> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
@@ -16006,6 +15863,11 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pub>
                                                                ] ;
                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :id ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pub> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
+                                                                          ] ;
                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                            rdf:rest rdf:nil ;
                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
@@ -16013,16 +15875,11 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref> ;
                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
                                                                                      ]
-                                                                         ] ;
-                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
-                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :id ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pub> ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
-                                                                          ]
+                                                                         ]
                                                               ]
                                                    ] ;
                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:PublicationXref ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ;
                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref>
                                                     ]
                                         ] ;
@@ -16046,6 +15903,11 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                         ] ;
   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasexperimentdata ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                               ] ;
                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                                                 rdf:rest rdf:nil ;
                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
@@ -16053,10 +15915,49 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
                                                                             <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
                                                                           ]
+                                                              ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#exp> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                                                     ] ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasprobe ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                                                                ]
+                                                                                    ]
+                                                                         ] ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                          ]
                                                               ] ;
-                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasexperimentdata ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :probe ;
                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
                                                                ]
                                                    ] ;
@@ -16064,6 +15965,105 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                       <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
                                                     ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :b_id ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest rdf:nil ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :id ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
+                                                               ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PublicationXref> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ] ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest rdf:nil ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :pathwayComponent ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                          ]
+                                                              ] ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:participant ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#y> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                               ]
+                                                   ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperimentset ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#expset> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ] ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:xref ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#pxref> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                                          ] ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasxref> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pmid> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#pxref>
+                                                                                     ] ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :haspmid ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#expset> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#pmid>
+                                                                                                ]
+                                                                                    ]
+                                                                         ]
+                                                              ] ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :ExperimentSet ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#expset>
+                                                               ]
+                                                   ]
                                         ]
 ] .
 
