@@ -19,33 +19,9 @@
 #################################################################
 
 
-###  http://www.w3.org/2002/07/owl#hasarraydesign
+###  http://www.biopax.org/release/biopax-level3.owl#b_id
 
-:hasarraydesign rdf:type :AnnotationProperty .
-
-
-
-###  http://www.w3.org/2002/07/owl#hasexperimenttype
-
-:hasexperimenttype rdf:type :AnnotationProperty .
-
-
-
-###  http://www.w3.org/2002/07/owl#hasid
-
-:hasid rdf:type :AnnotationProperty .
-
-
-
-###  http://www.w3.org/2002/07/owl#hasorganism
-
-:hasorganism rdf:type :AnnotationProperty .
-
-
-
-###  http://www.w3.org/2002/07/owl#probename
-
-:probename rdf:type :AnnotationProperty .
+bp:b_id rdf:type :AnnotationProperty .
 
 
 
@@ -58,15 +34,15 @@
 #################################################################
 
 
-###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperiment
+###  http://www.biopax.org/release/biopax-level3.owl#xref
 
-:hasinferredexperiment rdf:type :ObjectProperty .
+bp:xref rdfs:domain :ExperimentSet .
 
 
 
-###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasinferredexperimentset
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasxref
 
-:hasinferredexperimentset rdf:type :ObjectProperty .
+<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasxref> rdf:type :ObjectProperty .
 
 
 
@@ -103,6 +79,18 @@
 ###  http://www.w3.org/2002/07/owl#hasid
 
 :hasid rdf:type :ObjectProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#hasinferredexperiment
+
+:hasinferredexperiment rdf:type :ObjectProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#hasinferredexperimentset
+
+:hasinferredexperimentset rdf:type :ObjectProperty .
 
 
 
@@ -176,12 +164,6 @@
 
 
 
-###  http://www.w3.org/2002/07/owl#publication
-
-:publication rdf:type :ObjectProperty .
-
-
-
 ###  http://www.w3.org/2002/07/owl#referpmidof
 
 :referpmidof rdf:type :ObjectProperty .
@@ -207,6 +189,12 @@
 #################################################################
 
 
+###  http://www.biopax.org/release/biopax-level3.owl#b_id
+
+bp:b_id rdf:type :DatatypeProperty .
+
+
+
 ###  http://www.w3.org/2002/07/owl#author
 
 :author rdf:type :DatatypeProperty ,
@@ -230,6 +218,30 @@
 
 
 
+###  http://www.w3.org/2002/07/owl#hasarraydesign
+
+:hasarraydesign rdf:type :DatatypeProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#hasexperimenttype
+
+:hasexperimenttype rdf:type :DatatypeProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#hasid
+
+:hasid rdf:type :DatatypeProperty .
+
+
+
+###  http://www.w3.org/2002/07/owl#hasorganism
+
+:hasorganism rdf:type :DatatypeProperty .
+
+
+
 ###  http://www.w3.org/2002/07/owl#id
 
 :id rdf:type :DatatypeProperty ,
@@ -248,6 +260,12 @@
       rdfs:comment "Name of entity"^^xsd:string ;
       
       rdfs:range xsd:string .
+
+
+
+###  http://www.w3.org/2002/07/owl#probename
+
+:probename rdf:type :DatatypeProperty .
 
 
 
@@ -279,37 +297,32 @@
 #################################################################
 
 
-###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PathwayWithExperimentData
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Experimentsetwithxref
 
-:PathwayWithExperimentData rdf:type :Class ;
-                           
-                           :equivalentClass [ rdf:type :Class ;
-                                              :intersectionOf ( bp:Pathway
-                                                                [ rdf:type :Restriction ;
-                                                                  :onProperty :hasinferredexperiment ;
-                                                                  :someValuesFrom :Experiment
-                                                                ]
-                                                              )
-                                            ] ;
-                           
-                           rdfs:subClassOf bp:Pathway .
+<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Experimentsetwithxref> rdf:type :Class ;
+                                                                                               
+                                                                                               :equivalentClass [ rdf:type :Class ;
+                                                                                                                  :intersectionOf ( :ExperimentSet
+                                                                                                                                    [ rdf:type :Restriction ;
+                                                                                                                                      :onProperty bp:xref ;
+                                                                                                                                      :someValuesFrom bp:PublicationXref
+                                                                                                                                    ]
+                                                                                                                                  )
+                                                                                                                ] ;
+                                                                                               
+                                                                                               rdfs:subClassOf :ExperimentSet .
 
 
 
-###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#PathwayWithExperimentSet
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication
 
-:PathwayWithExperimentSet rdf:type :Class ;
-                          
-                          :equivalentClass [ rdf:type :Class ;
-                                             :intersectionOf ( bp:Pathway
-                                                               [ rdf:type :Restriction ;
-                                                                 :onProperty :hasinferredexperimentset ;
-                                                                 :someValuesFrom :ExperimentSet
-                                                               ]
-                                                             )
-                                           ] ;
-                          
-                          rdfs:subClassOf bp:Pathway .
+<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> rdf:type :Class .
+
+
+
+###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#aaa
+
+<http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#aaa> rdf:type :Class .
 
 
 
@@ -365,6 +378,40 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 
 
+###  http://www.w3.org/2002/07/owl#PathwayWithExperimentData
+
+:PathwayWithExperimentData rdf:type :Class ;
+                           
+                           :equivalentClass [ rdf:type :Class ;
+                                              :intersectionOf ( bp:Pathway
+                                                                [ rdf:type :Restriction ;
+                                                                  :onProperty :hasinferredexperiment ;
+                                                                  :someValuesFrom :Experiment
+                                                                ]
+                                                              )
+                                            ] ;
+                           
+                           rdfs:subClassOf bp:Pathway .
+
+
+
+###  http://www.w3.org/2002/07/owl#PathwayWithExperimentSet
+
+:PathwayWithExperimentSet rdf:type :Class ;
+                          
+                          :equivalentClass [ rdf:type :Class ;
+                                             :intersectionOf ( bp:Pathway
+                                                               [ rdf:type :Restriction ;
+                                                                 :onProperty :hasinferredexperimentset ;
+                                                                 :someValuesFrom :ExperimentSet
+                                                               ]
+                                                             )
+                                           ] ;
+                          
+                          rdfs:subClassOf bp:Pathway .
+
+
+
 ###  http://www.w3.org/2002/07/owl#PathwayWithPublication
 
 :PathwayWithPublication rdf:type :Class ;
@@ -378,12 +425,6 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                              ]
                                                            )
                                          ] .
-
-
-
-###  http://www.w3.org/2002/07/owl#Publication
-
-:Publication rdf:type :Class .
 
 
 
@@ -416,52 +457,6 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 #    Individuals
 #
 #################################################################
-
-
-###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#GeneticInteraction_test
-
-:GeneticInteraction_test rdf:type bp:GeneticInteraction ,
-                                  :NamedIndividual ;
-                         
-                         bp:participant :LYPLA2 ,
-                                        :MACC1 ,
-                                        :MAPK1 ,
-                                        :MIR4435-1HG .
-
-
-
-###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Pathway_test
-
-:Pathway_test rdf:type bp:Pathway ,
-                       :NamedIndividual ;
-              
-              :pathwayComponent :GeneticInteraction_test .
-
-
-
-###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyExperimentSet
-
-:dummyExperimentSet rdf:type :ExperimentSet ,
-                             :NamedIndividual ;
-                    
-                    :hasexperimentdata :dummyExperiment_WithPublication .
-
-
-
-###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPathway_WithPublication
-
-:dummyPathway_WithPublication rdf:type bp:Pathway ,
-                                       :NamedIndividual ;
-                              
-                              bp:xref :PublicationXref1 .
-
-
-
-###  http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#dummyPathway_WithoutPublication
-
-:dummyPathway_WithoutPublication rdf:type bp:Pathway ,
-                                          :NamedIndividual .
-
 
 
 ###  http://www.w3.org/2002/07/owl#A1BG
@@ -5649,6 +5644,18 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 
 
+###  http://www.w3.org/2002/07/owl#GeneticInteraction_test
+
+:GeneticInteraction_test rdf:type bp:GeneticInteraction ,
+                                  :NamedIndividual ;
+                         
+                         bp:participant :LYPLA2 ,
+                                        :MACC1 ,
+                                        :MAPK1 ,
+                                        :MIR4435-1HG .
+
+
+
 ###  http://www.w3.org/2002/07/owl#HG-U133_Plus_2
 
 :HG-U133_Plus_2 rdf:type :ArrayDesign ,
@@ -7203,6 +7210,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 
 
+###  http://www.w3.org/2002/07/owl#Pathway_test
+
+:Pathway_test rdf:type bp:Pathway ,
+                       :NamedIndividual ;
+              
+              :pathwayComponent :GeneticInteraction_test .
+
+
+
 ###  http://www.w3.org/2002/07/owl#Provenance1
 
 :Provenance1 rdf:type :NamedIndividual .
@@ -7214,7 +7230,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref1 rdf:type bp:PublicationXref ,
                            :NamedIndividual ;
                   
-                  bp:id "20090754"^^xsd:string ;
+                  bp:b_id "20090754"^^xsd:string ;
                   
                   bp:year "2010"^^xsd:int ;
                   
@@ -7255,7 +7271,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2011"^^xsd:int ;
                    
-                   bp:id "21280156"^^xsd:string ;
+                   bp:b_id "21280156"^^xsd:string ;
                    
                    bp:author "Eberhart, Charles G"^^xsd:string ,
                              "Guerrero-Cazares, Hugo"^^xsd:string ;
@@ -7283,7 +7299,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref100 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11226752"^^xsd:string ;
+                    bp:b_id "11226752"^^xsd:string ;
                     
                     bp:year "2001"^^xsd:int ;
                     
@@ -7318,7 +7334,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref101 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "14567914"^^xsd:string ;
+                    bp:b_id "14567914"^^xsd:string ;
                     
                     bp:year "2003"^^xsd:int ;
                     
@@ -7363,7 +7379,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref102 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "15965470"^^xsd:string ;
+                    bp:b_id "15965470"^^xsd:string ;
                     
                     bp:year "2005"^^xsd:int ;
                     
@@ -7390,7 +7406,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref103 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "16284625"^^xsd:string ;
+                    bp:b_id "16284625"^^xsd:string ;
                     
                     bp:year "2005"^^xsd:int ;
                     
@@ -7417,7 +7433,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2011"^^xsd:int ;
                     
-                    bp:id "22162134"^^xsd:string ;
+                    bp:b_id "22162134"^^xsd:string ;
                     
                     bp:author "Artavanis-Tsakonas, S"^^xsd:string ,
                               "Hori, K"^^xsd:string ;
@@ -7439,7 +7455,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref105 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "17028573"^^xsd:string ;
+                    bp:b_id "17028573"^^xsd:string ;
                     
                     bp:year "2006"^^xsd:int ;
                     
@@ -7461,7 +7477,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref106 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "17028573"^^xsd:string ;
+                    bp:b_id "17028573"^^xsd:string ;
                     
                     bp:year "2006"^^xsd:int ;
                     
@@ -7485,7 +7501,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2010"^^xsd:int ;
                     
-                    bp:id "20418862"^^xsd:string ;
+                    bp:b_id "20418862"^^xsd:string ;
                     
                     bp:author "Anderson, GA"^^xsd:string ;
                     
@@ -7511,7 +7527,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref108 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "18660822"^^xsd:string ;
+                    bp:b_id "18660822"^^xsd:string ;
                     
                     bp:year "2008"^^xsd:int ;
                     
@@ -7544,7 +7560,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref109 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "18700817"^^xsd:string ;
+                    bp:b_id "18700817"^^xsd:string ;
                     
                     bp:year "2008"^^xsd:int ;
                     
@@ -7574,7 +7590,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref11 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "14991602"^^xsd:string ;
+                   bp:b_id "14991602"^^xsd:string ;
                    
                    bp:year "2004"^^xsd:int ;
                    
@@ -7594,7 +7610,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref110 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "18237417"^^xsd:string ;
+                    bp:b_id "18237417"^^xsd:string ;
                     
                     bp:year "2008"^^xsd:int ;
                     
@@ -7618,7 +7634,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref111 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "15652348"^^xsd:string ;
+                    bp:b_id "15652348"^^xsd:string ;
                     
                     bp:year "2005"^^xsd:int ;
                     
@@ -7648,7 +7664,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1994"^^xsd:int ;
                     
-                    bp:id "8313469"^^xsd:string ;
+                    bp:b_id "8313469"^^xsd:string ;
                     
                     bp:title "Asymmetric distribution of numb protein during division of the sensory organ precursor cell confers distinct fates to daughter cells"^^xsd:string ;
                     
@@ -7668,7 +7684,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref113 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "19567869"^^xsd:string ;
+                    bp:b_id "19567869"^^xsd:string ;
                     
                     bp:year "2009"^^xsd:int ;
                     
@@ -7692,7 +7708,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref114 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "18628966"^^xsd:string ;
+                    bp:b_id "18628966"^^xsd:string ;
                     
                     bp:year "2008"^^xsd:int ;
                     
@@ -7713,7 +7729,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref115 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "14980219"^^xsd:string ;
+                    bp:b_id "14980219"^^xsd:string ;
                     
                     bp:year "2004"^^xsd:int ;
                     
@@ -7738,7 +7754,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref116 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "18374649"^^xsd:string ;
+                    bp:b_id "18374649"^^xsd:string ;
                     
                     bp:year "2008"^^xsd:int ;
                     
@@ -7768,7 +7784,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1998"^^xsd:int ;
                     
-                    bp:id "9694793"^^xsd:string ;
+                    bp:b_id "9694793"^^xsd:string ;
                     
                     bp:title "A histone deacetylase corepressor complex regulates the Notch signal transduction pathway"^^xsd:string ;
                     
@@ -7796,7 +7812,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1995"^^xsd:int ;
                     
-                    bp:id "7588063"^^xsd:string ;
+                    bp:b_id "7588063"^^xsd:string ;
                     
                     bp:source "Development 121:3291-301"^^xsd:string ;
                     
@@ -7824,7 +7840,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref119 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "10713164"^^xsd:string ;
+                    bp:b_id "10713164"^^xsd:string ;
                     
                     bp:year "2000"^^xsd:int ;
                     
@@ -7850,7 +7866,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref12 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "17685488"^^xsd:string ;
+                   bp:b_id "17685488"^^xsd:string ;
                    
                    bp:year "2007"^^xsd:int ;
                    
@@ -7874,7 +7890,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref120 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "16530044"^^xsd:string ;
+                    bp:b_id "16530044"^^xsd:string ;
                     
                     bp:year "2006"^^xsd:int ;
                     
@@ -7899,7 +7915,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref121 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "12050117"^^xsd:string ;
+                    bp:b_id "12050117"^^xsd:string ;
                     
                     bp:year "2002"^^xsd:int ;
                     
@@ -7924,7 +7940,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref122 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "12391150"^^xsd:string ;
+                    bp:b_id "12391150"^^xsd:string ;
                     
                     bp:year "2002"^^xsd:int ;
                     
@@ -7950,7 +7966,8 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1995"^^xsd:int ;
                     
-                    bp:id "7566092"^^xsd:string ;
+                    bp:b_id "22144582"^^xsd:string ,
+                            "7566092"^^xsd:string ;
                     
                     bp:author "Brou, C"^^xsd:string ,
                               "Israel, A"^^xsd:string ,
@@ -7975,7 +7992,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1996"^^xsd:int ;
                     
-                    bp:id "8687460"^^xsd:string ;
+                    bp:b_id "8687460"^^xsd:string ;
                     
                     bp:source "Biochem Biophys Res Commun 223:701-5"^^xsd:string ;
                     
@@ -7996,7 +8013,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1996"^^xsd:int ;
                     
-                    bp:id "8649374"^^xsd:string ;
+                    bp:b_id "8649374"^^xsd:string ;
                     
                     bp:author "Caudy, Michael"^^xsd:string ,
                               "Fisher, AL"^^xsd:string ;
@@ -8018,7 +8035,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1994"^^xsd:int ;
                     
-                    bp:id "8001118"^^xsd:string ;
+                    bp:b_id "8001118"^^xsd:string ;
                     
                     bp:author "Brent, R"^^xsd:string ;
                     
@@ -8044,7 +8061,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref127 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "17114293"^^xsd:string ;
+                    bp:b_id "17114293"^^xsd:string ;
                     
                     bp:year "2006"^^xsd:int ;
                     
@@ -8083,7 +8100,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2010"^^xsd:int ;
                     
-                    bp:id "20972443"^^xsd:string ;
+                    bp:b_id "20972443"^^xsd:string ;
                     
                     bp:author "Arnett, KL"^^xsd:string ,
                               "Aster, JC"^^xsd:string ,
@@ -8106,7 +8123,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref129 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "10964718"^^xsd:string ;
+                    bp:b_id "10964718"^^xsd:string ;
                     
                     bp:year "2000"^^xsd:int ;
                     
@@ -8126,7 +8143,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref13 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "15472075"^^xsd:string ;
+                   bp:b_id "15472075"^^xsd:string ;
                    
                    bp:year "2004"^^xsd:int ;
                    
@@ -8155,7 +8172,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref130 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "15107403"^^xsd:string ;
+                    bp:b_id "15107403"^^xsd:string ;
                     
                     bp:year "2004"^^xsd:int ;
                     
@@ -8180,7 +8197,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref131 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11044625"^^xsd:string ;
+                    bp:b_id "11044625"^^xsd:string ;
                     
                     bp:year "2000"^^xsd:int ;
                     
@@ -8203,7 +8220,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref132 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "15546612"^^xsd:string ;
+                    bp:b_id "15546612"^^xsd:string ;
                     
                     bp:year "2004"^^xsd:int ;
                     
@@ -8225,7 +8242,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref133 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11585921"^^xsd:string ;
+                    bp:b_id "11585921"^^xsd:string ;
                     
                     bp:year "2001"^^xsd:int ;
                     
@@ -8254,7 +8271,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref134 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "18094723"^^xsd:string ;
+                    bp:b_id "18094723"^^xsd:string ;
                     
                     bp:year "2008"^^xsd:int ;
                     
@@ -8275,7 +8292,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref135 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11461910"^^xsd:string ;
+                    bp:b_id "11461910"^^xsd:string ;
                     
                     bp:year "2001"^^xsd:int ;
                     
@@ -8301,7 +8318,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref136 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "16256737"^^xsd:string ;
+                    bp:b_id "16256737"^^xsd:string ;
                     
                     bp:year "2005"^^xsd:int ;
                     
@@ -8334,7 +8351,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2011"^^xsd:int ;
                     
-                    bp:id "21737748"^^xsd:string ;
+                    bp:b_id "21737748"^^xsd:string ;
                     
                     bp:author "Arnett, Kelly L"^^xsd:string ,
                               "Ashworth, T"^^xsd:string ,
@@ -8365,7 +8382,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref138 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "18418349"^^xsd:string ;
+                    bp:b_id "18418349"^^xsd:string ;
                     
                     bp:year "2008"^^xsd:int ;
                     
@@ -8393,7 +8410,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref139 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "10958687"^^xsd:string ;
+                    bp:b_id "10958687"^^xsd:string ;
                     
                     bp:year "2000"^^xsd:int ;
                     
@@ -8421,7 +8438,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref14 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "16773578"^^xsd:string ;
+                   bp:b_id "16773578"^^xsd:string ;
                    
                    bp:year "2006"^^xsd:int ;
                    
@@ -8448,7 +8465,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref140 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "10934472"^^xsd:string ;
+                    bp:b_id "10934472"^^xsd:string ;
                     
                     bp:year "2000"^^xsd:int ;
                     
@@ -8474,7 +8491,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref141 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11861489"^^xsd:string ;
+                    bp:b_id "11861489"^^xsd:string ;
                     
                     bp:year "2002"^^xsd:int ;
                     
@@ -8495,7 +8512,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref142 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11171333"^^xsd:string ;
+                    bp:b_id "11171333"^^xsd:string ;
                     
                     bp:year "2001"^^xsd:int ;
                     
@@ -8526,7 +8543,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1975"^^xsd:int ;
                     
-                    bp:id "803282"^^xsd:string ;
+                    bp:b_id "803282"^^xsd:string ;
                     
                     bp:author "Alagille, D"^^xsd:string ,
                               "Dommergues, J P"^^xsd:string ,
@@ -8549,7 +8566,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1997"^^xsd:int ;
                     
-                    bp:id "9207787"^^xsd:string ;
+                    bp:b_id "9207787"^^xsd:string ;
                     
                     bp:author "Chandrasekharappa, S C"^^xsd:string ,
                               "Collins, F S"^^xsd:string ,
@@ -8578,7 +8595,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref145 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "10551863"^^xsd:string ;
+                    bp:b_id "10551863"^^xsd:string ;
                     
                     bp:year "1999"^^xsd:int ;
                     
@@ -8609,7 +8626,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1997"^^xsd:int ;
                     
-                    bp:id "9207788"^^xsd:string ;
+                    bp:b_id "9207788"^^xsd:string ;
                     
                     bp:title "Alagille syndrome is caused by mutations in human Jagged1, which encodes a ligand for Notch1"^^xsd:string ;
                     
@@ -8645,7 +8662,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1987"^^xsd:int ;
                     
-                    bp:id "3153318"^^xsd:string ;
+                    bp:b_id "3153318"^^xsd:string ;
                     
                     bp:author "Alagille, D"^^xsd:string ,
                               "Dommergues, J P"^^xsd:string ,
@@ -8669,7 +8686,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref148 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "15569487"^^xsd:string ;
+                    bp:b_id "15569487"^^xsd:string ;
                     
                     bp:year "2004"^^xsd:int ;
                     
@@ -8697,7 +8714,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2012"^^xsd:int ;
                     
-                    bp:id "22658935"^^xsd:string ;
+                    bp:b_id "22658935"^^xsd:string ;
                     
                     bp:author "Botvinick, Elliot"^^xsd:string ;
                     
@@ -8722,7 +8739,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1994"^^xsd:int ;
                    
-                   bp:id "7698746"^^xsd:string ;
+                   bp:b_id "7698746"^^xsd:string ;
                    
                    bp:source "Genomics 24:253-8"^^xsd:string ;
                    
@@ -8743,7 +8760,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref150 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11823422"^^xsd:string ;
+                    bp:b_id "11823422"^^xsd:string ;
                     
                     bp:year "2002"^^xsd:int ;
                     
@@ -8773,7 +8790,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2012"^^xsd:int ;
                     
-                    bp:id "22658936"^^xsd:string ;
+                    bp:b_id "22658936"^^xsd:string ;
                     
                     bp:author "Botvinick, Elliot"^^xsd:string ;
                     
@@ -8798,7 +8815,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2010"^^xsd:int ;
                     
-                    bp:id "20156974"^^xsd:string ;
+                    bp:b_id "20156974"^^xsd:string ;
                     
                     bp:title "ADAM10 is essential for Notch2-dependent marginal zone B cell development and CD23 cleavage in vivo"^^xsd:string ;
                     
@@ -8827,7 +8844,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref153 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11518718"^^xsd:string ;
+                    bp:b_id "11518718"^^xsd:string ;
                     
                     bp:year "2001"^^xsd:int ;
                     
@@ -8850,7 +8867,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref154 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "18469519"^^xsd:string ;
+                    bp:b_id "18469519"^^xsd:string ;
                     
                     bp:year "2008"^^xsd:int ;
                     
@@ -8877,7 +8894,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "1997"^^xsd:int ;
                     
-                    bp:id "9384573"^^xsd:string ;
+                    bp:b_id "9384573"^^xsd:string ;
                     
                     bp:source "EMBO J. 16:6936-46"^^xsd:string ;
                     
@@ -8905,7 +8922,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2011"^^xsd:int ;
                     
-                    bp:id "21632553"^^xsd:string ;
+                    bp:b_id "21632553"^^xsd:string ;
                     
                     bp:author "Bockhorn, Maximilian"^^xsd:string ;
                     
@@ -8931,7 +8948,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref157 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11101851"^^xsd:string ;
+                    bp:b_id "11101851"^^xsd:string ;
                     
                     bp:year "2000"^^xsd:int ;
                     
@@ -8956,7 +8973,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref158 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "17284587"^^xsd:string ;
+                    bp:b_id "17284587"^^xsd:string ;
                     
                     bp:year "2007"^^xsd:int ;
                     
@@ -8981,7 +8998,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref159 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11866432"^^xsd:string ;
+                    bp:b_id "11866432"^^xsd:string ;
                     
                     bp:year "2002"^^xsd:int ;
                     
@@ -9007,7 +9024,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref16 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "11187898"^^xsd:string ;
+                   bp:b_id "11187898"^^xsd:string ;
                    
                    bp:year "2000"^^xsd:int ;
                    
@@ -9030,7 +9047,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref160 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11986231"^^xsd:string ;
+                    bp:b_id "11986231"^^xsd:string ;
                     
                     bp:year "2002"^^xsd:int ;
                     
@@ -9057,7 +9074,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref161 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "18724371"^^xsd:string ;
+                    bp:b_id "18724371"^^xsd:string ;
                     
                     bp:year "2008"^^xsd:int ;
                     
@@ -9091,7 +9108,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2013"^^xsd:int ;
                     
-                    bp:id "23362349"^^xsd:string ;
+                    bp:b_id "23362349"^^xsd:string ;
                     
                     bp:author "Bouvier, Raymonde"^^xsd:string ;
                     
@@ -9121,7 +9138,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2012"^^xsd:int ;
                     
-                    bp:id "21898486"^^xsd:string ;
+                    bp:b_id "21898486"^^xsd:string ;
                     
                     bp:author "Gannon, Maureen"^^xsd:string ;
                     
@@ -9147,7 +9164,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2013"^^xsd:int ;
                     
-                    bp:id "23362348"^^xsd:string ;
+                    bp:b_id "23362348"^^xsd:string ;
                     
                     bp:author "Buisson, Isabelle"^^xsd:string ,
                               "Cereghini, Silvia"^^xsd:string ,
@@ -9175,7 +9192,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2010"^^xsd:int ;
                     
-                    bp:id "20816393"^^xsd:string ;
+                    bp:b_id "20816393"^^xsd:string ;
                     
                     bp:title "Canonical and non-canonical Notch ligands"^^xsd:string ;
                     
@@ -9197,7 +9214,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2010"^^xsd:int ;
                     
-                    bp:id "20816392"^^xsd:string ;
+                    bp:b_id "20816392"^^xsd:string ;
                     
                     bp:author "Blacklow, SC"^^xsd:string ;
                     
@@ -9218,7 +9235,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2011"^^xsd:int ;
                     
-                    bp:id "21378989"^^xsd:string ;
+                    bp:b_id "21378989"^^xsd:string ;
                     
                     bp:author "Bezieau, Stephane"^^xsd:string ,
                               "Cormier-Daire, Valerie"^^xsd:string ,
@@ -9251,7 +9268,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref168 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "19379690"^^xsd:string ;
+                    bp:b_id "19379690"^^xsd:string ;
                     
                     bp:year "2009"^^xsd:int ;
                     
@@ -9273,7 +9290,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2011"^^xsd:int ;
                     
-                    bp:id "21378985"^^xsd:string ;
+                    bp:b_id "21378985"^^xsd:string ;
                     
                     bp:author "Aftimos, Salim"^^xsd:string ,
                               "Asilmaz, Esra"^^xsd:string ,
@@ -9310,7 +9327,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref17 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "19150886"^^xsd:string ;
+                   bp:b_id "19150886"^^xsd:string ;
                    
                    bp:year "2009"^^xsd:int ;
                    
@@ -9333,7 +9350,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                     
                     bp:year "2011"^^xsd:int ;
                     
-                    bp:id "21681853"^^xsd:string ;
+                    bp:b_id "21681853"^^xsd:string ;
                     
                     bp:author "Boycott, Kym M"^^xsd:string ,
                               "Caqueret, Aurore"^^xsd:string ,
@@ -9363,7 +9380,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref171 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "10079256"^^xsd:string ;
+                    bp:b_id "10079256"^^xsd:string ;
                     
                     bp:year "1999"^^xsd:int ;
                     
@@ -9393,7 +9410,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref172 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "12794186"^^xsd:string ;
+                    bp:b_id "12794186"^^xsd:string ;
                     
                     bp:year "2003"^^xsd:int ;
                     
@@ -9417,7 +9434,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref173 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "14986688"^^xsd:string ;
+                    bp:b_id "14986688"^^xsd:string ;
                     
                     bp:year "2004"^^xsd:int ;
                     
@@ -9436,7 +9453,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref174 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "10889061"^^xsd:string ;
+                    bp:b_id "10889061"^^xsd:string ;
                     
                     bp:year "2000"^^xsd:int ;
                     
@@ -9455,7 +9472,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref175 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "10221902"^^xsd:string ;
+                    bp:b_id "10221902"^^xsd:string ;
                     
                     bp:year "1999"^^xsd:int ;
                     
@@ -9477,7 +9494,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref176 rdf:type bp:PublicationXref ,
                              :NamedIndividual ;
                     
-                    bp:id "11112321"^^xsd:string ;
+                    bp:b_id "11112321"^^xsd:string ;
                     
                     bp:year "2000"^^xsd:int ;
                     
@@ -9499,7 +9516,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1996"^^xsd:int ;
                    
-                   bp:id "8878478"^^xsd:string ;
+                   bp:b_id "8878478"^^xsd:string ;
                    
                    bp:author "Alamowitch, S"^^xsd:string ,
                              "Bach, JF"^^xsd:string ,
@@ -9535,7 +9552,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref19 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "15684396"^^xsd:string ;
+                   bp:b_id "15684396"^^xsd:string ;
                    
                    bp:year "2005"^^xsd:int ;
                    
@@ -9566,7 +9583,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                   
                   bp:year "2011"^^xsd:int ;
                   
-                  bp:id "21875955"^^xsd:string ;
+                  bp:b_id "21875955"^^xsd:string ;
                   
                   bp:author "Andersen, JB"^^xsd:string ,
                             "Dorrell, C"^^xsd:string ,
@@ -9602,7 +9619,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1998"^^xsd:int ;
                    
-                   bp:id "9693032"^^xsd:string ;
+                   bp:b_id "9693032"^^xsd:string ;
                    
                    bp:author "Banta, AB"^^xsd:string ,
                              "Chen, L"^^xsd:string ;
@@ -9633,7 +9650,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref21 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "17540599"^^xsd:string ;
+                   bp:b_id "17540599"^^xsd:string ;
                    
                    bp:year "2007"^^xsd:int ;
                    
@@ -9668,7 +9685,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref22 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "17823410"^^xsd:string ;
+                   bp:b_id "17823410"^^xsd:string ;
                    
                    bp:year "2007"^^xsd:int ;
                    
@@ -9693,7 +9710,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref23 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "17554337"^^xsd:string ;
+                   bp:b_id "17554337"^^xsd:string ;
                    
                    bp:year "2007"^^xsd:int ;
                    
@@ -9728,7 +9745,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref24 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "17540598"^^xsd:string ;
+                   bp:b_id "17540598"^^xsd:string ;
                    
                    bp:year "2007"^^xsd:int ;
                    
@@ -9756,7 +9773,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref25 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "19773441"^^xsd:string ;
+                   bp:b_id "19773441"^^xsd:string ;
                    
                    bp:year "2009"^^xsd:int ;
                    
@@ -9790,7 +9807,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref26 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "19714243"^^xsd:string ;
+                   bp:b_id "19714243"^^xsd:string ;
                    
                    bp:year "2009"^^xsd:int ;
                    
@@ -9824,7 +9841,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2010"^^xsd:int ;
                    
-                   bp:id "20351093"^^xsd:string ;
+                   bp:b_id "20351093"^^xsd:string ;
                    
                    bp:source "Carcinogenesis 31:1037-44"^^xsd:string ;
                    
@@ -9852,7 +9869,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2010"^^xsd:int ;
                    
-                   bp:id "20805998"^^xsd:string ;
+                   bp:b_id "20805998"^^xsd:string ;
                    
                    bp:author "Ahmad, A"^^xsd:string ,
                              "Banerjee, S"^^xsd:string ;
@@ -9879,7 +9896,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2011"^^xsd:int ;
                    
-                   bp:id "21602795"^^xsd:string ;
+                   bp:b_id "21602795"^^xsd:string ;
                    
                    bp:author "Barbry, P"^^xsd:string ,
                              "Birembaut, P"^^xsd:string ,
@@ -9916,7 +9933,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                   
                   bp:year "2012"^^xsd:int ;
                   
-                  bp:id "22110129"^^xsd:string ;
+                  bp:b_id "22110129"^^xsd:string ;
                   
                   bp:author "Ansari, Aseem Z"^^xsd:string ,
                             "Carlson, Clayton D"^^xsd:string ,
@@ -9942,7 +9959,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2011"^^xsd:int ;
                    
-                   bp:id "21551231"^^xsd:string ;
+                   bp:b_id "21551231"^^xsd:string ;
                    
                    bp:author "Amadori, A"^^xsd:string ,
                              "Basso, G"^^xsd:string ,
@@ -9980,7 +9997,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref31 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "19723635"^^xsd:string ;
+                   bp:b_id "19723635"^^xsd:string ;
                    
                    bp:year "2009"^^xsd:int ;
                    
@@ -10001,7 +10018,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref32 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "20080834"^^xsd:string ;
+                   bp:b_id "20080834"^^xsd:string ;
                    
                    bp:year "2010"^^xsd:int ;
                    
@@ -10029,7 +10046,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2009"^^xsd:int ;
                    
-                   bp:id "20495621"^^xsd:string ;
+                   bp:b_id "20495621"^^xsd:string ;
                    
                    bp:author "Arndt, K"^^xsd:string ,
                              "Bischof, JM"^^xsd:string ,
@@ -10056,7 +10073,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref34 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "1425352"^^xsd:string ;
+                   bp:b_id "1425352"^^xsd:string ;
                    
                    bp:year "1992"^^xsd:int ;
                    
@@ -10083,7 +10100,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref35 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10545110"^^xsd:string ;
+                   bp:b_id "10545110"^^xsd:string ;
                    
                    bp:year "1999"^^xsd:int ;
                    
@@ -10103,7 +10120,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref36 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "1764995"^^xsd:string ;
+                   bp:b_id "1764995"^^xsd:string ;
                    
                    bp:year "1991"^^xsd:int ;
                    
@@ -10125,7 +10142,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref37 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "15692013"^^xsd:string ;
+                   bp:b_id "15692013"^^xsd:string ;
                    
                    bp:year "2005"^^xsd:int ;
                    
@@ -10150,7 +10167,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2011"^^xsd:int ;
                    
-                   bp:id "21464368"^^xsd:string ;
+                   bp:b_id "21464368"^^xsd:string ;
                    
                    bp:source "Blood 117:5652-62"^^xsd:string ;
                    
@@ -10178,7 +10195,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref39 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "18347015"^^xsd:string ;
+                   bp:b_id "18347015"^^xsd:string ;
                    
                    bp:year "2008"^^xsd:int ;
                    
@@ -10203,7 +10220,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref4 rdf:type bp:PublicationXref ,
                            :NamedIndividual ;
                   
-                  bp:id "17344417"^^xsd:string ;
+                  bp:b_id "17344417"^^xsd:string ;
                   
                   bp:year "2007"^^xsd:int ;
                   
@@ -10238,7 +10255,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref40 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "12486116"^^xsd:string ;
+                   bp:b_id "12486116"^^xsd:string ;
                    
                    bp:year "2003"^^xsd:int ;
                    
@@ -10261,7 +10278,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref41 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "11524432"^^xsd:string ;
+                   bp:b_id "11524432"^^xsd:string ;
                    
                    bp:year "2001"^^xsd:int ;
                    
@@ -10289,7 +10306,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2011"^^xsd:int ;
                    
-                   bp:id "21490058"^^xsd:string ;
+                   bp:b_id "21490058"^^xsd:string ;
                    
                    bp:source "Development 138:1925-34"^^xsd:string ;
                    
@@ -10313,7 +10330,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref43 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "18243100"^^xsd:string ;
+                   bp:b_id "18243100"^^xsd:string ;
                    
                    bp:year "2008"^^xsd:int ;
                    
@@ -10345,7 +10362,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2010"^^xsd:int ;
                    
-                   bp:id "20197277"^^xsd:string ;
+                   bp:b_id "20197277"^^xsd:string ;
                    
                    bp:author "Biunno, I"^^xsd:string ,
                              "Cardano, M"^^xsd:string ;
@@ -10378,7 +10395,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1994"^^xsd:int ;
                    
-                   bp:id "7918097"^^xsd:string ;
+                   bp:b_id "7918097"^^xsd:string ;
                    
                    bp:author "Dahlstrand, J"^^xsd:string ,
                              "Lardelli, M"^^xsd:string ,
@@ -10399,7 +10416,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1996"^^xsd:int ;
                    
-                   bp:id "8681805"^^xsd:string ;
+                   bp:b_id "8681805"^^xsd:string ;
                    
                    bp:source "Development 122:2251-9"^^xsd:string ;
                    
@@ -10424,7 +10441,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1997"^^xsd:int ;
                    
-                   bp:id "9244302"^^xsd:string ;
+                   bp:b_id "9244302"^^xsd:string ;
                    
                    bp:author "Artavanis-Tsakonas, S"^^xsd:string ,
                              "Blaumueller, CM"^^xsd:string ;
@@ -10447,7 +10464,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1993"^^xsd:int ;
                    
-                   bp:id "8293978"^^xsd:string ;
+                   bp:b_id "8293978"^^xsd:string ;
                    
                    bp:source "Genetics 135:765-83"^^xsd:string ;
                    
@@ -10468,7 +10485,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2010"^^xsd:int ;
                    
-                   bp:id "20170518"^^xsd:string ;
+                   bp:b_id "20170518"^^xsd:string ;
                    
                    bp:source "BMC Dev Biol 10:19"^^xsd:string ;
                    
@@ -10492,7 +10509,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                   
                   bp:year "2010"^^xsd:int ;
                   
-                  bp:id "20442780"^^xsd:string ;
+                  bp:b_id "20442780"^^xsd:string ;
                   
                   bp:title "Differential control of Notch1 gene transcription by Klf4 and Sp3 transcription factors in normal versus cancer-derived keratinocytes"^^xsd:string ;
                   
@@ -10512,7 +10529,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref50 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10459009"^^xsd:string ;
+                   bp:b_id "10459009"^^xsd:string ;
                    
                    bp:year "1999"^^xsd:int ;
                    
@@ -10533,7 +10550,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref51 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "1295745"^^xsd:string ;
+                   bp:b_id "1295745"^^xsd:string ;
                    
                    bp:year "1992"^^xsd:int ;
                    
@@ -10557,7 +10574,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1996"^^xsd:int ;
                    
-                   bp:id "8722778"^^xsd:string ;
+                   bp:b_id "8722778"^^xsd:string ;
                    
                    bp:source "Genetics 143:237-47"^^xsd:string ;
                    
@@ -10577,7 +10594,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1998"^^xsd:int ;
                    
-                   bp:id "9727485"^^xsd:string ;
+                   bp:b_id "9727485"^^xsd:string ;
                    
                    bp:source "Cell 94:423-6"^^xsd:string ;
                    
@@ -10595,7 +10612,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref54 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10669757"^^xsd:string ;
+                   bp:b_id "10669757"^^xsd:string ;
                    
                    bp:year "2000"^^xsd:int ;
                    
@@ -10624,7 +10641,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1998"^^xsd:int ;
                    
-                   bp:id "9653148"^^xsd:string ;
+                   bp:b_id "9653148"^^xsd:string ;
                    
                    bp:author "Jarriault, S"^^xsd:string ,
                              "LeBail, O"^^xsd:string ,
@@ -10645,7 +10662,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref56 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "12049766"^^xsd:string ;
+                   bp:b_id "12049766"^^xsd:string ;
                    
                    bp:year "2002"^^xsd:int ;
                    
@@ -10665,7 +10682,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref57 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "19701457"^^xsd:string ;
+                   bp:b_id "19701457"^^xsd:string ;
                    
                    bp:year "2009"^^xsd:int ;
                    
@@ -10698,7 +10715,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "2011"^^xsd:int ;
                    
-                   bp:id "21097675"^^xsd:string ;
+                   bp:b_id "21097675"^^xsd:string ;
                    
                    bp:source "Blood 117:1184-95"^^xsd:string ;
                    
@@ -10725,7 +10742,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref59 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10935637"^^xsd:string ;
+                   bp:b_id "10935637"^^xsd:string ;
                    
                    bp:year "2000"^^xsd:int ;
                    
@@ -10750,7 +10767,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                   
                   bp:year "2010"^^xsd:int ;
                   
-                  bp:id "20442293"^^xsd:string ;
+                  bp:b_id "20442293"^^xsd:string ;
                   
                   bp:source "Cancer Res. 70:4034-44"^^xsd:string ;
                   
@@ -10777,7 +10794,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1997"^^xsd:int ;
                    
-                   bp:id "9207795"^^xsd:string ;
+                   bp:b_id "9207795"^^xsd:string ;
                    
                    bp:author "Bashirullah, A"^^xsd:string ,
                              "Boulianne, G"^^xsd:string ,
@@ -10811,7 +10828,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref61 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10935626"^^xsd:string ;
+                   bp:b_id "10935626"^^xsd:string ;
                    
                    bp:year "2000"^^xsd:int ;
                    
@@ -10845,7 +10862,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1997"^^xsd:int ;
                    
-                   bp:id "9187150"^^xsd:string ;
+                   bp:b_id "9187150"^^xsd:string ;
                    
                    bp:title "A family of mammalian Fringe genes implicated in boundary determination and the Notch pathway"^^xsd:string ;
                    
@@ -10868,7 +10885,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref63 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "11707585"^^xsd:string ;
+                   bp:b_id "11707585"^^xsd:string ;
                    
                    bp:year "2001"^^xsd:int ;
                    
@@ -10891,7 +10908,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref64 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "11530204"^^xsd:string ;
+                   bp:b_id "11530204"^^xsd:string ;
                    
                    bp:year "2001"^^xsd:int ;
                    
@@ -10917,7 +10934,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref65 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10075724"^^xsd:string ;
+                   bp:b_id "10075724"^^xsd:string ;
                    
                    bp:year "1999"^^xsd:int ;
                    
@@ -10944,7 +10961,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref66 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "11135303"^^xsd:string ;
+                   bp:b_id "11135303"^^xsd:string ;
                    
                    bp:year "2001"^^xsd:int ;
                    
@@ -10964,7 +10981,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref67 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10366590"^^xsd:string ;
+                   bp:b_id "10366590"^^xsd:string ;
                    
                    bp:year "1999"^^xsd:int ;
                    
@@ -10987,7 +11004,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1998"^^xsd:int ;
                    
-                   bp:id "9819428"^^xsd:string ;
+                   bp:b_id "9819428"^^xsd:string ;
                    
                    bp:author "Brou, C"^^xsd:string ;
                    
@@ -11015,7 +11032,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref69 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "18296446"^^xsd:string ;
+                   bp:b_id "18296446"^^xsd:string ;
                    
                    bp:year "2008"^^xsd:int ;
                    
@@ -11042,7 +11059,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref7 rdf:type bp:PublicationXref ,
                            :NamedIndividual ;
                   
-                  bp:id "16612405"^^xsd:string ;
+                  bp:b_id "16612405"^^xsd:string ;
                   
                   bp:year "2006"^^xsd:int ;
                   
@@ -11064,7 +11081,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref70 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "15574878"^^xsd:string ;
+                   bp:b_id "15574878"^^xsd:string ;
                    
                    bp:year "2005"^^xsd:int ;
                    
@@ -11090,7 +11107,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref71 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "18824585"^^xsd:string ;
+                   bp:b_id "18824585"^^xsd:string ;
                    
                    bp:year "2008"^^xsd:int ;
                    
@@ -11121,7 +11138,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref72 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "18824583"^^xsd:string ;
+                   bp:b_id "18824583"^^xsd:string ;
                    
                    bp:year "2008"^^xsd:int ;
                    
@@ -11152,7 +11169,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref73 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "19524514"^^xsd:string ;
+                   bp:b_id "19524514"^^xsd:string ;
                    
                    bp:year "2009"^^xsd:int ;
                    
@@ -11181,7 +11198,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1998"^^xsd:int ;
                    
-                   bp:id "9462510"^^xsd:string ;
+                   bp:b_id "9462510"^^xsd:string ;
                    
                    bp:author "Banta, AB"^^xsd:string ,
                              "Deng, Y"^^xsd:string ,
@@ -11212,7 +11229,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1997"^^xsd:int ;
                    
-                   bp:id "9315665"^^xsd:string ;
+                   bp:b_id "9315665"^^xsd:string ;
                    
                    bp:author "Aster, JC"^^xsd:string ,
                              "Hasserjian, RP"^^xsd:string ;
@@ -11235,7 +11252,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref76 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "11006133"^^xsd:string ;
+                   bp:b_id "11006133"^^xsd:string ;
                    
                    bp:year "2000"^^xsd:int ;
                    
@@ -11259,7 +11276,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref77 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "15824097"^^xsd:string ;
+                   bp:b_id "15824097"^^xsd:string ;
                    
                    bp:year "2005"^^xsd:int ;
                    
@@ -11286,7 +11303,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref78 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "17003037"^^xsd:string ;
+                   bp:b_id "17003037"^^xsd:string ;
                    
                    bp:year "2006"^^xsd:int ;
                    
@@ -11318,7 +11335,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref79 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "18077452"^^xsd:string ;
+                   bp:b_id "18077452"^^xsd:string ;
                    
                    bp:year "2008"^^xsd:int ;
                    
@@ -11350,7 +11367,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                   
                   bp:year "2011"^^xsd:int ;
                   
-                  bp:id "21402699"^^xsd:string ;
+                  bp:b_id "21402699"^^xsd:string ;
                   
                   bp:author "Bresnick, Emery H"^^xsd:string ;
                   
@@ -11370,7 +11387,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref80 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "12530964"^^xsd:string ;
+                   bp:b_id "12530964"^^xsd:string ;
                    
                    bp:year "2003"^^xsd:int ;
                    
@@ -11405,7 +11422,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref81 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "18043734"^^xsd:string ;
+                   bp:b_id "18043734"^^xsd:string ;
                    
                    bp:year "2007"^^xsd:int ;
                    
@@ -11433,7 +11450,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref82 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "11740940"^^xsd:string ;
+                   bp:b_id "11740940"^^xsd:string ;
                    
                    bp:year "2001"^^xsd:int ;
                    
@@ -11457,7 +11474,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref83 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "15760269"^^xsd:string ;
+                   bp:b_id "15760269"^^xsd:string ;
                    
                    bp:year "2005"^^xsd:int ;
                    
@@ -11480,7 +11497,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref84 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "15829515"^^xsd:string ;
+                   bp:b_id "15829515"^^xsd:string ;
                    
                    bp:year "2005"^^xsd:int ;
                    
@@ -11504,7 +11521,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref85 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "16093323"^^xsd:string ;
+                   bp:b_id "16093323"^^xsd:string ;
                    
                    bp:year "2005"^^xsd:int ;
                    
@@ -11525,7 +11542,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref86 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "17401372"^^xsd:string ;
+                   bp:b_id "17401372"^^xsd:string ;
                    
                    bp:year "2007"^^xsd:int ;
                    
@@ -11551,7 +11568,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref87 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "12354787"^^xsd:string ;
+                   bp:b_id "12354787"^^xsd:string ;
                    
                    bp:year "2002"^^xsd:int ;
                    
@@ -11583,7 +11600,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref88 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "19726682"^^xsd:string ;
+                   bp:b_id "19726682"^^xsd:string ;
                    
                    bp:year "2009"^^xsd:int ;
                    
@@ -11610,7 +11627,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1997"^^xsd:int ;
                    
-                   bp:id "9244301"^^xsd:string ;
+                   bp:b_id "9244301"^^xsd:string ;
                    
                    bp:source "Cell 90:271-80"^^xsd:string ;
                    
@@ -11629,7 +11646,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref9 rdf:type bp:PublicationXref ,
                            :NamedIndividual ;
                   
-                  bp:id "1831692"^^xsd:string ;
+                  bp:b_id "1831692"^^xsd:string ;
                   
                   bp:year "1991"^^xsd:int ;
                   
@@ -11657,7 +11674,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref90 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10882063"^^xsd:string ;
+                   bp:b_id "10882063"^^xsd:string ;
                    
                    bp:year "2000"^^xsd:int ;
                    
@@ -11686,7 +11703,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref91 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10879540"^^xsd:string ;
+                   bp:b_id "10879540"^^xsd:string ;
                    
                    bp:year "2000"^^xsd:int ;
                    
@@ -11712,7 +11729,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref92 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "12209127"^^xsd:string ;
+                   bp:b_id "12209127"^^xsd:string ;
                    
                    bp:year "2002"^^xsd:int ;
                    
@@ -11733,7 +11750,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1998"^^xsd:int ;
                    
-                   bp:id "9620803"^^xsd:string ;
+                   bp:b_id "9620803"^^xsd:string ;
                    
                    bp:author "Kisslinger, JA"^^xsd:string ,
                              "Kopan, R"^^xsd:string ;
@@ -11753,7 +11770,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref94 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "10206645"^^xsd:string ;
+                   bp:b_id "10206645"^^xsd:string ;
                    
                    bp:year "1999"^^xsd:int ;
                    
@@ -11784,7 +11801,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref95 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "19151708"^^xsd:string ;
+                   bp:b_id "19151708"^^xsd:string ;
                    
                    bp:year "2009"^^xsd:int ;
                    
@@ -11818,7 +11835,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1998"^^xsd:int ;
                    
-                   bp:id "9604939"^^xsd:string ;
+                   bp:b_id "9604939"^^xsd:string ;
                    
                    bp:author "Adachi, A"^^xsd:string ;
                    
@@ -11839,7 +11856,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1998"^^xsd:int ;
                    
-                   bp:id "9651681"^^xsd:string ;
+                   bp:b_id "9651681"^^xsd:string ;
                    
                    bp:source "Curr Biol 8:771-4"^^xsd:string ;
                    
@@ -11858,7 +11875,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 :PublicationXref98 rdf:type bp:PublicationXref ,
                             :NamedIndividual ;
                    
-                   bp:id "19000840"^^xsd:string ;
+                   bp:b_id "19000840"^^xsd:string ;
                    
                    bp:year "2008"^^xsd:int ;
                    
@@ -11891,7 +11908,7 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                    
                    bp:year "1998"^^xsd:int ;
                    
-                   bp:id "9590294"^^xsd:string ;
+                   bp:b_id "9590294"^^xsd:string ;
                    
                    bp:author "Artavanis-Tsakonas, S"^^xsd:string ,
                              "Carcanciu, ML"^^xsd:string ,
@@ -12648,6 +12665,15 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 
 
+###  http://www.w3.org/2002/07/owl#dummyExperimentSet
+
+:dummyExperimentSet rdf:type :ExperimentSet ,
+                             :NamedIndividual ;
+                    
+                    :hasexperimentdata :dummyExperiment_WithPublication .
+
+
+
 ###  http://www.w3.org/2002/07/owl#dummyExperiment_NoPublication
 
 :dummyExperiment_NoPublication rdf:type :Experiment ,
@@ -12669,6 +12695,22 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 ###  http://www.w3.org/2002/07/owl#dummyPathway_NoPublication
 
 :dummyPathway_NoPublication rdf:type :NamedIndividual .
+
+
+
+###  http://www.w3.org/2002/07/owl#dummyPathway_WithPublication
+
+:dummyPathway_WithPublication rdf:type bp:Pathway ,
+                                       :NamedIndividual ;
+                              
+                              bp:xref :PublicationXref1 .
+
+
+
+###  http://www.w3.org/2002/07/owl#dummyPathway_WithoutPublication
+
+:dummyPathway_WithoutPublication rdf:type bp:Pathway ,
+                                          :NamedIndividual .
 
 
 
@@ -15546,17 +15588,21 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_14688391
 
-:pmid_14688391 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_14688391 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "14688391"^^xsd:string .
+               :hasid "14688391"^^xsd:string ;
+               
+               bp:b_id "14688391"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_16713582
 
-:pmid_16713582 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_16713582 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "16713582"^^xsd:string ;
                
                :hasid "16713582"^^xsd:string .
 
@@ -15564,8 +15610,10 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_17114293
 
-:pmid_17114293 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_17114293 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "17114293"^^xsd:string ;
                
                :hasid "17114293"^^xsd:string .
 
@@ -15573,17 +15621,21 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_17183653
 
-:pmid_17183653 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_17183653 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "17183653"^^xsd:string .
+               :hasid "17183653"^^xsd:string ;
+               
+               bp:b_id "17183653"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_17540599
 
-:pmid_17540599 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_17540599 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "17540599"^^xsd:string ;
                
                :hasid "17540599"^^xsd:string .
 
@@ -15591,8 +15643,10 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_18974828
 
-:pmid_18974828 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_18974828 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "18974828"^^xsd:string ;
                
                :hasid "18974828"^^xsd:string .
 
@@ -15600,35 +15654,43 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_19128516
 
-:pmid_19128516 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_19128516 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "19128516"^^xsd:string .
+               :hasid "19128516"^^xsd:string ;
+               
+               bp:b_id "19128516"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_19187765
 
-:pmid_19187765 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_19187765 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "19187765"^^xsd:string .
+               :hasid "19187765"^^xsd:string ;
+               
+               bp:b_id "19187765"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_19187766
 
-:pmid_19187766 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_19187766 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "19187766"^^xsd:string .
+               :hasid "19187766"^^xsd:string ;
+               
+               bp:b_id "19187766"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_19571010
 
-:pmid_19571010 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_19571010 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "19571010"^^xsd:string ;
                
                :hasid "19571010"^^xsd:string .
 
@@ -15636,26 +15698,32 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_19829295
 
-:pmid_19829295 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_19829295 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "19829295"^^xsd:string .
+               :hasid "19829295"^^xsd:string ;
+               
+               bp:b_id "19829295"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_20075857
 
-:pmid_20075857 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_20075857 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "20075857"^^xsd:string .
+               :hasid "20075857"^^xsd:string ;
+               
+               bp:b_id "20075857"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_20090754
 
-:pmid_20090754 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_20090754 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "20090754"^^xsd:string ;
                
                :hasid "20090754"^^xsd:string .
 
@@ -15663,8 +15731,10 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_20123894
 
-:pmid_20123894 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_20123894 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "20123894"^^xsd:string ;
                
                :hasid "20123894"^^xsd:string .
 
@@ -15672,8 +15742,10 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_20508642
 
-:pmid_20508642 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_20508642 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "20508642"^^xsd:string ;
                
                :hasid "20508642"^^xsd:string .
 
@@ -15681,26 +15753,32 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_20805998
 
-:pmid_20805998 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_20805998 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "20805998"^^xsd:string .
+               :hasid "20805998"^^xsd:string ;
+               
+               bp:b_id "20805998"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_20837710
 
-:pmid_20837710 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_20837710 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "20837710"^^xsd:string .
+               :hasid "20837710"^^xsd:string ;
+               
+               bp:b_id "20837710"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_20953172
 
-:pmid_20953172 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_20953172 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "20953172"^^xsd:string ;
                
                :hasid "20953172"^^xsd:string .
 
@@ -15708,8 +15786,10 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_21057493
 
-:pmid_21057493 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_21057493 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "21057493"^^xsd:string ;
                
                :hasid "21057493"^^xsd:string .
 
@@ -15717,26 +15797,32 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_21170310
 
-:pmid_21170310 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_21170310 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "21170310"^^xsd:string .
+               :hasid "21170310"^^xsd:string ;
+               
+               bp:b_id "21170310"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_21295276
 
-:pmid_21295276 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_21295276 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "21295276"^^xsd:string .
+               :hasid "21295276"^^xsd:string ;
+               
+               bp:b_id "21295276"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_21451524
 
-:pmid_21451524 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_21451524 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "21451524"^^xsd:string ;
                
                :hasid "21451524"^^xsd:string .
 
@@ -15744,17 +15830,21 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_21551231
 
-:pmid_21551231 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_21551231 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "21551231"^^xsd:string .
+               :hasid "21551231"^^xsd:string ;
+               
+               bp:b_id "21551231"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_21602795
 
-:pmid_21602795 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_21602795 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "21602795"^^xsd:string ;
                
                :hasid "21602795"^^xsd:string .
 
@@ -15762,17 +15852,21 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_21630377
 
-:pmid_21630377 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_21630377 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "21630377"^^xsd:string .
+               :hasid "21630377"^^xsd:string ;
+               
+               bp:b_id "21630377"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_21875955
 
-:pmid_21875955 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_21875955 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "21875955"^^xsd:string ;
                
                :hasid "21875955"^^xsd:string .
 
@@ -15780,17 +15874,21 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_22144582
 
-:pmid_22144582 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_22144582 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
                
-               :hasid "22144582"^^xsd:string .
+               :hasid "22144582"^^xsd:string ;
+               
+               bp:b_id "22144582"^^xsd:string .
 
 
 
 ###  http://www.w3.org/2002/07/owl#pmid_22421046
 
-:pmid_22421046 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_22421046 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "22421046"^^xsd:string ;
                
                :hasid "22421046"^^xsd:string .
 
@@ -15798,8 +15896,10 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_22466170
 
-:pmid_22466170 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_22466170 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "22466170"^^xsd:string ;
                
                :hasid "22466170"^^xsd:string .
 
@@ -15807,8 +15907,10 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 
 ###  http://www.w3.org/2002/07/owl#pmid_23812591
 
-:pmid_23812591 rdf:type :NamedIndividual ,
-                        :Publication ;
+:pmid_23812591 rdf:type <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ,
+                        :NamedIndividual ;
+               
+               bp:b_id "23812591"^^xsd:string ;
                
                :hasid "23812591"^^xsd:string .
 
@@ -15842,12 +15944,215 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
 #################################################################
 
 
+<urn:swrl#pubref> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#expset> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#pub> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#someid> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl#exp> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#pathway> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl#publication> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-<urn:swrl#exp> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-<urn:swrl#x> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-<urn:swrl#z> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
-<urn:swrl#y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ] ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :probe ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                               ] ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                          ] ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasprobe ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                                                                ]
+                                                                                    ] ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                                                     ]
+                                                                         ]
+                                                              ]
+                                                   ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#exp> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> bp:PublicationXref ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#publication>
+                                                               ] ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:xref ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#publication>
+                                                                                     ] ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:xref ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pathway> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#publication>
+                                                                                                ]
+                                                                                    ]
+                                                                         ] ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#classPredicate> :Experiment ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp>
+                                                                          ]
+                                                              ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pathway>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#exp> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pathway>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#hasxref> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pub> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#pubref>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/ryan/ontologies/2015/2/untitled-ontology-24#Publication> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pub>
+                                                               ] ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:rest rdf:nil ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:b_id ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
+                                                                                     ]
+                                                                         ] ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:b_id ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pub> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
+                                                                          ]
+                                                              ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:PublicationXref ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :ExperimentSet ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#expset>
+                                                               ] ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                      rdf:rest rdf:nil ;
+                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:b_id ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref> ;
+                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
+                                                                                                ]
+                                                                                    ] ;
+                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:b_id ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pub> ;
+                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#someid>
+                                                                                     ]
+                                                                         ] ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :haspmid ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#expset> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#pub>
+                                                                          ]
+                                                              ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:PublicationXref ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pubref>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:xref ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#expset> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#pubref>
+                                                    ]
+                                        ]
+] .
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest rdf:nil ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperimentset ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
+                                                    ]
+                                        ] ;
+  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                rdf:rest rdf:nil ;
+                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
+                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
+                                                                          ]
+                                                              ] ;
+                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasexperimentdata ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
+                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
+                                                               ]
+                                                   ] ;
+                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
+                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
+                                                    ]
+                                        ]
+] .
 [ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                           rdf:rest rdf:nil ;
@@ -15879,124 +16184,6 @@ Usage: Gene should only be used for describing GeneticInteractions."""^^xsd:stri
                                                     ]
                                         ]
 ] .
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest rdf:nil ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
-                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#exp> ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ]
-                                        ] ;
-  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ] ;
-                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
-                                                                          ] ;
-                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                                      rdf:rest rdf:nil ;
-                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasprobe ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp> ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
-                                                                                                ]
-                                                                                    ] ;
-                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasgenesymbol ;
-                                                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
-                                                                                     ]
-                                                                         ]
-                                                              ] ;
-                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                 <http://www.w3.org/2003/11/swrl#classPredicate> :probe ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
-                                                               ]
-                                                   ]
-                                        ]
-] .
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x>
-                                                    ] ;
-                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                rdf:rest rdf:nil ;
-                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                            <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasexperimentdata ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y> ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#z>
-                                                                          ]
-                                                              ] ;
-                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#y>
-                                                               ]
-                                                   ]
-                                        ] ;
-  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest rdf:nil ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperimentset ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#x> ;
-                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#z>
-                                                    ]
-                                        ]
-] .
-[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-  <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#classPredicate> bp:Pathway ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pathway>
-                                                    ] ;
-                                          rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                     rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                 <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:xref ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pathway> ;
-                                                                 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#publication>
-                                                               ] ;
-                                                     rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                            <http://www.w3.org/2003/11/swrl#classPredicate> bp:PublicationXref ;
-                                                                            <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#publication>
-                                                                          ] ;
-                                                                rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                                                      rdf:rest rdf:nil ;
-                                                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> bp:xref ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp> ;
-                                                                                                  <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#publication>
-                                                                                                ]
-                                                                                    ] ;
-                                                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Experiment ;
-                                                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#exp>
-                                                                                     ]
-                                                                         ]
-                                                              ]
-                                                   ]
-                                        ] ;
-  <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                          rdf:rest rdf:nil ;
-                                          rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                      <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasinferredexperiment ;
-                                                      <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl#exp> ;
-                                                      <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl#pathway>
-                                                    ]
-                                        ]
-] .
 
-###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+###  Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net
 
